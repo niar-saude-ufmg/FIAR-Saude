@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: FIAR Saúde – Responsible AI Audit Framework for Public Health Systems
+message: If you use this framework, please cite it as below.
+authors:
+  - family-names: Vasconcelos
+    given-names: Marisa
+year: 2026
+license: MIT
+repository-code: https://github.com/marisavas/FIAR-Saude
