@@ -1,150 +1,157 @@
-# Metodologia do Framework FIAR
+# Metodologia do FIAR-Saúde
 
-## Objetivo do framework
+## Contexto e Motivação
 
-O FIAR (Framework de Auditoria de IA Responsável) foi desenvolvido para apoiar a **documentação, avaliação e auditoria** de sistemas de inteligência artificial aplicados à saúde pública.
+Frameworks de IA Responsável frequentemente estabelecem princípios éticos de alto nível — como transparência, justiça e responsabilização (*accountability*) — mas oferecem orientação limitada sobre sua implementação prática.
 
-Seu objetivo é transformar princípios de IA Responsável em **controles verificáveis**, baseados em evidências documentadas e avaliados por meio de dimensões estruturadas.
+Essa lacuna entre **princípios normativos e operacionalização** é amplamente discutida na literatura (Floridi et al., 2018; Morley et al., 2020).
 
-O framework busca reduzir a distância entre **princípios normativos de ética em IA** e **práticas operacionais de governança e auditoria** de sistemas de IA.
+O FIAR-Saúde foi desenvolvido para responder a esse problema no contexto específico da saúde pública brasileira, propondo uma abordagem operacional baseada em:
 
-Essa abordagem está alinhada a diretrizes internacionais de IA Responsável, como os princípios da OECD para IA, recomendações da Organização Mundial da Saúde (OMS) para sistemas de IA em saúde e normas de gestão de risco em IA propostas pela ISO/IEC.
+- documentação estruturada do sistema
+- evidências verificáveis ao longo do ciclo de vida da tarefa
+- avaliação sistemática por dimensões de IA Responsável
+- inferência longitudinal de maturidade institucional
 
----
+Diferentemente de abordagens centradas exclusivamente na avaliação interna de modelos, o FIAR-Saúde concentra-se na **governança verificável das práticas** associadas ao desenvolvimento, operação e monitoramento de sistemas de IA. Seu foco não é inspecionar diretamente as propriedades internas do modelo ou acessar ambientes restritos, mas avaliar a existência, consistência, rastreabilidade e recorrência de evidências técnicas e documentais produzidas ao longo do ciclo de vida do sistema.
 
-## Princípios do framework
-
-O FIAR baseia-se em quatro princípios metodológicos:
-
-### Documentação estruturada
-
-Sistemas de IA devem possuir documentação clara sobre contexto, dados utilizados, arquitetura do modelo e finalidade.
-
-### Evidências verificáveis
-
-A avaliação de IA Responsável deve ser baseada em evidências documentadas, como artefatos técnicos e registros do sistema.
-
-### Separação entre projeto e auditoria
-
-O framework estabelece uma distinção entre:
-
-* **artefatos produzidos pelo projeto**
-* **avaliações conduzidas por auditores independentes** 
-
-O projeto não avalia a si próprio, sendo responsável por fornecer evidências que serão analisadas por auditor independente.
-
-### Avaliação multidimensional
-
-A auditoria considera múltiplas dimensões de IA Responsável, refletindo diferentes categorias de risco.
-
-No FIAR, essas dimensões incluem:
-
-* auditabilidade
-* explicabilidade
-* justiça
-* privacidade
-* governança
+Essa perspectiva aproxima o framework de modelos de auditoria regulatória e governança baseada em evidências, nos quais a conformidade é inferida a partir de artefatos verificáveis, consistência operacional e responsabilização institucional.
 
 ---
 
-## Estrutura da auditoria
+## Diferenciais do FIAR-Saúde
 
-A auditoria utilizando o FIAR é organizada em três componentes principais:
+O FIAR-Saúde se diferencia de outros frameworks de IA Responsável por:
 
-1. **Documentação do sistema de IA**
-2. **Artefatos técnicos produzidos pelo projeto**
-3. **Avaliação independente conduzida pelo auditor**
+- operacionalizar princípios éticos em **critérios verificáveis**
+- separar explicitamente **desenvolvimento do sistema e auditoria independente**
+- utilizar **evidências documentadas como base da avaliação**, sem necessidade de acesso a dados sensíveis ou ambientes restritos
+- adotar um **modelo de maturidade longitudinal e cumulativo**, baseado na recorrência verificável das práticas ao longo do tempo
+- distinguir **conformidade pontual** (por versão avaliável) de **maturidade institucional** (por projeto, ao longo do tempo)
+- incorporar **trilhas de execução** diferenciadas conforme o destino do modelo (publicação científica ou operação ativa)
 
-A documentação e os artefatos são produzidos pela equipe responsável pelo sistema de IA, enquanto a avaliação é conduzida com base em critérios definidos pelo framework.
-
----
-
-## Evidências e artefatos
-
-A auditoria FIAR baseia-se na análise de evidências documentadas fornecidas pelo projeto.
-
-Entre os principais artefatos estão:
-
-* documentação inicial do sistema
-* Data Cards
-* Model Cards
-* relatórios técnicos
-* documentação de governança
-
-Esses artefatos permitem registrar informações relevantes, como:
-
-* fontes de dados
-* decisões de modelagem
-* limitações do sistema
-* potenciais impactos
+Essa abordagem responde a críticas recorrentes na literatura sobre a dificuldade de traduzir princípios de IA Responsável em práticas auditáveis e mensuráveis (Mittelstadt, 2019; Raji et al., 2020).
 
 ---
 
-## Avaliação de maturidade
+## Princípios Metodológicos
 
-O FIAR avalia o grau de maturidade do sistema em cada dimensão de IA Responsável.
+O FIAR-Saúde baseia-se em cinco princípios:
 
-Cada dimensão é analisada com base:
+### 1. Documentação estruturada
 
-* nas evidências fornecidas pelo projeto
-* nos critérios definidos pelo framework
+Sistemas de IA devem possuir documentação clara sobre contexto, dados utilizados, arquitetura do modelo e finalidade, produzida ao longo de todo o ciclo de vida da tarefa — não apenas em momentos isolados.
 
-A avaliação considera:
+### 2. Evidências verificáveis
 
-* nível de documentação existente
-* presença de práticas de mitigação de riscos
-* mecanismos de transparência
-* práticas institucionais de governança
+A avaliação de IAR deve ser baseada em evidências documentadas — artefatos técnicos, registros operacionais e documentação institucional — não em autoproclamação. Não há inferência válida sem artefato correspondente.
 
-Os resultados são expressos por níveis de maturidade (L1-L4), acompanhados de justificativas documentadas.
+### 3. Separação entre projeto e auditoria
 
---- 
+O framework estabelece uma distinção estrutural entre artefatos produzidos pelo projeto e avaliações conduzidas pelo NIAR. O projeto não avalia a si próprio. Essa separação é fundamental para a credibilidade e imparcialidade do processo (Raji et al., 2020).
 
-## Resultado da auditoria
+### 4. Avaliação multidimensional
 
-O processo de auditoria resulta na produção de um **relatório de auditoria**, que inclui:
+A auditoria considera sete dimensões de IA Responsável — Governança, Segurança, Privacidade, Responsabilização, Rastreabilidade, Justiça e Transparência — refletindo diferentes categorias de risco ao longo do ciclo de vida do sistema. As dimensões são avaliadas de forma integrada, não isolada.
 
-* avaliação por dimensão
-* evidências analisadas
-* justificativas das avaliações
-* recomendações para melhoria
+### 5. Governança longitudinal
 
-O relatório apoia processos de **governança, transparência e melhoria contínua**.
+A conformidade é avaliada pontualmente por versão avaliável. A maturidade é inferida longitudinalmente a partir do histórico de conformidades do projeto, refletindo a capacidade institucional de executar práticas de IAR de forma recorrente e verificável ao longo do tempo.
 
 ---
 
-## Implementação do framework
+## Fundamentação em Referências Internacionais
 
-O FIAR é operacionalizado por meio de um template estruturado:
+O framework está alinhado a referências técnicas e normativas internacionais consolidadas para IAR:
 
-👉 https://github.com/marisavas/FIAR-Audit-Template
+- **Princípios da OECD para IA** (2024): destacam transparência, robustez técnica, centralidade humana e responsabilidade ao longo do ciclo de vida dos sistemas de IA.
+- **Recomendações da OMS** (2021): orientações sobre gestão sistemática de riscos, validação de modelos, supervisão humana e governança de dados em saúde.
+- **ISO/IEC 23894** (2023): propõe abordagem estruturada para identificação, avaliação e mitigação de riscos ao longo do ciclo de vida de sistemas de IA.
+- **AI Act da União Europeia** (2024): referências em classificação de riscos, documentação técnica e supervisão de sistemas de IA de alto risco, adotadas como orientação prospectiva de boas práticas.
+- **NIST AI RMF 1.0** (2023): framework de gestão de risco em IA que inspira a metodologia operacional de auditoria.
+- **LGPD** (2018): o framework incorpora a verificação da consistência entre o escopo aprovado em protocolos éticos e o desenvolvimento efetivo dos sistemas de IA.
 
-O template fornece suporte para:
-
-* documentação do sistema
-* organização de artefatos
-* registro das avaliações
-* estruturação do relatório final
-
-Cada auditoria deve ser conduzida em um **repositório próprio criado a partir do template**, garantindo padronização e rastreabilidade.
+No contexto de projetos que utilizam dados de saúde, os projetos desenvolvidos no âmbito do CIIA-Saúde devem ser previamente submetidos à avaliação do CEP-UFMG quando houver necessidade de registros de aprovação ética. O FIAR-Saúde não substitui esse processo regulatório.
 
 ---
 
-## Arquitetura conceitual do framework
+## Escopo e Não Objetivos
 
-O FIAR distingue entre:
+O FIAR-Saúde é um framework de governança e auditoria baseada em evidências. Portanto, o framework **não** possui como objetivo:
 
-- **camada técnica** (avaliação por dimensões)
-- **camada institucional** (maturidade e governança)
+- certificar modelos clínicos
+- garantir ausência de viés
+- substituir validação clínica
+- substituir mecanismos regulatórios ou processos formais de certificação
+- realizar auditoria forense completa
+- verificar diretamente propriedades internas do modelo
+- acessar necessariamente dados sensíveis ou ambientes restritos
 
-As dimensões técnicas fornecem evidências para a avaliação institucional do sistema.
+---
 
-## Relação com o processo de auditoria
+## Fases do Ciclo Operacional
 
-A operacionalização da metodologia descrita neste documento é detalhada em:
+O FIAR-Saúde estrutura a operacionalização da governança em cinco fases longitudinais, que se repetem a cada mudança relevante no sistema:
 
-→ [Ciclo de Auditoria](ciclo_auditoria.md)
+| Fase | Responsável | Atividades principais |
+|---|---|---|
+| **1. Entrada** | CIIA + NIAR | Enquadramento institucional, identificação de lacunas de IAR, classificação de risco inicial. |
+| **2. Adequação** | NIAR | Capacitação da equipe, fornecimento de templates, estruturação do pipeline de evidências. |
+| **3. Execução** | Projeto | Produção dos artefatos (Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica). |
+| **4. Avaliação** | NIAR | Auditoria baseada em evidências: verificação de completude, consistência cruzada e amostragem operacional. |
+| **5. Governança** | CIIA + NIAR | Classificação de conformidade, atribuição de maturidade, definição de condicionantes e monitoramento contínuo. |
 
-Para critérios de avaliação por dimensão, consulte:
+Reavaliações são acionadas sempre que ocorrem mudanças relevantes na tarefa — retreinamento com novos dados, mudança de arquitetura, expansão de escopo clínico, incidentes operacionais ou alterações regulatórias. Essas reexecuções parciais ou integrais das dimensões de IAR constituem a base da inferência longitudinal de maturidade.
 
-→ [Dimensões de Avaliação](dimensoes_avaliacao.md)
+---
+
+## Capacitação e Adequação Inicial
+
+O FIAR-Saúde reconhece que muitos projetos de IA em saúde ainda não possuem mecanismos estruturados de IAR. Assim, o framework não opera apenas como mecanismo de verificação de conformidade, mas também como **instrumento de indução e estruturação progressiva de capacidades** sociotécnicas de governança.
+
+Projetos em níveis iniciais de maturidade podem ingressar no framework sem possuir artefatos completos. Nesses casos, o processo pode incluir fases de capacitação e adequação conduzidas pelo NIAR, incluindo:
+
+- treinamento introdutório em IAR
+- fornecimento de templates e guias operacionais
+- apoio metodológico para produção dos artefatos
+- orientação sobre governança e rastreabilidade
+- ciclos iterativos de adequação documental e técnica
+
+O objetivo principal nessa etapa não é a reprovação imediata do projeto, mas o desenvolvimento gradual de mecanismos verificáveis de governança.
+
+---
+
+## Navegação da Documentação
+
+- Ciclo de Auditoria → [ciclo_auditoria.md](ciclo_auditoria.md)
+- Dimensões de IAR → [dimensoes_avaliacao.md](dimensoes_avaliacao.md)
+- Trilhas de Execução → [trilhas_execucao.md](trilhas_execucao.md)
+- Modelo de Maturidade → [modelo_maturidade.md](modelo_maturidade.md)
+- Governança da Auditoria → [governanca_auditoria.md](governanca_auditoria.md)
+- Mapeamento de Referências → [mapeamento_referencias.md](mapeamento_referencias.md)
+
+---
+
+## Referências
+
+- Floridi, L., et al. (2018). AI4People — [An Ethical Framework for a Good AI Society](https://ai4people.org/PDF/AI4People_Ethical_Framework_For_A_Good_AI_Society.pdf).
+- Morley, J., Machado, C. C., et al. (2020). [The ethics of AI in health care: A mapping review](https://doi.org/10.1016/j.socscimed.2020.113172). *Social Science & Medicine, 260*, 113172. 
+- Mittelstadt, B. D., et al. (2019). [Principles alone cannot guarantee ethical AI](https://doi.org/10.1038/s42256-019-0114-4). *Nature Machine Intelligence, 1*, 501–507.
+- Raji, I. D., et al. (2020). [Closing the AI accountability gap: Defining an end-to-end framework for internal algorithmic auditing](https://doi.org/10.1145/3351095.3372873). In *Proceedings of the Conference on Fairness, Accountability, and Transparency (FAccT)*.
+- Organisation for Economic Co-operation and Development (2024). [Recommendation of the Council on Artificial Intelligence. OECD/LEGAL/0449](https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449).
+- World Health Organization (2021). [Ethics and Governance of Artificial Intelligence for Health](https://www.who.int/publications/i/item/9789240029200)
+- International Organization for Standardization (2023). [ISO/IEC 23894: Artificial intelligence — Guidance on risk management](https://www.iso.org/standard/77304.html)
+- National Institute of Standards and Technology (2023). [Artificial Intelligence Risk Management Framework (AI RMF 1.0)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf)
+- European Union. (2024). [Artificial Intelligence Act](https://artificialintelligenceact.eu/)
+- Brasil (2018). [Lei nº 13.709 — Lei Geral de Proteção de Dados Pessoais (LGPD)](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm). 
+- Carvalho, M., et al. (2026). [Quem controla os dados? Governança e responsabilidade na era da inteligência artificial](https://horizontes.sbc.org.br/index.php/2026/04/quem-controla-os-dados-governanca-e-responsabilidade-na-era-da-inteligencia-artificial/). *SBC Horizontes*.
+
+
+---
+
+
+
+
+
+
+
