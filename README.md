@@ -1,137 +1,113 @@
-# FIAR Saúde – Framework de Auditoria de IA Responsável
+# FIAR-Saúde – Framework de Inteligência Artificial Responsável para Saúde
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Status](https://img.shields.io/badge/status-research_framework-orange)
 ![Domain](https://img.shields.io/badge/domain-public_health_AI-green)
+![Version](https://img.shields.io/badge/version-1.0-blue)
 
-O FIAR Saúde é um framework para auditoria de sistemas de inteligência artificial que transforma princípios de IA Responsável em **critérios verificáveis, evidências documentadas e níveis de maturidade auditáveis**, no contexto da saúde pública.
+O FIAR Saúde é um framework metodológico de governança e auditoria de sistemas de inteligência artificial aplicados à saúde. Ele transforma princípios de IA Responsável (IAR) em **critérios verificáveis, evidências documentadas e níveis de maturidade auditáveis**, operando no contexto da saúde pública brasileira.
 
-O framework busca reduzir a lacuna entre **princípios normativos de ética em IA** e sua **operacionalização em práticas de governança e auditoria**, permitindo avaliações sistemáticas, reprodutíveis e comparáveis entre sistemas.
+O framework busca reduzir a lacuna entre **princípios normativos de ética em IA** e sua **operacionalização em práticas de governança e auditoria** — uma limitação amplamente discutida na literatura (Floridi et al., 2018; Mittelstadt, 2019).
+
+> O FIAR-Saúde **não** certifica modelos clínicos, garante ausência de viés ou substitui validação clínica e mecanismos regulatórios formais. Seu foco é a **governança verificável** das práticas associadas ao desenvolvimento, operação e monitoramento de sistemas de IA.
+
+<!-- busca reduzir a lacuna entre **princípios normativos de ética em IA** e sua **operacionalização em práticas de governança e auditoria**, permitindo avaliações sistemáticas, reprodutíveis e comparáveis entre sistemas.-->
 
 ---
 
-## Como funciona?
+## Instâncias Institucionais
 
-O FIAR estrutura a auditoria de sistemas de IA como um ecossistema composto por duas camadas complementares:
+O FIAR-Saúde opera por meio de duas instâncias institucionais centrais:
 
-* **Metodologia** (este repositório)
-* **Execução** (template de auditoria)
+- **CIIA-Saúde** (Centro de Inovação em Inteligência Artificial para a Saúde – UFMG): instância decisória, responsável pelo enquadramento institucional dos projetos e validação de aceites de risco residual significativo.
+- **NIAR** (Núcleo de Inteligência Artificial Responsável para a Saúde): instância técnico-operacional, conduzindo as fases de capacitação, auditoria e atribuição de maturidade.
 
-Para auditar um sistema, utilize o template:
+---
 
-👉 [FIAR Audit Template](https://github.com/marisavas/FIAR-Audit-Template)
+## Ecossistema
+
+Cada auditoria é conduzida em um **repositório próprio criado a partir do FIAR_template**. O ToyExample é uma instância real de auditoria e referência didática para novos projetos.
 
 ```mermaid
 flowchart TD
-    A[FIAR-Saude] --> B[Audit Template]
-    B --> C[Projeto Auditado]
-    C --> D[Relatório]
-
+    A[FIAR-Saude\nFramework e Metodologia] --> B[FIAR_template\nTemplate Base]
+    B --> C1[Repositório de Auditoria\nProjeto X]
+    B --> C2[Repositório de Auditoria\nProjeto Y]
+    B --> C3[Repositório de Auditoria\nProjeto Z]
+    C1 --> D[Relatório de Auditoria]
+    C2 --> D
+    C3 --> D
 ```
 
-A avaliação é realizada por meio de um checklist estruturado, que conecta evidências documentadas a critérios verificáveis e níveis de maturidade.
+| Repositório                         | Função                                                                          |
+| ------------------------------------ | --------------------------------------------------------------------------------- |
+| **FIAR-Saude** (este)          | Documentação conceitual e metodologia do framework                              |
+| **FIAR_template**              | Template base clonado para cada auditoria                                         |
+| **Repositórios de auditoria** | Um por projeto auditado — contém artefatos, evidências e consistência cruzada |
+| **ToyExample**                 | Instância de auditoria do PrevisãoRESP-SUS usado como exemplo didático         |
 
 ---
 
-## Dimensões de Avaliação (IAR)
+## Dimensões de IAR
 
-O FIAR operacionaliza a IA Responsável por meio de cinco dimensões críticas:
+O FIAR-Saúde operacionaliza **sete dimensões** de IA Responsável:
 
-- **Auditabilidade**: Rastreabilidade do ciclo de vida de dados e modelos (logs, versionamento e controle de acesso)
-- **Explicabilidade**: Capacidade de fornecer interpretações compreensíveis para decisões clínicas ou administrativas
-- **Justiça**: Detecção e mitigação de vieses em subgrupos demográficos (por exemplo, cor/raça, gênero, região)
-- **Privacidade**: Garantia de anonimização e conformidade com a LGPD e normativas do CNS
-- **Governança**: Estruturas de decisão, gestão de riscos e alinhamento com comitês de ética (CEP/CONEP)
-
-> As dimensões apresentadas correspondem à **camada técnica da auditoria**.
-> A relação com as dimensões institucionais do modelo de maturidade está detalhada em `docs/dimensoes_avaliacao.md`.
-
-As dimensões adotadas refletem categorias amplamente discutidas em diretrizes internacionais, incluindo:
-
-- OECD AI Principles (OECD, 2019)
-- WHO Guidance on Ethics and Governance of AI for Health (WHO, 2021)
-- ISO/IEC 23894 – AI Risk Management (ISO, 2023)
+| Dimensão                     | Exemplos de Evidências                                                                      |
+| ----------------------------- | -------------------------------------------------------------------------------------------- |
+| **Governança**         | Escopo aprovado, condicionantes institucionais, mecanismos de supervisão.                   |
+| **Segurança**          | Registros de incidentes, controle de acesso, mecanismos de resposta a falhas.                |
+| **Privacidade**         | Documentação sobre anonimização, políticas de retenção, controle de acesso aos dados. |
+| **Responsabilização** | Registros nominais de decisão, aprovação formal de riscos.                                |
+| **Rastreabilidade**     | Versionamento de dados e modelos, histórico de decisões técnicas.                         |
+| **Justiça**            | Métricas de disparidade, avaliações de fairness, registros de mitigação.                |
+| **Transparência**      | Relatórios de explicabilidade, justificativas técnicas das decisões de modelagem.         |
 
 ---
 
 ## Níveis de Maturidade
 
-O FIAR classifica o estágio de cada projeto em uma escala progressiva de maturidade:
+O nível de maturidade expressa a capacidade institucional do projeto de executar práticas de IAR de forma recorrente e verificável ao longo do tempo. É inferido pelo NIAR a partir do histórico de conformidades das tarefas do projeto.
 
-| Nível       | Estágio               | Descrição                                              |
-| ------------ | ---------------------- | -------------------------------------------------------- |
-| **L1** | **Ad-hoc**       | Práticas informais e não padronizadas                  |
-| **L2** | **Inicial**      | Documentação básica disponível                       |
-| **L3** | **Desenvolvido** | Testes técnicos realizados com evidências documentadas |
-| **L4** | **Consolidado**  | Monitoramento contínuo e governança integrada          |
-
----
-
-## Motivação
-
-Frameworks de IA Responsável frequentemente estabelecem princípios éticos de alto nível  como transparência, justiça e responsabilização (*accountability*), mas oferecem orientação limitada sobre sua implementação prática.
-
-Essa lacuna entre **princípios normativos e operacionalização** é amplamente discutida na literatura (Floridi et al., 2018; Morley et al., 2020).
-
-O FIAR propõe uma abordagem operacional baseada em:
-
-* documentação estruturada do sistema
-* evidências verificáveis
-* avaliação sistemática por dimensões de IA Responsável
-* geração de relatórios de auditoria
-
-O framework distingue **artefatos produzidos pelo projeto** de **avaliações independentes conduzidas pelo auditor**, permitindo auditorias mais estruturadas, transparentes e verificáveis e alinhando-se a práticas de auditoria e accountability em sistemas algorítmicos (Raji et al., 2020).
+| Nível       | Denominação | Critério                                                                                              |
+| ------------ | ------------- | ------------------------------------------------------------------------------------------------------ |
+| **N1** | Ad-hoc        | Ausência de mecanismos estruturados ou execução apenas reativa.                                     |
+| **N2** | Inicial       | Pelo menos um ciclo completo de avaliação com artefatos formalmente produzidos.                      |
+| **N3** | Desenvolvido  | Recorrência verificável ao longo de múltiplas versões avaliáveis. Exclusivo da Trilha Produção. |
+| **N4** | Consolidado   | Monitoramento contínuo institucionalizado e governança integrada. Exclusivo da Trilha Produção.    |
 
 ---
 
-## Diferenciais do FIAR
+## Quickstart
 
-O FIAR se diferencia de outros frameworks de IA Responsável por:
+Para auditar um sistema utilizando o FIAR-Saúde:
 
-- operacionalizar princípios éticos em **critérios verificáveis**
-- separar explicitamente **desenvolvimento do sistema e auditoria independente**
-- utilizar **evidências documentadas como base da avaliação**
-- adotar um **modelo de maturidade progressivo e cumulativo**
-- permitir **reprodutibilidade e rastreabilidade** das auditorias
+1. Crie um repositório a partir do **FIAR_template**
+2. Defina a **tarefa**: modelo + dados + algoritmo + objetivo clínico/operacional
+3. Classifique a tarefa na trilha correspondente (**Artigo** ou **Produção**)
+4. Produza os **artefatos de desenvolvimento** (Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica)
+5. Submeta ao ciclo de **auditoria do NIAR**
+6. Receba a classificação de conformidade e o **nível de maturidade** do projeto
 
-Essa abordagem responde a críticas recorrentes na literatura sobre a dificuldade de traduzir princípios de IA Responsável em práticas auditáveis e mensuráveis (Mittelstadt, 2019; Raji et al., 2020).
-
----
-
-## Arquitetura do Framework
-
-O ecossistema FIAR é composto por três elementos principais:
-
-1. **FIAR-Saude** - Documentação conceitual e metodologia
-2. **FIAR-Audit-Template** - Estrutura para execução das auditorias
-3. **Repositórios de auditoria** – Instâncias específicas para cada sistema avaliado
-
-```mermaid
-flowchart TD
-
-   A[FIAR-Saude<br>Framework] --> B[FIAR-Audit-Template]
-   B --> C1[Audit Repo X]
-
-   B --> C2[Audit Repo Y]
-   B --> C3[Audit Repo Z]
-   C1 --> D[Relatório]
-   C2 --> D
-   C3 --> D
-
-```
-
-Cada auditoria deve ser conduzida em um **repositório próprio criado a partir do template**.
+👉 [FIAR_template](https://github.com/niar-saude-ufmg/FIAR-Audit-Template)
 
 ---
 
 ## Documentação Completa
 
-Para detalhes metodológicos:
+- Metodologia → [docs/metodologia_fiar.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/metodologia_fiar.md)
+- Ciclo de Auditoria → [docs/ciclo_auditoria.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/ciclo_auditoria.md)
+- Dimensões de IAR → [docs/dimensoes_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/dimensoes_avaliacao.md)
+- Trilhas de Execução → [docs/trilhas_execucao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/trilhas_execucao.md)
+- Modelo de Maturidade → [docs/modelo_maturidade.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/modelo_maturidade.md)
+- Governança → [docs/governanca_auditoria.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/governanca_auditoria.md)
 
-- Metodologia → [docs/metodologia_fiar.md](docs/metodologia_fiar.md)
-- Ciclo de Auditoria → [docs/ciclo_auditoria.md](docs/ciclo_auditoria.md)
-- Dimensões → [docs/dimensoes_avaliacao.md](docs/dimensoes_avaliacao.md)
-- Governança → [docs/governanca_auditoria.md](docs/governanca_auditoria.md)
+---
+
+## Exemplo de Aplicação
+
+👉 [ToyExample — PrevisãoRESP-SUS](https://github.com/niar-saude-ufmg/SBCAS_26_Respiratory_Disease)
+
+Sistema hipotético de previsão de internações respiratórias por hospital utilizando dados do SIH/DataSUS, com avaliação das dimensões de Justiça, Transparência, Auditabilidade e Governança.
 
 ---
 
@@ -139,76 +115,42 @@ Para detalhes metodológicos:
 
 ```
 FIAR-Saude/
-├── docs/                       # Detalhamento técnico
-│   ├── metodologia_fiar.md     # Fases 1 (Exploratória) e 2 (Sistemática)
-│   ├── dimensoes_avaliacao.md  # Critérios e sub-indicadores
-│   ├── ciclo_auditoria.md      # Fluxo passo a passo
-│   └── governanca_auditoria.md # Papéis e responsabilidades
+├── docs/
+│   ├── metodologia_fiar.md
+│   ├── dimensoes_avaliacao.md
+│   ├── ciclo_auditoria.md
+│   ├── governanca_auditoria.md
+│   ├── trilhas_execucao.md
+│   ├── modelo_maturidade.md
+│   └── mapeamento_referencias.md
 ├── README.md
 ├── LICENSE
 └── CITATION.cff
-
 ```
-
-Este repositório contém a **documentação conceitual do framework**. A execução das auditorias deve ser realizada por meio do template.
-
----
-
-## Exemplo
-
-Um exemplo completo de aplicação do FIAR está disponível em:
-
-👉 [Acessar Toy Example](https://github.com/fiar-audit-toy-example)
-
-Inclui:
-
-* documentação do sistema
-* artefatos técnicos
-* avaliação estruturada
-* relatório final
-
----
-
-## Quickstart
-
-Para auditar um sistema utilizando o FIAR:
-
-1. Crie um repositório a partir do template
-2. Documente o sistema (descrição, contexto, limitações)
-3. Adicione artefatos técnicos (Model Card, Data Card, métricas, logs)
-4. Avalie o sistema utilizando o checklist FIAR
-5. Consolide os resultados por dimensão
-6. Gere o relatório de maturidade com recomendações
 
 ---
 
 ## Público-alvo
 
-O FIAR foi desenvolvido para:
-
-* pesquisadores em IA aplicada à saúde
-* equipes de ciência de dados em instituições públicas
-* projetos que desejam estruturar práticas de IA Responsável
-
----
-
-## Status do Projeto
-
-Este framework está em desenvolvimento e validação em projetos de IA em saúde pública no contexto do CIIA-Saúde.
+- pesquisadores em IA aplicada à saúde pública
+- equipes de ciência de dados em instituições públicas de saúde
+- projetos vinculados ao CIIA-Saúde/UFMG
+- auditores e gestores responsáveis pela governança de sistemas de IA em saúde
 
 ---
 
-## Referência e Citação
+## Status
 
-Se você utilizar o FIAR em pesquisas ou projetos, cite:
-
-Vasconcelos et al. (2026). *FIAR Saúde – Responsible AI Audit Framework for Public Health Systems.*
+Versão 1.0 — Maio de 2026. Framework em validação em projetos de IA em saúde pública no contexto do CIIA-Saúde/UFMG.
 
 ---
 
-## Contribuições
+## Citação
 
-Contribuições para o framework são bem-vindas.
+```
+Vasconcelos et al. (2026). FIAR-Saúde: Framework de Inteligência Artificial
+Responsável para Saúde. CIIA-Saúde, UFMG / NIAR-Saúde.
+```
 
 ---
 
@@ -220,13 +162,12 @@ MIT License
 
 ## Referências
 
-
-* Floridi, L., et al. (2018). *AI4People—An Ethical Framework for a Good AI Society*. [https://ai4people.org/PDF/AI4People_Ethical_Framework_For_A_Good_AI_Society.pdf](https://ai4people.org/PDF/AI4People_Ethical_Framework_For_A_Good_AI_Society.pdf)
-* Morley, J., Machado, C. C., et al. (2020). The ethics of AI in health care: A mapping review. *Social Science & Medicine, 260*, 113172. [https://doi.org/10.1016/j.socscimed.2020.113172](https://doi.org/10.1016/j.socscimed.2020.113172)
-* OECD (2019). *OECD Principles on Artificial Intelligence*. [https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449](https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449)
-* World Health Organization (WHO). (2021). *Ethics and Governance of Artificial Intelligence for Health*. [https://www.who.int/publications/i/item/9789240029200](https://www.who.int/publications/i/item/9789240029200)
-* International Organization for Standardization (ISO). (2023). *ISO/IEC 23894: Artificial intelligence — Risk management*. [https://www.iso.org/standard/77304.html](https://www.iso.org/standard/77304.html)
-* National Institute of Standards and Technology (NIST). (2023). *Artificial Intelligence Risk Management Framework (AI RMF 1.0)*. [https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf)
-* European Union. (2024). *Artificial Intelligence Act*. [https://artificialintelligenceact.eu/](https://artificialintelligenceact.eu/)
-* Mittelstadt, B. D., et al. (2019). Principles alone cannot guarantee ethical AI. *Nature Machine Intelligence, 1*, 501–507. [https://doi.org/10.1038/s42256-019-0114-4](https://doi.org/10.1038/s42256-019-0114-4)
-* Raji, I. D., et al. (2020). Closing the AI accountability gap: Defining an end-to-end framework for internal algorithmic auditing. In *Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency (FAccT)*. [https://doi.org/10.1145/3351095.3372873](https://doi.org/10.1145/3351095.3372873)
+* Floridi, L., et al. (2018). [AI4People — An Ethical Framework for a Good AI Society](https://ai4people.org/PDF/AI4People_Ethical_Framework_For_A_Good_AI_Society.pdf).
+* Mittelstadt, B. D., et al. (2019). [Principles alone cannot guarantee ethical AI](https://doi.org/10.1038/s42256-019-0114-4). *Nature Machine Intelligence, 1*, 501–507.
+* Raji, I. D., et al. (2020). [Closing the AI accountability gap: Defining an end-to-end framework for internal algorithmic auditing](https://doi.org/10.1145/3351095.3372873). In *Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency (FAccT)*.
+* OECD (2024). [Recommendation of the Council on Artificial Intelligence. OECD/LEGAL/0449](https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449).
+* World Health Organization (2021). [Ethics and Governance of Artificial Intelligence for Health](https://www.who.int/publications/i/item/9789240029200)
+* International Organization for Standardization (2023). [ISO/IEC 23894: Artificial intelligence — Guidance on risk management](https://www.iso.org/standard/77304.html)
+* European Union. (2024). [Artificial Intelligence Act](https://artificialintelligenceact.eu/)
+* National Institute of Standards and Technology (2023). [Artificial Intelligence Risk Management Framework (AI RMF 1.0)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf)
+* Brasil (2018). Lei nº 13.709 — Lei Geral de Proteção de Dados Pessoais (LGPD).
