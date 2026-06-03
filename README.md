@@ -83,7 +83,7 @@ Para auditar um sistema utilizando o FIAR-Saúde:
 
 1. Crie um repositório a partir do **FIAR_template**
 2. Defina a **tarefa**: modelo + dados + algoritmo + objetivo clínico/operacional
-3. Classifique a tarefa na trilha correspondente (**Artigo** ou **Produção**)
+3. Classifique a tarefa na trilha correspondente (**Experimental** ou **Produção**)
 4. Produza os **artefatos de desenvolvimento** (Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica)
 5. Submeta ao ciclo de **auditoria do NIAR**
 6. Receba a classificação de conformidade e o **nível de maturidade** do projeto
@@ -107,7 +107,7 @@ Para auditar um sistema utilizando o FIAR-Saúde:
 
 👉 [ToyExample — PrevisãoRESP-SUS](https://github.com/niar-saude-ufmg/SBCAS_26_Respiratory_Disease)
 
-Sistema hipotético de previsão de internações respiratórias por hospital utilizando dados do SIH/DataSUS, com avaliação das dimensões de Justiça, Transparência, Auditabilidade e Governança.
+Sistema hipotético de previsão de internações respiratórias por hospital utilizando dados do SIH/DataSUS, com avaliação das dimensões de Justiça, Transparência, Rastreabilidade e Governança.
 
 ---
 
