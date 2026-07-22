@@ -1,8 +1,8 @@
-# Avaliação de Auditabilidade
+# Avaliação de Rastreabilidade
 
-A dimensão de auditabilidade no framework FIAR examina em que medida um sistema de inteligência artificial possui documentação, rastreabilidade e evidências suficientes para permitir análise, verificação e reprodutibilidade ao longo de seu ciclo de vida.
+A dimensão de rastreabilidade no framework FIAR examina em que medida um sistema de inteligência artificial possui documentação, histórico e evidências suficientes para permitir análise, verificação e reprodutibilidade ao longo de seu ciclo de vida.
 
-A auditabilidade é um requisito fundamental para a avaliação de sistemas de IA, pois possibilita a reconstrução de decisões técnicas e institucionais, além de sustentar práticas de transparência e governança.
+A rastreabilidade é um requisito fundamental para a avaliação de sistemas de IA, pois possibilita a reconstrução de decisões técnicas e institucionais, além de sustentar práticas de transparência e governança.
 
 Essa dimensão está alinhada a diretrizes internacionais de IA Responsável, incluindo princípios da OECD, recomendações da Organização Mundial da Saúde (OMS) e normas de gestão de risco em IA (como ISO/IEC 23894), que destacam a importância de documentação, rastreabilidade e prestação de contas.
 
@@ -10,7 +10,7 @@ Essa dimensão está alinhada a diretrizes internacionais de IA Responsável, in
 
 ## Objetivo da dimensão
 
-A análise de auditabilidade busca responder perguntas como:
+A análise de rastreabilidade busca responder perguntas como:
 
 - O sistema possui documentação estruturada?
 - É possível rastrear decisões ao longo do desenvolvimento?
@@ -21,7 +21,7 @@ A análise de auditabilidade busca responder perguntas como:
 
 ## Riscos associados
 
-A ausência de auditabilidade pode gerar riscos relevantes, incluindo:
+A ausência de rastreabilidade pode gerar riscos relevantes, incluindo:
 
 - impossibilidade de verificar decisões do sistema
 - falta de transparência sobre dados e modelos
@@ -33,9 +33,9 @@ Esses riscos comprometem a confiabilidade do sistema e dificultam sua governanç
 
 ---
 
-## Componentes da auditabilidade
+## Componentes da rastreabilidade
 
-A avaliação considera diferentes componentes que sustentam a auditabilidade do sistema:
+A avaliação considera diferentes componentes que sustentam a rastreabilidade do sistema:
 
 ### Documentação do sistema
 
@@ -46,7 +46,7 @@ Refere-se à existência de documentação clara sobre:
 - arquitetura do modelo
 - fluxos de dados
 
-### Rastreabilidade
+### Rastreamento de decisões e processos
 
 Refere-se à capacidade de reconstruir decisões e processos ao longo do ciclo de vida do sistema, incluindo:
 
@@ -93,10 +93,10 @@ A ausência de evidências não implica necessariamente falha, mas indica menor 
 
 ## Critérios de avaliação
 
-A avaliação de auditabilidade considera:
+A avaliação de rastreabilidade considera:
 
 - existência de documentação estruturada
-- nível de rastreabilidade de dados e modelos
+- nível de rastreamento de dados e modelos ao longo do tempo
 - capacidade de reproduzir resultados
 - disponibilidade e organização de artefatos
 - consistência entre evidências fornecidas
@@ -122,24 +122,22 @@ Exemplos de situações avaliadas incluem:
 
 ## Resultado da avaliação
 
-O auditor avalia a dimensão de auditabilidade considerando:
+O auditor avalia a dimensão de rastreabilidade considerando:
 
 - qualidade e completude da documentação
-- nível de rastreabilidade do sistema
+- nível de rastreamento do sistema ao longo do tempo
 - disponibilidade de evidências técnicas
 - capacidade de auditoria independente
 
-Os resultados são registrados no relatório final de auditoria, juntamente com justificativas e recomendações para melhoria.
+O resultado é expresso em nível de maturidade (N1–N4), acompanhado de justificativas e recomendações para melhoria, sendo registrado no relatório final de auditoria.
 
 ---
 
 ## Relação com o processo de auditoria
 
-A auditabilidade sustenta todas as demais dimensões do framework, pois a avaliação de explicabilidade, justiça, privacidade e governança depende da disponibilidade de evidências confiáveis.
+A rastreabilidade sustenta a avaliação das demais dimensões do framework, pois a avaliação de transparência, justiça, privacidade, segurança, responsabilização e governança depende da disponibilidade de evidências confiáveis e rastreáveis.
 
-Sem auditabilidade, a avaliação das demais dimensões torna-se limitada ou inviável.
+Sem rastreabilidade, a avaliação das demais dimensões torna-se limitada ou inviável.
 
 Para o processo completo de auditoria, consulte:
 → [Ciclo de Auditoria](../ciclo_auditoria.md)
-
----

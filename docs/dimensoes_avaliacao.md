@@ -1,6 +1,6 @@
 # Dimensões de Avaliação do FIAR
 
-O FIAR avalia sistemas de inteligência artificial a partir de cinco dimensões principais de IA Responsável.
+O FIAR avalia sistemas de inteligência artificial a partir de **sete dimensões** principais de IA Responsável.
 
 Essas dimensões estruturam a avaliação de IA Responsável no framework, representando diferentes categorias de risco associadas ao uso de sistemas de IA em contextos de saúde pública.
 
@@ -10,83 +10,115 @@ A definição dessas dimensões foi inspirada em referências internacionais de 
 
 ---
 
-## 1. Auditabilidade
+## 1. Governança
 
-A dimensão de auditabilidade avalia se o sistema possui níveis adequados de documentação e rastreabilidade que permitam análise, verificação e reprodutibilidade.
-
-Aspectos considerados incluem:
-
-* documentação do sistema
-* rastreabilidade de dados e modelos
-* registro de decisões ao longo do desenvolvimento
-* disponibilidade de artefatos técnicos
-
-Para critérios detalhados de avaliação, consulte:
-→ [Avaliação de Auditabilidade](avaliacao/auditabilidade.md)
-
----
-
-## 2. Explicabilidade
-
-A dimensão de explicabilidade avalia se o funcionamento do sistema e suas decisões podem ser compreendidos por públicos relevantes.
+A dimensão de governança avalia a existência de estruturas institucionais para supervisionar o desenvolvimento e o uso do sistema de IA.
 
 Aspectos considerados incluem:
 
-* descrição do funcionamento do modelo
-* justificativas para decisões automatizadas
-* mecanismos de interpretação
-* comunicação de limitações
+- definição de responsabilidades institucionais
+- mecanismos de supervisão humana
+- políticas de uso e operação do sistema
+- processos de revisão, atualização e monitoramento
 
 Para critérios detalhados de avaliação, consulte:
-→ [Avaliação de Explicabilidade](avaliacao/explicabilidade.md)
+→ [Avaliação de Governança](avaliacao/governanca.md)
 
 ---
 
-## 3. Justiça
+## 2. Segurança
 
-A dimensão de justiça avalia potenciais impactos desiguais do sistema sobre diferentes grupos populacionais.
+A dimensão de segurança avalia a proteção do sistema contra ameaças, ataques e acessos não autorizados, garantindo a integridade e a disponibilidade do sistema.
 
 Aspectos considerados incluem:
 
-* presença de vieses nos dados
-* diferenças de desempenho entre subgrupos
-* riscos de efeitos discriminatórios
-* estratégias de mitigação de vieses
+- registros de incidentes de segurança
+- controle de acesso a dados e ambientes
+- mecanismos de resposta a falhas
+- hardening e isolamento de infraestrutura
 
 Para critérios detalhados de avaliação, consulte:
-→ [Avaliação de Justiça](avaliacao/justica.md)
+→ [Avaliação de Segurança](avaliacao/seguranca.md) *(arquivo ainda não criado — ver observação no final)*
 
 ---
 
-## 4. Privacidade
+## 3. Privacidade
 
 A dimensão de privacidade avalia como dados sensíveis são coletados, utilizados e protegidos ao longo do ciclo de vida do sistema.
 
 Aspectos considerados incluem:
 
-* origem e sensibilidade dos dados
-* práticas de anonimização ou pseudonimização
-* mecanismos de controle de acesso
-* conformidade com legislações e políticas de proteção de dados
+- origem e sensibilidade dos dados
+- práticas de anonimização ou pseudonimização
+- mecanismos de controle de acesso
+- conformidade com legislações e políticas de proteção de dados (LGPD)
 
 Para critérios detalhados de avaliação, consulte:
 → [Avaliação de Privacidade](avaliacao/privacidade.md)
 
 ---
 
-## 5. Governança
+## 4. Responsabilização
 
-A dimensão de governança avalia a existência de estruturas institucionais para supervisionar o desenvolvimento e o uso do sistema de IA.
+A dimensão de responsabilização avalia se há identificação clara de quem é responsável pelos resultados e impactos do sistema, com mecanismos de prestação de contas desde o design até a operação.
 
 Aspectos considerados incluem:
 
-* definição de responsabilidades institucionais
-* mecanismos de supervisão humana
-* políticas de uso e operação do sistema
-* processos de revisão, atualização e monitoramento
+- registros nominais de decisão
+- aprovação formal de riscos e condicionantes
+- atribuição clara de responsabilidades por etapa do ciclo de vida
+- rastreabilidade de aprovações institucionais
 
 Para critérios detalhados de avaliação, consulte:
-→ [Avaliação de Governança](avaliacao/governanca.md)
+→ [Avaliação de Responsabilização](avaliacao/responsabilizacao.md) *(arquivo ainda não criado — ver observação no final)*
+
+---
+
+## 5. Rastreabilidade
+
+A dimensão de rastreabilidade avalia se o sistema possui níveis adequados de documentação e histórico que permitam acompanhamento, verificação e reprodutibilidade ao longo de todo o processo de desenvolvimento.
+
+Aspectos considerados incluem:
+
+- versionamento de dados e modelos
+- histórico de decisões técnicas
+- registro de execução e logs
+- disponibilidade de artefatos técnicos ao longo do tempo
+
+Para critérios detalhados de avaliação, consulte:
+→ [Avaliação de Rastreabilidade](avaliacao/rastreabilidade.md) *(arquivo ainda não criado — ver observação no final)*
+
+---
+
+## 6. Justiça
+
+A dimensão de justiça avalia potenciais impactos desiguais do sistema sobre diferentes grupos populacionais.
+
+Aspectos considerados incluem:
+
+- presença de vieses nos dados
+- diferenças de desempenho entre subgrupos
+- riscos de efeitos discriminatórios
+- estratégias de mitigação de vieses
+
+Para critérios detalhados de avaliação, consulte:
+→ [Avaliação de Justiça](avaliacao/justica.md)
+
+---
+
+## 7. Transparência
+
+A dimensão de transparência avalia se o funcionamento do sistema e suas decisões podem ser compreendidos por públicos relevantes, incluindo justificativas técnicas das decisões de modelagem.
+
+Aspectos considerados incluem:
+
+- relatórios de explicabilidade (local e global)
+- justificativas para decisões automatizadas
+- mecanismos de interpretação do modelo
+- comunicação de limitações a públicos não técnicos
+
+Para critérios detalhados de avaliação, consulte:
+→ [Avaliação de Transparência](avaliacao/transparencia.md) *(arquivo ainda não criado — ver observação no final)*
 
 ---
 
@@ -96,10 +128,10 @@ A avaliação de cada dimensão é realizada com base nas evidências fornecidas
 
 A análise considera:
 
-* qualidade e completude da documentação
-* presença de mecanismos de mitigação de riscos
-* transparência das decisões técnicas
-* maturidade das práticas institucionais
+- qualidade e completude da documentação
+- presença de mecanismos de mitigação de riscos
+- transparência das decisões técnicas
+- maturidade das práticas institucionais
 
 Os resultados são consolidados no **relatório final de auditoria**, juntamente com justificativas e recomendações para melhoria.
 
@@ -109,41 +141,15 @@ Os resultados são consolidados no **relatório final de auditoria**, juntamente
 
 A avaliação operacional de cada dimensão é realizada por meio de checklists específicos, disponíveis na pasta:
 
-→ [Checklists de Avaliação](checklist/)
-
+→ [Checklists de Avaliação](avaliacao/checklist.md)
 
 Cada item do checklist:
 
-* está associado a uma dimensão
-* requer evidência documental ou técnica
-* é avaliado segundo critérios padronizados (por exemplo: presente, parcial, ausente)
+- está associado a uma dimensão
+- requer evidência documental ou técnica
+- é avaliado segundo critérios padronizados (por exemplo: presente, parcial, ausente)
 
 O checklist permite padronizar o processo de auditoria e garantir consistência entre avaliações.
-
----
-
-## Documentação Complementar
-
-Algumas dimensões possuem documentação metodológica específica, contendo:
-
-* critérios detalhados de avaliação
-* exemplos de evidências esperadas
-* orientações para análise
-
-Esses documentos são utilizados como suporte ao processo de auditoria.
-
----
-
-## Critérios detalhados por dimensão
-
-Os critérios operacionais de avaliação estão disponíveis em:
-
-- [Auditabilidade](avaliacao/auditabilidade.md)
-- [Justiça](avaliacao/justica.md)
-- [Explicabilidade](avaliacao/explicabilidade.md)
-- [Governança](avaliacao/governanca.md)
-- [Privacidade](avaliacao/privacidade.md)
-
 
 ---
 
@@ -151,13 +157,13 @@ Os critérios operacionais de avaliação estão disponíveis em:
 
 As dimensões de IA Responsável representam a estrutura de avaliação definida pelo framework FIAR.
 
-Para uma visão conceitual dos princípios do framework: 
+Para uma visão conceitual dos princípios do framework:
 → [Metodologia do FIAR](metodologia_fiar.md)
 
-Para o processo operacional de auditoria: 
+Para o processo operacional de auditoria:
 → [Ciclo de Auditoria](ciclo_auditoria.md)
 
-Para critérios detalhados de avaliação por dimensão: 
-→ [Documentação de Avaliação](avaliacao/)
+Para os níveis e critérios de maturidade:
+→ [Modelo de Maturidade](modelo_maturidade.md)
 
-
+---

@@ -1,16 +1,16 @@
-# Avaliação de Explicabilidade
+# Avaliação de Transparência
 
-A dimensão de explicabilidade no framework FIAR analisa em que medida o funcionamento e as decisões de um sistema de inteligência artificial podem ser compreendidos por diferentes públicos relevantes.
+A dimensão de transparência no framework FIAR analisa em que medida o funcionamento e as decisões de um sistema de inteligência artificial podem ser compreendidos por diferentes públicos relevantes.
 
-Em contextos de saúde pública, a explicabilidade é importante para apoiar decisões institucionais, permitir revisão técnica e promover transparência no uso de modelos computacionais.
+Em contextos de saúde pública, a transparência é importante para apoiar decisões institucionais, permitir revisão técnica e promover confiança no uso de modelos computacionais.
 
-A explicabilidade é amplamente reconhecida como um princípio central de IA Responsável, sendo destacada em diretrizes como OECD AI Principles e recomendações da OMS para sistemas de IA em saúde.
+A transparência é amplamente reconhecida como um princípio central de IA Responsável, sendo destacada em diretrizes como OECD AI Principles e recomendações da OMS para sistemas de IA em saúde.
 
 ---
 
 ## Objetivo da dimensão
 
-A análise de explicabilidade busca avaliar a capacidade do sistema de:
+A análise de transparência busca avaliar a capacidade do sistema de:
 
 * documentar seu funcionamento geral
 * permitir a interpretação de decisões
@@ -19,9 +19,9 @@ A análise de explicabilidade busca avaliar a capacidade do sistema de:
 
 ---
 
-## Tipos de explicabilidade
+## Tipos de explicabilidade avaliados
 
-A avaliação considera diferentes níveis de explicabilidade.
+A avaliação considera diferentes níveis de explicabilidade como evidência da dimensão de transparência.
 
 ### Explicabilidade do modelo
 
@@ -65,7 +65,7 @@ A auditoria não exige um método específico, mas avalia a existência e adequa
 
 ## Riscos associados
 
-A ausência ou limitação de explicabilidade pode gerar riscos como:
+A ausência ou limitação de transparência pode gerar riscos como:
 
 * dificuldade de validação técnica do modelo
 * uso inadequado ou interpretação incorreta de resultados
@@ -111,9 +111,6 @@ Exemplos de avaliação incluem:
 
 ## Resultado da avaliação
 
-O auditor avalia a dimensão de explicabilidade com base nas evidências disponíveis e nos critérios definidos pelo framework.
+O auditor avalia a dimensão de transparência com base nas evidências disponíveis e nos critérios definidos pelo framework.
 
-O resultado é expresso em nível de maturidade (L1–L4), acompanhado de justificativas e recomendações para melhoria, sendo registrado no relatório final de auditoria.
-
----
-
+O resultado é expresso em nível de maturidade (N1–N4), acompanhado de justificativas e recomendações para melhoria, sendo registrado no relatório final de auditoria.

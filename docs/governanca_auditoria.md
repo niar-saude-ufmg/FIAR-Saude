@@ -36,6 +36,18 @@ O auditor também é responsável pela elaboração do **relatório da auditoria
 
 ---
 
+## Hierarquia institucional
+
+O FIAR-Saúde opera sob três instâncias, em níveis distintos:
+
+- **CIIA-Saúde**: instância decisória externa, responsável pelo enquadramento institucional geral dos projetos submetidos.
+- **NIAR**: instância técnico-operacional, responsável pela capacitação, auditoria e atribuição de maturidade.
+- **Comitê Gestor**: órgão interno ao NIAR, responsável pela deliberação sobre avaliações escalonadas — validação de aceites de risco residual e definição de condicionantes operacionais.
+
+O auditor mencionado nas seções acima atua no âmbito do NIAR. Casos de médio risco, alto risco ou inconsistências estruturais relevantes são escalonados ao Comitê Gestor.
+
+---
+
 ## Independência da auditoria
 
 A independência entre projeto e auditor é um princípio central do FIAR.
