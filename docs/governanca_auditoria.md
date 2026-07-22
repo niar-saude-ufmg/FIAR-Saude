@@ -78,7 +78,7 @@ A reprodutibilidade permite revisões futuras, comparações entre versões do s
 
 Para operacionalizar o processo de auditoria, o FIAR disponibiliza um template estruturado:
 
-👉 https://github.com/marisavas/FIAR-Audit-Template
+👉 [https://github.com/niar-saude-ufmg/FIAR-Audit-Template](https://github.com/niar-saude-ufmg/FIAR-Audit-Template)
 
 Cada auditoria deve ser conduzida em um **repositório próprio criado a partir desse template**, garantindo padronização, organização e rastreabilidade das informações.
 
@@ -86,8 +86,8 @@ Cada auditoria deve ser conduzida em um **repositório próprio criado a partir 
 
 ## Separação de responsabilidades
 
-| Atividade | Projeto | Auditor |
-|----------|--------|--------|
-| Produção de artefatos | ✔ | ✖ |
-| Avaliação de dimensões | ✖ | ✔ |
-| Geração de relatório | ✖ | ✔ |
+| Atividade                 | Projeto | Auditor |
+| ------------------------- | ------- | ------- |
+| Produção de artefatos   | ✔      | ✖      |
+| Avaliação de dimensões | ✖      | ✔      |
+| Geração de relatório   | ✖      | ✔      |
