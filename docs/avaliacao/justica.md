@@ -10,7 +10,7 @@ A análise de justiça está alinhada a abordagens de avaliação de fairness em
 
 ---
 
-## Objetivo da dimensão 
+## Objetivo da dimensão
 
 A análise de justiça busca avaliar se o sistema:
 
@@ -61,7 +61,7 @@ Diferenças significativas entre grupos podem indicar riscos de impacto desigual
 
 ## Fontes de viés
 
-A avaliação considera possíveis fontes de viés ao longo do ciclo de desenvolvimento do sistema, como: 
+A avaliação considera possíveis fontes de viés ao longo do ciclo de desenvolvimento do sistema, como:
 
 * viés nos dados de treinamento
 * sub-representação de determinados grupos
@@ -96,7 +96,7 @@ A ausência de avaliação de justiça pode gerar riscos como:
 
 ---
 
-## Evidências esperadas 
+## Evidências esperadas
 
 O auditor pode considerar evidências como:
 
@@ -107,7 +107,6 @@ O auditor pode considerar evidências como:
 * registros de estratégias de mitigação adotadas
 
 A ausência de determinadas evidências não implica automaticamente uma falha, mas pode indicar menor maturidade.
-
 
 ---
 
@@ -138,4 +137,4 @@ Exemplos de avaliação incluem:
 
 O auditor avalia a dimensão de justiça com base nas evidências disponíveis e nos critérios definidos pelo framework.
 
-O resultado é expresso em nível de maturidade (L1–L4), acompanhado de justificativas e recomendações para melhoria, sendo registrado no relatório final de auditoria.
+O resultado é expresso em nível de maturidade (N1–N4), acompanhado de justificativas e recomendações para melhoria, sendo registrado no relatório final de auditoria.

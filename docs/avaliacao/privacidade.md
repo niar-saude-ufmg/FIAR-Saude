@@ -4,14 +4,13 @@ A dimensão de privacidade no framework FIAR examina como dados sensíveis são 
 
 Sistemas aplicados à saúde frequentemente utilizam dados pessoais ou clínicos, o que torna a proteção de dados um aspecto central da governança de IA.
 
-
 A proteção de dados é um componente central de frameworks de governança de IA, sendo abordada em normas internacionais e legislações de proteção de dados.
 
 ---
 
-## Objetivos da dimensão 
+## Objetivos da dimensão
 
-A análise de privacidade busca avaliar se o sistema: 
+A análise de privacidade busca avaliar se o sistema:
 
 * utiliza dados de forma transparente e justificada
 * identifica e trata adequadamente dados sensíveis
@@ -102,6 +101,6 @@ Exemplos de avaliação incluem:
 
 O auditor avalia a dimensão de privacidade com base nas evidências disponíveis e nos critérios definidos pelo framework.
 
-O resultado é expresso em nível de maturidade (L1–L4), acompanhado de justificativas e recomendações para melhoria, sendo registrado no relatório final de auditoria.
+O resultado é expresso em nível de maturidade (N1–N4), acompanhado de justificativas e recomendações para melhoria, sendo registrado no relatório final de auditoria.
 
 ---

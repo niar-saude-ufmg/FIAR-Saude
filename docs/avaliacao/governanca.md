@@ -99,6 +99,6 @@ Exemplos de avaliação incluem:
 
 O auditor avalia a dimensão de governança com base nas evidências disponíveis e nos critérios definidos pelo framework.
 
-O resultado é expresso em nível de maturidade (L1–L4), acompanhado de justificativas e recomendações para melhoria, sendo registrado no relatório final de auditoria.
+O resultado é expresso em nível de maturidade (N1–N4), acompanhado de justificativas e recomendações para melhoria, sendo registrado no relatório final de auditoria.
 
 ---
