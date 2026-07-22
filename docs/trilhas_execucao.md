@@ -32,7 +32,7 @@ Para atingir N2, a tarefa deve apresentar:
 
 ## 2. Trilha Produção
 
-Na Trilha Produção, a maturidade é **acumulativa** e evolui ao longo do tempo conforme o sistema acumula versões, evidências operacionais e estruturas de governança. O ponto de partida é N2, obtido com os mesmos critérios da Trilha Arti aplicados à versão inicial do sistema.
+Na Trilha Produção, a maturidade é **acumulativa** e evolui ao longo do tempo conforme o sistema acumula versões, evidências operacionais e estruturas de governança. O ponto de partida é N2, obtido com os mesmos critérios da Trilha Experimental aplicados à versão inicial do sistema.
 
 A progressão para N3 e N4 depende de evidências operacionais adicionais:
 
