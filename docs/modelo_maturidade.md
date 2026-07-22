@@ -91,25 +91,25 @@ Essa análise evita distorções, como:
 
 O FIAR utiliza quatro níveis de maturidade:
 
-### L1 – Ad-hoc
+### N1 – Ad-hoc
 
 - ausência de documentação estruturada
 - práticas inexistentes ou informais
 - evidências escassas ou inexistentes
 
-### L2 – Inicial
+### N2 – Inicial
 
 - documentação básica disponível
 - algumas práticas implementadas de forma parcial
 - evidências limitadas ou inconsistentes
 
-### L3 – Desenvolvido
+### N3 – Desenvolvido
 
 - práticas estruturadas e documentadas
 - evidências consistentes e verificáveis
 - aplicação sistemática em partes do sistema
 
-### L4 – Consolidado
+### N4 – Consolidado
 
 - práticas institucionalizadas
 - monitoramento contínuo
@@ -124,10 +124,10 @@ O score quantitativo pode ser utilizado como referência indicativa:
 
 | Score aproximado | Interpretação sugerida |
 | ---------------- | ------------------------ |
-| 0.00 – 0.25     | L1 – Ad-hoc             |
-| 0.25 – 0.50     | L2 – Inicial            |
-| 0.50 – 0.75     | L3 – Desenvolvido       |
-| 0.75 – 1.00     | L4 – Consolidado        |
+| 0.00 – 0.25     | N1 – Ad-hoc             |
+| 0.25 – 0.50     | N2 – Inicial            |
+| 0.50 – 0.75     | N3 – Desenvolvido       |
+| 0.75 – 1.00     | N4 – Consolidado        |
 
 **Importante:**
 Esses intervalos são orientativos. A classificação final deve ser validada pela análise qualitativa do auditor.
