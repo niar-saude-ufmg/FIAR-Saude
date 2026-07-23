@@ -107,7 +107,7 @@ Para auditar um sistema utilizando o FIAR-Saúde:
 
 👉 [ToyExample — PrevisãoRESP-SUS](https://github.com/niar-saude-ufmg/SBCAS_26_Respiratory_Disease)
 
-Sistema hipotético de previsão de internações respiratórias por hospital utilizando dados do SIH/DataSUS, com avaliação das dimensões de Justiça, Transparência, Rastreabilidade e Governança.
+Sistema hipotético de previsão de internações respiratórias por hospital utilizando dados do SIH/DataSUS, com avaliação das dimensões de Justiça, Transparência, Auditabilidade e Explicabilidade.
 
 ---
 
