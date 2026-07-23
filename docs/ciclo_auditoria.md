@@ -69,11 +69,13 @@ A coleta e organização de evidências estruturam a base analítica da auditori
 
 O auditor conduz a avaliação do sistema com base nas dimensões definidas pelo FIAR:
 
-* auditabilidade
-* explicabilidade
-* justiça
-* privacidade
 * governança
+* segurança
+* privacidade
+* responsabilização
+* rastreabilidade
+* justiça
+* transparência
 
 A avaliação é operacionalizada por meio de um **checklist estruturado**, que associa:
 
@@ -87,7 +89,7 @@ Cada item do checklist é classificado como:
 - parcial
 - ausente
 
-Os resultados são agregados por dimensão e utilizados para determinar o nível de maturidade do sistema (L1–L4).
+Os resultados são agregados por dimensão e utilizados para determinar o nível de maturidade do sistema (N1–N4).
 
 Para critérios detalhados por dimensão, consulte:
 
@@ -118,17 +120,21 @@ A[Definição do sistema de IA] --> B[Documentação inicial do projeto]
 
 B --> C[Coleta de evidências]
 
-C --> D1[Avaliação de Auditabilidade]
-C --> D2[Avaliação de Justiça]
-C --> D3[Avaliação de Explicabilidade]
-C --> D4[Avaliação de Privacidade]
-C --> D5[Avaliação de Governança]
+C --> D1[Avaliação de Governança]
+C --> D2[Avaliação de Segurança]
+C --> D3[Avaliação de Privacidade]
+C --> D4[Avaliação de Responsabilização]
+C --> D5[Avaliação de Rastreabilidade]
+C --> D6[Avaliação de Justiça]
+C --> D7[Avaliação de Transparência]
 
 D1 --> E[Score de maturidade]
 D2 --> E
 D3 --> E
 D4 --> E
 D5 --> E
+D6 --> E
+D7 --> E
 
 E --> F[Relatório de Auditoria]
 F --> G[Recomendações]
@@ -178,4 +184,4 @@ Essa organização permite diferentes formas de navegação:
 
 - Para uma visão conceitual do framework → consulte a metodologia  
 - Para entender o que é avaliado → consulte as dimensões  
-- Para critérios detalhados de avaliação → consulte a documentação de avaliação  
+- Para critérios detalhados de avaliação → consulte a documentação de avaliação
