@@ -6,7 +6,6 @@ Ele transforma princípios e dimensões do framework em **critérios verificáve
 
 ---
 
-
 ## Como usar este checklist
 
 Este checklist deve ser utilizado como instrumento único de avaliação durante a auditoria FIAR.
@@ -39,17 +38,19 @@ Cada item do checklist corresponde a um critério verificável associado a uma d
 
 Cada item do checklist é definido por:
 
-- **Código do critério** (ex: AUD-01, EXP-02)
+- **Código do critério** (ex: GOV-01, RAS-02)
 - **Descrição do critério**
 - **Evidência esperada**
 
 Os critérios estão organizados por dimensão:
 
-- Auditabilidade (AUD)
-- Explicabilidade (EXP)
-- Justiça (JUS)
-- Privacidade (PRI)
 - Governança (GOV)
+- Segurança (SEG)
+- Privacidade (PRI)
+- Responsabilização (RESP)
+- Rastreabilidade (RAS)
+- Justiça (JUS)
+- Transparência (TRA)
 
 ---
 
@@ -99,57 +100,42 @@ A atribuição de maturidade considera:
 
 Os níveis seguem o modelo do FIAR:
 
-- L1 – Ad-hoc
-- L2 – Inicial
-- L3 – Desenvolvido
-- L4 – Consolidado
+- N1 – Ad-hoc
+- N2 – Inicial
+- N3 – Desenvolvido
+- N4 – Consolidado
 
 ---
 
 ## Estrutura dos critérios por dimensão
 
-### Auditabilidade (AUD)
+### Governança (GOV)
 
-| Código | Critério                                              | Evidência esperada        |
-| ------- | ------------------------------------------------------ | -------------------------- |
-| AUD-01  | O sistema possui documentação geral                  | documentação do sistema  |
-| AUD-02  | Existe descrição das fontes de dados                 | Data Card                  |
-| AUD-03  | Existe documentação do modelo                        | Model Card                 |
-| AUD-04  | O processo de desenvolvimento está documentado        | relatórios técnicos      |
-| AUD-05  | Existem registros de decisões relevantes              | logs / documentação      |
-| AUD-06  | Os artefatos técnicos estão disponíveis             | repositórios / documentos |
-| AUD-07  | Existe rastreabilidade entre dados, modelo e decisões | documentação integrada   |
-| AUD-08  | A documentação permite reprodutibilidade básica     | documentação técnica    |
-
----
-
-### Explicabilidade (EXP)
-
-| Código | Critério                                          | Evidência esperada          |
-| ------- | -------------------------------------------------- | ---------------------------- |
-| EXP-01  | O modelo possui descrição geral documentada      | Model Card                   |
-| EXP-02  | As variáveis utilizadas são descritas            | documentação               |
-| EXP-03  | O processo de treinamento é documentado           | relatório técnico          |
-| EXP-04  | Existem métodos de interpretação do modelo      | SHAP, LIME etc.              |
-| EXP-05  | Existem explicações para decisões individuais   | exemplos documentados        |
-| EXP-06  | As explicações são adequadas ao contexto de uso | documentação               |
-| EXP-07  | Limitações das explicações são documentadas   | Model Card                   |
-| EXP-08  | Existe material para usuários não técnicos      | documentação institucional |
+| Código | Critério                          | Evidência esperada |
+| ------- | ---------------------------------- | ------------------- |
+| GOV-01  | Existem responsáveis definidos    | documentação      |
+| GOV-02  | Papéis estão documentados        | organograma         |
+| GOV-03  | Existe supervisão humana          | processos           |
+| GOV-04  | Existem políticas de uso          | documentação      |
+| GOV-05  | Existe monitoramento contínuo     | relatórios         |
+| GOV-06  | Existem processos de atualização | documentação      |
+| GOV-07  | Existem registros de decisão      | logs                |
+| GOV-08  | Existe revisão periódica         | documentação      |
 
 ---
 
-### Justiça (JUS)
+### Segurança (SEG)
 
-| Código | Critério                                               | Evidência esperada |
-| ------- | ------------------------------------------------------- | ------------------- |
-| JUS-01  | Grupos relevantes foram identificados                   | documentação      |
-| JUS-02  | Existe análise de distribuição dos dados             | Data Card           |
-| JUS-03  | Existe análise de desempenho por subgrupo              | relatório          |
-| JUS-04  | Métricas de fairness foram utilizadas                  | relatório          |
-| JUS-05  | Possíveis fontes de viés foram analisadas             | documentação      |
-| JUS-06  | Limitações relacionadas à justiça são documentadas | Model Card          |
-| JUS-07  | Existem estratégias de mitigação de viés            | relatório          |
-| JUS-08  | Existe monitoramento por subgrupo                       | documentação      |
+| Código | Critério                                                     | Evidência esperada             |
+| ------- | -------------------------------------------------------------- | -------------------------------- |
+| SEG-01  | Existem mecanismos de autenticação e autorização de usuários | documentação de controle de acesso |
+| SEG-02  | Existe segmentação de acesso por perfil de usuário            | políticas de acesso             |
+| SEG-03  | O ambiente de processamento de dados sensíveis é isolado      | documentação de arquitetura     |
+| SEG-04  | Existem registros de acesso e uso                              | logs de acesso                   |
+| SEG-05  | A infraestrutura possui medidas de hardening documentadas      | documentação técnica            |
+| SEG-06  | Existe plano de resposta a incidentes de segurança             | documentação institucional      |
+| SEG-07  | Existem registros de incidentes de segurança, quando aplicável | registros de incidentes          |
+| SEG-08  | Existem ações corretivas documentadas para incidentes ocorridos | relatório de incidentes         |
 
 ---
 
@@ -168,18 +154,63 @@ Os níveis seguem o modelo do FIAR:
 
 ---
 
-### Governança (GOV)
+### Responsabilização (RESP)
 
-| Código | Critério                          | Evidência esperada |
-| ------- | ---------------------------------- | ------------------- |
-| GOV-01  | Existem responsáveis definidos    | documentação      |
-| GOV-02  | Papéis estão documentados        | organograma         |
-| GOV-03  | Existe supervisão humana          | processos           |
-| GOV-04  | Existem políticas de uso          | documentação      |
-| GOV-05  | Existe monitoramento contínuo     | relatórios         |
-| GOV-06  | Existem processos de atualização | documentação      |
-| GOV-07  | Existem registros de decisão      | logs                |
-| GOV-08  | Existe revisão periódica         | documentação      |
+| Código | Critério                                                                | Evidência esperada                 |
+| ------- | -------------------------------------------------------------------------- | ------------------------------------ |
+| RESP-01 | Responsáveis técnicos pelo desenvolvimento estão identificados          | documentação institucional         |
+| RESP-02 | Responsáveis pela validação e aprovação de riscos estão identificados   | documentação institucional         |
+| RESP-03 | Responsáveis pela operação e monitoramento contínuo estão identificados | documentação institucional         |
+| RESP-04 | Existem registros de decisão técnica com identificação nominal         | registro de decisão técnica       |
+| RESP-05 | Existe documentação de aceite de risco residual                         | registro de aceite de risco         |
+| RESP-06 | Existem condicionantes operacionais formalmente definidos               | documentação institucional         |
+| RESP-07 | Decisões escalonadas possuem registro de aprovação institucional        | atas / registros de aprovação       |
+| RESP-08 | Existe justificativa documentada para trade-offs metodológicos relevantes | registro de decisão técnica       |
+
+---
+
+### Rastreabilidade (RAS)
+
+| Código | Critério                                              | Evidência esperada        |
+| ------- | ------------------------------------------------------ | -------------------------- |
+| RAS-01  | O sistema possui documentação geral                  | documentação do sistema  |
+| RAS-02  | Existe descrição das fontes de dados                 | Data Card                  |
+| RAS-03  | Existe documentação do modelo                        | Model Card                 |
+| RAS-04  | O processo de desenvolvimento está documentado        | relatórios técnicos      |
+| RAS-05  | Existem registros de decisões relevantes              | logs / documentação      |
+| RAS-06  | Os artefatos técnicos estão disponíveis             | repositórios / documentos |
+| RAS-07  | Existe rastreabilidade entre dados, modelo e decisões | documentação integrada   |
+| RAS-08  | A documentação permite reprodutibilidade básica     | documentação técnica    |
+
+---
+
+### Justiça (JUS)
+
+| Código | Critério                                               | Evidência esperada |
+| ------- | ------------------------------------------------------- | ------------------- |
+| JUS-01  | Grupos relevantes foram identificados                   | documentação      |
+| JUS-02  | Existe análise de distribuição dos dados             | Data Card           |
+| JUS-03  | Existe análise de desempenho por subgrupo              | relatório          |
+| JUS-04  | Métricas de fairness foram utilizadas                  | relatório          |
+| JUS-05  | Possíveis fontes de viés foram analisadas             | documentação      |
+| JUS-06  | Limitações relacionadas à justiça são documentadas | Model Card          |
+| JUS-07  | Existem estratégias de mitigação de viés            | relatório          |
+| JUS-08  | Existe monitoramento por subgrupo                       | documentação      |
+
+---
+
+### Transparência (TRA)
+
+| Código | Critério                                          | Evidência esperada          |
+| ------- | -------------------------------------------------- | ---------------------------- |
+| TRA-01  | O modelo possui descrição geral documentada      | Model Card                   |
+| TRA-02  | As variáveis utilizadas são descritas            | documentação               |
+| TRA-03  | O processo de treinamento é documentado           | relatório técnico          |
+| TRA-04  | Existem métodos de interpretação do modelo      | SHAP, LIME etc.               |
+| TRA-05  | Existem explicações para decisões individuais   | exemplos documentados        |
+| TRA-06  | As explicações são adequadas ao contexto de uso | documentação               |
+| TRA-07  | Limitações das explicações são documentadas   | Model Card                   |
+| TRA-08  | Existe material para usuários não técnicos      | documentação institucional |
 
 ---
 
@@ -193,5 +224,3 @@ Seu uso sistemático garante:
 - rastreabilidade das decisões
 - consistência entre auditorias
 - suporte à melhoria contínua
-
-
