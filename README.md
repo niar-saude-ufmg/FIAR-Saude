@@ -82,7 +82,7 @@ O nível de maturidade expressa a capacidade institucional do projeto de executa
 Para auditar um sistema utilizando o FIAR-Saúde:
 
 1. Crie um repositório a partir do **FIAR_template**
-2. Defina a **tarefa**: modelo + dados + algoritmo + objetivo clínico/operacional
+2. Defina a **tarefa**: modelo + dados + procedimentos + objetivo clínico/operacional
 3. Classifique a tarefa na trilha correspondente (**Experimental** ou **Produção**)
 4. Produza os **artefatos de desenvolvimento** (Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica)
 5. Submeta ao ciclo de **auditoria do NIAR**
