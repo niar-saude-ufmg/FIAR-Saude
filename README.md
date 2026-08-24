@@ -5,11 +5,11 @@
 ![Domain](https://img.shields.io/badge/domain-public_health_AI-green)
 ![Version](https://img.shields.io/badge/version-1.0-blue)
 
-O FIAR Saúde é um framework metodológico de governança e auditoria de sistemas de inteligência artificial aplicados à saúde. Ele transforma princípios de IA Responsável (IAR) em **critérios verificáveis, evidências documentadas e níveis de maturidade auditáveis**, operando no contexto da saúde pública brasileira.
+O **FIAR-Saúde** é um framework institucional e metodológico de governança de sistemas de inteligência artificial aplicados à saúde. Ele transforma princípios de **IA Responsável (IAR)** em critérios verificáveis, evidências documentadas, avaliações técnicas, sinais de governança e acompanhamento longitudinal, operando no contexto da saúde pública brasileira.
 
 O framework busca reduzir a lacuna entre **princípios normativos de ética em IA** e sua **operacionalização em práticas de governança e auditoria** — uma limitação amplamente discutida na literatura (Floridi et al., 2018; Mittelstadt, 2019).
 
-> O FIAR-Saúde **não** certifica modelos clínicos, garante ausência de viés ou substitui validação clínica e mecanismos regulatórios formais. Seu foco é a **governança verificável** das práticas associadas ao desenvolvimento, operação e monitoramento de sistemas de IA.
+> O FIAR-Saúde **não** certifica modelos clínicos, **não garante ausência de viés e não substitui** **validação clínica ou mecanismos regulatórios formais**. Seu foco é a governança verificável das práticas, decisões e evidências associadas ao desenvolvimento, avaliação, operação e monitoramento de sistemas de IA.
 
 <!-- busca reduzir a lacuna entre **princípios normativos de ética em IA** e sua **operacionalização em práticas de governança e auditoria**, permitindo avaliações sistemáticas, reprodutíveis e comparáveis entre sistemas.-->
 
@@ -17,34 +17,37 @@ O framework busca reduzir a lacuna entre **princípios normativos de ética em I
 
 ## Instâncias Institucionais
 
-O FIAR-Saúde opera por meio de duas instâncias institucionais centrais:
+A operacionalização do FIAR-Saúde distingue três responsabilidades institucionais:
 
-- **CIIA-Saúde** (Centro de Inovação em Inteligência Artificial para a Saúde – UFMG): instância decisória, responsável pelo enquadramento institucional dos projetos e validação de aceites de risco residual significativo.
-- **NIAR** (Núcleo de Inteligência Artificial Responsável para a Saúde): instância técnico-operacional, conduzindo as fases de capacitação, auditoria e atribuição de maturidade.
+- **Projetos de IA:** responsáveis pelo desenvolvimento dos modelos e pela produção, manutenção e atualização das evidências técnicas sob sua responsabilidade.
+- **NIAR-Saúde (Núcleo de Inteligência Artificial Responsável para a Saúde):** instância técnico-operacional responsável por operacionalizar o FIAR-Saúde, orientar e padronizar a produção de evidências, delimitar avaliações, verificar a suficiência, consistência e rastreabilidade dos artefatos e conduzir a avaliação técnica.
+- **Comitê Gestor:** instância de governança responsável por deliberações institucionais quando houver necessidade de aceite de risco, definição de condicionantes, restrições de uso ou outras decisões que ultrapassem a avaliação técnica de rotina.
+
+A **produção de evidências**, a **avaliação técnica** e a **deliberação institucional** são funções distintas.
 
 ---
 
 ## Ecossistema
 
-Cada auditoria é conduzida em um **repositório próprio criado a partir do FIAR_template**. O ToyExample é uma instância real de auditoria e referência didática para novos projetos.
+Cada projeto avaliadopode utilizar um **repositório próprio criado a partir do FIAR_template**.
 
 ```mermaid
 flowchart TD
-    A[FIAR-Saude\nFramework e Metodologia] --> B[FIAR_template\nTemplate Base]
-    B --> C1[Repositório de Auditoria\nProjeto X]
+    A[FIAR-Saude\nFramework e Metodologia] --> B[FIAR-Audit-Template\nTemplate Base]
+    B --> C1[Repositório de Avaliação\nProjeto X]
     B --> C2[Repositório de Auditoria\nProjeto Y]
     B --> C3[Repositório de Auditoria\nProjeto Z]
-    C1 --> D[Relatório de Auditoria]
+    C1 --> D[Histórico de Avaliação]
     C2 --> D
     C3 --> D
 ```
 
-| Repositório                         | Função                                                                          |
-| ------------------------------------ | --------------------------------------------------------------------------------- |
-| **FIAR-Saude** (este)          | Documentação conceitual e metodologia do framework                              |
-| **FIAR_template**              | Template base clonado para cada auditoria                                         |
-| **Repositórios de auditoria** | Um por projeto auditado — contém artefatos, evidências e consistência cruzada |
-| **ToyExample**                 | Instância de auditoria do PrevisãoRESP-SUS usado como exemplo didático         |
+| Repositório                         | Função                                                                                 |
+| ------------------------------------ | ---------------------------------------------------------------------------------------- |
+| **FIAR-Saude** (este)          | Documentação conceitual e metodologia do framework                                     |
+| **FIAR-Audit-Template**        | Template base para documentação e avaliação dos projetos                             |
+| **Repositórios dos projetos** | Contêm documentação, evidências, avaliações, pendências e histórico longitudinal |
+| **ToyExample**                 | Instância de auditoria do PrevisãoRESP-SUS usado como exemplo didático                |
 
 ---
 
@@ -79,23 +82,28 @@ O nível de maturidade expressa a capacidade institucional do projeto de executa
 
 ## Quickstart
 
-Para auditar um sistema utilizando o FIAR-Saúde:
+Um novo projeto entra no **FIAR-Saúde** por um ciclo estruturado:
 
-1. Crie um repositório a partir do **FIAR_template**
-2. Defina a **tarefa**: modelo + dados + procedimentos + objetivo clínico/operacional
-3. Classifique a tarefa na trilha correspondente (**Experimental** ou **Produção**)
-4. Produza os **artefatos de desenvolvimento** (Data Card, Model Card, Fairness Report, Explainability Report, Registro de Decisão Técnica)
-5. Submeta ao ciclo de **auditoria do NIAR**
-6. Receba a classificação de conformidade e o **nível de maturidade** do projeto
+1. **Entrada do projeto:** preenchimento do Formulário de Entrada.
+2. **Triagem pelo NIAR-Saúde:** compreensão da iniciativa e identificação de eventuais dúvidas.
+3. **Identificação da avaliação:** definição da **Tarefa de IA**, **Versão Avaliável**, **Contexto de Uso** e **Trilha**.
+4. **Definição das evidências necessárias:** o NIAR-Saúde determina os artefatos adequados ao ciclo.
+5. **Produção e envio das evidências pelo projeto:** por exemplo, Data Card, Model Card e outros artefatos aplicáveis.
+6. **Pré-avaliação documental:** verificação inicial da suficiência, consistência e rastreabilidade das evidências.
+7. **Tratamento de pendências:** complementações ou esclarecimentos, quando necessários.
+8. **Avaliação técnica por dimensão:** análise das evidências segundo os mecanismos de verificação do FIAR-Saúde.
+9. **Resultado de conformidade:** referente à **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
+10. **Deliberação institucional**, quando necessária.
+11. **Acompanhamento longitudinal:** novos ciclos são iniciados quando houver mudanças relevantes.
 
-👉 [FIAR_template](https://github.com/niar-saude-ufmg/FIAR-Audit-Template)
+> **A conformidade é pontual. A maturidade é longitudinal e pertence ao projeto.**
 
 ---
 
 ## Documentação Completa
 
 - Metodologia → [docs/metodologia_fiar.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/metodologia_fiar.md)
-- Ciclo de Auditoria → [docs/ciclo_auditoria.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/ciclo_auditoria.md)
+- Ciclo de Avaliação Técnica → [docs/ciclo_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/ciclo_avaliacao.md)
 - Dimensões de IAR → [docs/dimensoes_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/dimensoes_avaliacao.md)
 - Trilhas de Execução → [docs/trilhas_execucao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/trilhas_execucao.md)
 - Modelo de Maturidade → [docs/modelo_maturidade.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/modelo_maturidade.md)
@@ -118,7 +126,7 @@ FIAR-Saude/
 ├── docs/
 │   ├── metodologia_fiar.md
 │   ├── dimensoes_avaliacao.md
-│   ├── ciclo_auditoria.md
+│   ├── ciclo_avaliacao.md
 │   ├── governanca_auditoria.md
 │   ├── trilhas_execucao.md
 │   ├── modelo_maturidade.md
@@ -135,7 +143,7 @@ FIAR-Saude/
 - pesquisadores em IA aplicada à saúde pública
 - equipes de ciência de dados em instituições públicas de saúde
 - projetos vinculados ao CIIA-Saúde/UFMG
-- auditores e gestores responsáveis pela governança de sistemas de IA em saúde
+- avaliadores técnicos e gestores responsáveis pela governança de sistemas de IA em saúde
 
 ---
 
