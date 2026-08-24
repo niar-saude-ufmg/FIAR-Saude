@@ -363,6 +363,10 @@ O mesmo resultado técnico pode ser aceitável, insuficiente ou relevante de man
 
 ## 7. Sequência de avaliação de um requisito
 
+A avaliação requisito a requisito ocorre após a pré-avaliação documental do ciclo, conforme o [Protocolo de Pré-Avaliação Documental](protocolo_pre_avaliacao_documental.md).
+
+A pré-avaliação organiza e verifica inicialmente as fontes disponíveis; os mecanismos descritos neste documento são utilizados posteriormente para analisar as evidências em relação aos requisitos aplicáveis.
+
 Para cada requisito das dimensões do FIAR-Saúde, a avaliação segue a seguinte sequência:
 
 1. **Determinar a aplicabilidade**

@@ -102,13 +102,16 @@ Um novo projeto entra no **FIAR-Saúde** por um ciclo estruturado:
 
 ## Documentação Completa
 
-- Metodologia → [docs/metodologia_fiar.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/metodologia_fiar.md)
-- Ciclo de Avaliação Técnica → [docs/ciclo_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/ciclo_avaliacao.md)
-- Dimensões de IAR → [docs/dimensoes_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/dimensoes_avaliacao.md)
-- Trilhas de Execução → [docs/trilhas_execucao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/trilhas_execucao.md)
-- Modelo de Maturidade → [docs/modelo_maturidade.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/modelo_maturidade.md)
+- Metodologia → [docs/metodologia_fiar.md](docs/metodologia_fiar.md)
+- Ciclo de Avaliação Técnica → [docs/ciclo_avaliacao.md](docs/ciclo_avaliacao.md)
+- Dimensões de IAR → [docs/dimensoes_avaliacao.md](docs/dimensoes_avaliacao.md)
+- Trilhas de Execução → [docs/trilhas_execucao.md](docs/trilhas_execucao.md)
+- Modelo de Maturidade → [docs/modelo_maturidade.md](docs/modelo_maturidade.md)
 - Governança Institucional  → [docs/governanca_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/governanca_avaliacao.md)
-- Mecanismos de Verificação → [mecanismos_verificacao.md](mecanismos_verificacao.md)
+- Mecanismos de Verificação → [docs/mecanismos_verificacao.md](docs/mecanismos_verificacao.md)
+- Protocolo de Pré-Avaliação Documental → [docs/protocolo_pre_avaliacao_documental.md](docs/protocolo_pre_avaliacao_documental.md) — orienta o inventário inicial de evidências, as verificações cruzadas e o registro de pendências antes da avaliação por requisito. 
+
+
 
 ---
 

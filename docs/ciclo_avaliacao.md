@@ -94,37 +94,48 @@ O FIAR-Saúde não pressupõe um conjunto universal e rígido de artefatos. As e
 
 ---
 
-## 4. Controle e pré-avaliação documental
+## 4. Controle documental e pré-avaliação
 
-Os artefatos recebidos são registrados e submetidos a uma pré-avaliação documental.
+Antes da avaliação requisito a requisito, o NIAR-Saúde realiza uma pré-avaliação documental para verificar se existem condições suficientes para iniciar a análise técnica.
 
-Essa etapa verifica se a documentação permite iniciar a avaliação técnica e identifica eventuais necessidades de complementação.
+Essa etapa inclui:
 
-A pré-avaliação considera, entre outros aspectos:
+- confirmação da Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha de Execução;
+- inventário dos artefatos efetivamente disponíveis;
+- identificação das evidências relevantes contidas nos documentos;
+- verificação cruzada entre artefatos;
+- identificação de informações ausentes, ambiguidades e divergências;
+- identificação e registro inicial de pendências;
+- determinação das evidências adicionais realmente necessárias.
 
-* presença das evidências solicitadas;
-* suficiência mínima das informações;
-* coerência entre tarefa, dados, modelo e contexto de uso;
-* consistência entre diferentes artefatos;
-* identificação de versões;
-* riscos e limitações declarados;
-* rastreabilidade documental;
-* necessidade de evidências adicionais.
+A pré-avaliação documental não produz resultado de conformidade.
 
-A ausência ou insuficiência de uma informação não deve ser automaticamente interpretada como não conformidade.
+Somente fontes verificadas no ciclo atual podem ser tratadas como evidências da avaliação. Informações provenientes de conversas anteriores, memória do sistema ou registros históricos não verificados podem ser utilizadas apenas como pistas para localização de evidências.
 
-A pré-avaliação pode concluir que:
+O procedimento detalhado está definido em:
 
-* a avaliação técnica pode prosseguir;
-* parte da avaliação pode prosseguir com pendências;
-* são necessárias complementações documentais;
-* é necessário esclarecer novamente o objeto ou o contexto da avaliação.
+→ [Protocolo de Pré-Avaliação Documental](protocolo_pre_avaliacao_documental.md)
+
+### Saída da etapa
+
+Ao final da pré-avaliação, o NIAR-Saúde deve registrar:
+
+- se a unidade de avaliação está suficientemente delimitada;
+- quais artefatos foram recebidos;
+- quais verificações cruzadas foram realizadas;
+- quais pendências permanecem;
+- quais evidências adicionais precisam ser solicitadas;
+- se existem condições para iniciar a avaliação requisito a requisito.
 
 ---
 
 ## 5. Registro e tratamento de pendências
 
-Lacunas ou dúvidas identificadas durante a pré-avaliação são registradas de maneira rastreável.
+As pendências identificadas durante a pré-avaliação documental devem ser registradas e tratadas de forma rastreável antes ou durante a avaliação técnica, conforme seu impacto.
+
+Pendências materiais na delimitação da **Tarefa de IA**, da **Versão Avaliável**, do **Contexto de Uso** ou da **Trilha de Execução** devem ser resolvidas antes do início da avaliação requisito a requisito.
+
+Outras pendências podem ser tratadas durante o ciclo, desde que seu impacto sobre a avaliação esteja explicitamente registrado.
 
 As pendências podem envolver:
 
