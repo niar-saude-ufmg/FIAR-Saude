@@ -107,7 +107,7 @@ Um novo projeto entra no **FIAR-Saúde** por um ciclo estruturado:
 - Dimensões de IAR → [docs/dimensoes_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/dimensoes_avaliacao.md)
 - Trilhas de Execução → [docs/trilhas_execucao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/trilhas_execucao.md)
 - Modelo de Maturidade → [docs/modelo_maturidade.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/modelo_maturidade.md)
-- Governança → [docs/governanca_auditoria.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/governanca_auditoria.md)
+- Governança Institucional  → [docs/governanca_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/governanca_avaliacao.md)
 
 ---
 
@@ -127,7 +127,7 @@ FIAR-Saude/
 │   ├── metodologia_fiar.md
 │   ├── dimensoes_avaliacao.md
 │   ├── ciclo_avaliacao.md
-│   ├── governanca_auditoria.md
+│   ├── governanca_avaliacao.md
 │   ├── trilhas_execucao.md
 │   ├── modelo_maturidade.md
 │   └── mapeamento_referencias.md
