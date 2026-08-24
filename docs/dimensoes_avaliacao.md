@@ -12,6 +12,22 @@ Os aspectos apresentados em cada dimensão são orientadores. Sua aplicabilidade
 
 ---
 
+## Lógica da avaliação no FIAR-Saúde
+
+A avaliação técnica do FIAR-Saúde pode ser compreendida por meio da seguinte cadeia:
+
+- **Dimensões:** definem **o que avaliamos**.
+- **Requisitos ou questões de avaliação:** definem **o que queremos verificar em cada dimensão**.
+- **Evidências:** constituem **a base utilizada para fundamentar a análise**.
+- **Mecanismos de verificação:** definem **como as evidências são examinadas**.
+- **Suficiência, consistência, rastreabilidade e contextualização:** constituem **propriedades transversais consideradas na análise das evidências**.
+- **Achados e pendências:** registram **os resultados da análise e as questões ainda não resolvidas**.
+- **Conformidade:** constitui o resultado pontual da avaliação de uma **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
+- **Maturidade:** constitui uma inferência longitudinal no nível do **projeto**, baseada na recorrência, continuidade e rastreabilidade das práticas de IA Responsável ao longo de sucessivos ciclos de avaliação.
+
+
+---
+
 ## 1. Governança
 
 A dimensão de governança avalia a existência de estruturas institucionais para supervisionar o desenvolvimento e o uso do sistema de IA.
