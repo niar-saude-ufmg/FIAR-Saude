@@ -1,12 +1,14 @@
 # Dimensões de Avaliação do FIAR
 
-O FIAR avalia sistemas de inteligência artificial a partir de **sete dimensões** principais de IA Responsável.
+O FIAR-Saúde operacionaliza a avaliação de IA Responsável a partir de **sete dimensões** principais.
 
-Essas dimensões estruturam a avaliação de IA Responsável no framework, representando diferentes categorias de risco associadas ao uso de sistemas de IA em contextos de saúde pública.
+Essas dimensões estruturam os requisitos e as evidências consideradas durante a avaliação técnica, permitindo analisar diferentes aspectos das práticas de IA Responsável associadas a uma **Tarefa de IA, Versão Avaliável e Contexto de Uso** específicos.
 
-Cada dimensão é avaliada com base em **evidências documentadas**, fornecidas pelo projeto e analisadas por um auditor independente.
+Cada dimensão é avaliada com base em **evidências documentais, técnicas e, quando aplicável, operacionais**, produzidas ou fornecidas pelo projeto e analisadas pelo **NIAR-Saúde**. A avaliação técnica é realizada de forma independente da equipe responsável pelo desenvolvimento, sem excluir a possibilidade de esclarecimentos, complementações ou correções durante o processo.
 
-A definição dessas dimensões foi inspirada em referências internacionais de IA Responsável, incluindo princípios da OECD, diretrizes da Organização Mundial da Saúde (OMS) para IA em saúde e normas de gestão de risco em IA (ISO/IEC 23894).
+A definição dessas dimensões foi inspirada em referências internacionais de IA Responsável, incluindo os princípios da OECD, as diretrizes da Organização Mundial da Saúde (OMS) para IA em saúde e normas de gestão de risco em IA, como a ISO/IEC 23894.
+
+Os aspectos apresentados em cada dimensão são orientadores. Sua aplicabilidade e os mecanismos de verificação utilizados dependem da tarefa, da trilha de execução, do contexto de uso e das evidências disponíveis.
 
 ---
 
@@ -35,7 +37,7 @@ Aspectos considerados incluem:
 - registros de incidentes de segurança
 - controle de acesso a dados e ambientes
 - mecanismos de resposta a falhas
-- hardening e isolamento de infraestrutura
+- mecanismos de proteção, hardening ou isolamento de infraestrutura, quando aplicáveis
 
 Para critérios detalhados de avaliação, consulte:
 → [Avaliação de Segurança](avaliacao/seguranca.md) *(arquivo ainda não criado — ver observação no final)*
@@ -65,7 +67,7 @@ A dimensão de responsabilização avalia se há identificação clara de quem �
 Aspectos considerados incluem:
 
 - registros nominais de decisão
-- aprovação formal de riscos e condicionantes
+- registros de aceite de risco e condicionantes institucionais, quando aplicáveis
 - atribuição clara de responsabilidades por etapa do ciclo de vida
 - rastreabilidade de aprovações institucionais
 
@@ -113,7 +115,7 @@ A dimensão de transparência avalia se o funcionamento do sistema e suas decis�
 Aspectos considerados incluem:
 
 - relatórios de explicabilidade (local e global)
-- justificativas para decisões automatizadas
+- justificativas e documentação sobre resultados ou decisões apoiadas pelo sistema, quando aplicável
 - mecanismos de interpretação do modelo
 - comunicação de limitações a públicos não técnicos
 
@@ -124,46 +126,81 @@ Para critérios detalhados de avaliação, consulte:
 
 ## Avaliação das Dimensões
 
-A avaliação de cada dimensão é realizada com base nas evidências fornecidas pelo projeto e analisadas pelo auditor.
+A avaliação de cada dimensão é conduzida pelo **NIAR-Saúde** com base nas evidências aplicáveis à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso considerados no ciclo de avaliação.
 
-A análise considera:
+A avaliação de uma dimensão não se limita à presença de documentos. Para cada requisito ou questão de avaliação, devem ser identificados:
 
-- qualidade e completude da documentação
-- presença de mecanismos de mitigação de riscos
-- transparência das decisões técnicas
-- maturidade das práticas institucionais
+- a evidência esperada;
+- as evidências efetivamente disponíveis;
+- o mecanismo de verificação aplicável;
+- a análise realizada;
+- as limitações da evidência;
+- eventuais pendências;
+- os achados relevantes;
+- eventuais recomendações ou sinais de governança.
 
-Os resultados são consolidados no **relatório final de auditoria**, juntamente com justificativas e recomendações para melhoria.
+As evidências são analisadas transversalmente quanto a quatro propriedades:
+
+- **Suficiência:** as evidências disponíveis são adequadas e suficientemente completas para analisar o requisito?
+- **Consistência:** as evidências são coerentes entre si e com outras informações relevantes do ciclo de avaliação?
+- **Rastreabilidade:** é possível identificar a origem, a versão e a relação da evidência com a tarefa e com as conclusões produzidas?
+- **Contextualização:** a evidência e seus resultados foram interpretados considerando o contexto de uso, as limitações, os riscos e as populações ou partes interessadas relevantes?
+
+Essas propriedades apoiam a análise das evidências, mas não constituem, isoladamente, resultados de conformidade.
+
+Os resultados das diferentes dimensões subsidiam a consolidação da avaliação de conformidade da **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
+
+A maturidade não é avaliada dentro de cada dimensão nem resulta da agregação de seus resultados. Ela é inferida longitudinalmente no nível do projeto, a partir da recorrência, continuidade e rastreabilidade das práticas de IA Responsável ao longo de sucessivos ciclos de avaliação.
 
 ---
 
-## Operacionalização da Avaliação (Checklist de Avaliação)
+## Operacionalização e Mecanismos de Verificação
 
-A avaliação operacional de cada dimensão é realizada por meio de checklists específicos, disponíveis na pasta:
+A avaliação das dimensões é operacionalizada por meio de **mecanismos de verificação** adequados ao requisito, à natureza da evidência e ao contexto da tarefa.
+
+Esses mecanismos podem incluir, entre outros:
+
+- verificação documental;
+- análise de consistência entre artefatos;
+- verificação de versionamento e rastreabilidade;
+- revisão de métricas e resultados técnicos;
+- análise metodológica;
+- execução ou revisão de testes técnicos, quando aplicável;
+- análise de registros operacionais;
+- esclarecimentos ou entrevistas com a equipe do projeto;
+- verificação de registros institucionais.
+
+Checklists padronizados podem ser utilizados como instrumentos de apoio para organizar requisitos, evidências e verificações:
 
 → [Checklists de Avaliação](avaliacao/checklist.md)
 
-Cada item do checklist:
+O checklist **não substitui a análise técnica e contextual** e não determina isoladamente o resultado de conformidade.
 
-- está associado a uma dimensão
-- requer evidência documental ou técnica
-- é avaliado segundo critérios padronizados (por exemplo: presente, parcial, ausente)
+Cada requisito deve estar associado, sempre que aplicável, a:
 
-O checklist permite padronizar o processo de auditoria e garantir consistência entre avaliações.
+1. **questão ou requisito de avaliação**;
+2. **evidência esperada**;
+3. **mecanismo de verificação**;
+4. **critério de suficiência da evidência**;
+5. **análise e achados**;
+6. **pendências ou limitações**;
+7. **eventual sinal de governança**.
+
+Estados administrativos ou documentais, como evidência recebida, incompleta ou ausente, não devem ser automaticamente convertidos em resultados de conformidade.
 
 ---
 
 ## Relação com a metodologia
 
-As dimensões de IA Responsável representam a estrutura de avaliação definida pelo framework FIAR.
+As dimensões de IA Responsável representam a estrutura temática da avaliação definida pelo FIAR-Saúde.
 
-Para uma visão conceitual dos princípios do framework:
+Para uma visão conceitual dos princípios e da arquitetura do framework:
 → [Metodologia do FIAR](metodologia_fiar.md)
 
-Para o processo operacional de auditoria:
-→ [Ciclo de Auditoria](ciclo_auditoria.md)
+Para o fluxo operacional da avaliação:
+→ [Ciclo de Avaliação Técnica](ciclo_avaliacao.md)
 
-Para os níveis e critérios de maturidade:
+Para os níveis e critérios de maturidade longitudinal:
 → [Modelo de Maturidade](modelo_maturidade.md)
 
 ---
