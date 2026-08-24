@@ -108,6 +108,7 @@ Um novo projeto entra no **FIAR-Saúde** por um ciclo estruturado:
 - Trilhas de Execução → [docs/trilhas_execucao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/trilhas_execucao.md)
 - Modelo de Maturidade → [docs/modelo_maturidade.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/modelo_maturidade.md)
 - Governança Institucional  → [docs/governanca_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/governanca_avaliacao.md)
+- Mecanismos de Verificação → [mecanismos_verificacao.md](mecanismos_verificacao.md)
 
 ---
 

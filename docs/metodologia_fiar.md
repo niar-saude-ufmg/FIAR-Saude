@@ -159,6 +159,7 @@ O objetivo principal nessa etapa não é a reprovação imediata do projeto, mas
 - Modelo de Maturidade → [modelo_maturidade.md](modelo_maturidade.md)
 - Governança da Avaliação → [governanca_avaliacao.md](governanca_avaliacao.md)
 - Mapeamento de Referências → [mapeamento_referencias.md](mapeamento_referencias.md)
+- Mecanismos de Verificação → [mecanismos_verificacao.md](mecanismos_verificacao.md)
 ---
 
 ## Referências
