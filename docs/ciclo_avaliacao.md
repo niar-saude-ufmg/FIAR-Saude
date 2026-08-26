@@ -127,6 +127,23 @@ Ao final da pré-avaliação, o NIAR-Saúde deve registrar:
 - quais evidências adicionais precisam ser solicitadas;
 - se existem condições para iniciar a avaliação requisito a requisito.
 
+### Determinação de evidências adicionais
+
+A existência de diretórios, templates ou tipos de artefato previstos pelo FIAR-Saúde não implica sua obrigatoriedade para todas as tarefas.
+
+Após a pré-avaliação documental, o NIAR-Saúde deve:
+
+1. identificar os requisitos aplicáveis;
+2. verificar quais evidências já estão disponíveis;
+3. analisar se essas evidências são suficientes para os requisitos correspondentes;
+4. identificar lacunas efetivas;
+5. somente então determinar quais complementações ou evidências adicionais precisam ser solicitadas ao projeto.
+
+Artefatos como Fairness Report, Explainability Report, Registro de Decisão Técnica, RIPD ou outros documentos específicos devem ser solicitados apenas quando forem necessários para suprir uma necessidade de evidência identificada na avaliação.
+
+A necessidade da evidência precede a escolha do artefato utilizado para registrá-la.
+
+
 ---
 
 ## 5. Registro e tratamento de pendências

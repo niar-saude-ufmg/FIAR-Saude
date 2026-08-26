@@ -48,6 +48,12 @@ A inexistência de determinado teste ou artefato não constitui automaticamente 
 
 A aplicabilidade de uma dimensão não implica a obrigatoriedade de um mecanismo técnico específico. Os mecanismos devem ser selecionados em função do requisito, da tarefa, das evidências e do contexto de uso.
 
+Da mesma forma, a existência de um template ou diretório no FIAR-Audit-Template não implica que o artefato correspondente seja obrigatório para todas as tarefas.
+
+Os artefatos constituem formas possíveis de produzir ou registrar evidências. Sua necessidade deve decorrer dos requisitos aplicáveis, das evidências já disponíveis e das lacunas identificadas durante a avaliação.
+
+Quando a evidência necessária já estiver suficientemente documentada em outro artefato ou registro rastreável, não é necessário exigir duplicação documental apenas para preencher um template específico.
+
 ### 3.2 Fundamentação em evidências
 
 Toda conclusão deve poder ser relacionada às evidências utilizadas.
