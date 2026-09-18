@@ -1,13 +1,14 @@
 # Avaliação de Responsabilização
 
-A dimensão de **Responsabilização** do FIAR-Saúde avalia se responsabilidades, decisões e mecanismos de prestação de contas relacionados à Tarefa de IA estão claramente definidos e documentados ao longo de seu ciclo de vida.
+A dimensão de **Responsabilização** do FIAR-Saúde avalia se responsabilidades por decisões, ações e consequências relevantes associadas à Tarefa de IA estão atribuídas de forma clara e verificável, permitindo identificar quem responde por elas e preservar evidências suficientes para prestação de contas ao longo do ciclo de vida.
 
-Em saúde pública, decisões técnicas e institucionais associadas ao desenvolvimento, validação, operação, monitoramento e uso de sistemas de IA podem envolver diferentes pessoas, equipes e instâncias. A avaliação busca verificar se é possível identificar quem possui responsabilidade por cada tipo de decisão relevante, em que contexto essa responsabilidade se aplica e como essas decisões podem ser posteriormente reconstruídas e revisadas.
+Sistemas de IA em saúde podem envolver diferentes pessoas, equipes e instâncias ao longo de seu desenvolvimento, avaliação, validação, implantação, operação e acompanhamento. Nesses contextos, a simples existência de estruturas de governança ou de registros técnicos não assegura, por si só, que seja possível determinar quem responde por determinada decisão, ação ou consequência.
 
-A responsabilização não deve ser inferida apenas a partir da autoria de documentos ou da participação técnica no projeto. Papéis institucionais, responsabilidades operacionais e competências decisórias devem ser explicitamente documentados quando relevantes.
+A Responsabilização busca evitar situações em que decisões relevantes permaneçam sem responsável identificável, responsabilidades sejam diluídas entre múltiplas partes ou ações e consequências não possam ser associadas aos atores que por elas respondem.
 
-A dimensão está alinhada a princípios de accountability presentes em referências internacionais de IA Responsável e em abordagens de governança e auditoria algorítmica que enfatizam a atribuição clara de responsabilidades e a rastreabilidade das decisões.
+A dimensão não define quais estruturas institucionais devem existir, quem possui competência formal para cada tipo de decisão, quais processos de escalonamento devem ser adotados ou como a supervisão institucional deve ser organizada. Esses aspectos pertencem principalmente à dimensão de Governança.
 
+Da mesma forma, a Responsabilização não substitui a Rastreabilidade. A Rastreabilidade permite reconstruir estados, registros, decisões, mudanças e evidências ao longo do ciclo de vida; a Responsabilização utiliza essas relações, quando necessário, para permitir identificar quem responde por decisões, ações e consequências relevantes.
 
 ---
 
@@ -15,125 +16,234 @@ A dimensão está alinhada a princípios de accountability presentes em referên
 
 A avaliação de Responsabilização busca verificar se o projeto:
 
-- identifica os papéis e responsabilidades relevantes ao longo do ciclo de vida da tarefa;
-- distingue responsabilidades técnicas, operacionais e institucionais;
-- documenta decisões relevantes e suas justificativas;
-- permite reconstruir quem decidiu, em qual papel ou instância, sobre qual questão e com base em quais evidências;
-- registra aceite de risco, condicionantes ou decisões institucionais quando aplicáveis;
-- mantém coerência entre responsabilidades declaradas e os processos efetivamente documentados;
-- atualiza responsabilidades quando mudanças organizacionais ou operacionais relevantes ocorrerem.
+- atribui de forma clara responsabilidades por decisões, ações e resultados relevantes associados à Tarefa de IA;
+- permite identificar quem tomou, aprovou ou assumiu responsabilidade por decisões relevantes;
+- preserva a relação entre decisões e suas justificativas ou fundamentos quando essa relação for necessária para prestação de contas;
+- mantém clareza de responsabilidade quando diferentes pessoas, equipes ou instituições compartilham, delegam ou transferem atividades;
+- atribui responsabilidade pelos encaminhamentos ou ações decorrentes de decisões relevantes;
+- mantém registros suficientes para que responsáveis possam explicar e prestar contas pelas decisões e ações sob sua responsabilidade;
+- permite associar consequências relevantes às decisões, ações e responsáveis correspondentes quando necessário para prestação de contas.
 
 ---
 
-## Papéis e responsabilidades
+## Atribuição de responsabilidade
 
-A avaliação considera se os papéis necessários à Tarefa de IA estão identificados de forma adequada ao contexto.
+Responsabilidades relevantes para a Tarefa de IA devem ser atribuídas de maneira suficientemente clara para que seja possível identificar quem responde por determinada decisão, ação ou resultado.
 
-Podem incluir, quando aplicáveis:
+A atribuição pode ocorrer a:
 
-- responsável pelo projeto;
-- responsável técnico pela tarefa ou sistema;
-- responsáveis por dados ou infraestrutura;
-- responsáveis pela operação e monitoramento;
-- responsáveis por validações específicas;
-- pontos focais institucionais;
-- instâncias responsáveis por decisões escalonadas;
-- Comitê Gestor, quando houver deliberação institucional.
+- pessoa;
+- papel ou função;
+- equipe;
+- unidade organizacional;
+- instância institucional;
 
-A existência de autoria, propriedade ou contribuição em Data Cards, Model Cards ou outros artefatos não deve ser utilizada, isoladamente, para inferir responsabilidade institucional.
+conforme a natureza da responsabilidade e a organização do projeto.
 
----
+O FIAR-Saúde não pressupõe que todas as responsabilidades precisem ser atribuídas nominalmente a uma pessoa física. Em determinados contextos, a atribuição a um papel, equipe ou instância pode ser adequada, desde que seja suficientemente específica para permitir identificar quem responde pelo elemento analisado.
 
-## Registro e rastreabilidade de decisões
+Responsabilidades não devem ser inferidas apenas a partir de:
 
-Decisões relevantes devem ser registradas de forma que seja possível reconstruir:
+- autoria de artigos;
+- autoria de código;
+- autoria de documentos;
+- participação em reuniões;
+- vínculo com determinada equipe;
+- participação técnica no desenvolvimento.
 
-- a decisão tomada;
-- o contexto e o problema que motivaram a decisão;
-- a pessoa, papel, equipe ou instância responsável;
-- a data ou período da decisão;
-- as evidências consideradas;
-- a justificativa;
-- eventuais alternativas avaliadas;
-- riscos, limitações ou trade-offs aceitos;
-- ações ou condicionantes decorrentes da decisão.
-
-Podem constituir evidências:
-
-- Registros de Decisão Técnica;
-- atas ou registros institucionais;
-- pareceres;
-- registros de aceite de risco;
-- decisões sobre mitigação;
-- registros de aprovação de mudanças.
-
-O FIAR-Saúde não exige necessariamente assinatura formal em todos os registros. O requisito central é que a responsabilidade e a decisão sejam identificáveis e rastreáveis de forma adequada ao contexto institucional.
+Quando uma responsabilidade for necessária à avaliação, sua atribuição deve estar sustentada por evidência explícita ou por outro registro verificável. Na ausência dessa base, a responsabilidade não deve ser inferida.
 
 ---
 
-## Aceite de risco, condicionantes e escalonamento
+## Responsabilidade por decisões
 
-Quando a avaliação identificar riscos residuais ou questões que exijam decisão institucional, deve ser possível identificar:
+Decisões relevantes associadas à Tarefa de IA devem permitir identificar, quando aplicável:
 
-- qual risco ou questão foi escalonado;
-- quais evidências fundamentaram o escalonamento;
-- qual instância possuía competência para decidir;
+- quem tomou a decisão;
+- quem a aprovou, quando aprovação distinta for necessária;
 - qual decisão foi tomada;
-- quais condicionantes, restrições ou responsabilidades foram estabelecidas;
-- como essa decisão será acompanhada.
+- qual era o objeto ou contexto da decisão;
+- quais informações ou evidências relevantes a fundamentaram;
+- qual justificativa foi registrada;
+- a que estado da tarefa a decisão se refere.
 
-Nem toda avaliação exige aceite formal de risco ou condicionantes. Esses mecanismos são aplicáveis quando a natureza do achado exige deliberação institucional.
+O nível de formalização esperado depende da materialidade da decisão.
+
+Decisões rotineiras ou de baixo impacto não precisam receber o mesmo nível de documentação exigido para decisões capazes de modificar de forma relevante:
+
+- dados utilizados;
+- modelo;
+- procedimentos;
+- riscos;
+- resultados;
+- limitações;
+- Contexto de Uso;
+- condições de continuidade ou operação.
+
+A avaliação de Responsabilização verifica a possibilidade de atribuir e explicar a decisão. A definição de quem possui competência institucional para decidir e do processo decisório aplicável pertence principalmente à dimensão de Governança.
+
+---
+
+## Responsabilidades compartilhadas, delegadas ou transferidas
+
+Tarefas de IA podem envolver múltiplas pessoas, equipes, instituições, fornecedores ou unidades organizacionais.
+
+Quando responsabilidades forem compartilhadas, delegadas ou transferidas, devem permanecer suficientemente claros:
+
+- os limites de responsabilidade de cada parte;
+- o objeto ao qual cada responsabilidade se refere;
+- eventuais mudanças na atribuição;
+- o período ou estado da tarefa ao qual a responsabilidade se aplica, quando relevante.
+
+A participação de múltiplas partes não deve tornar indistinguível quem responde por determinada decisão ou ação.
+
+Delegação de execução não implica necessariamente transferência da responsabilidade final. Quando essa distinção for relevante ao contexto avaliado, ela deve permanecer explicitamente documentada.
+
+---
+
+## Responsabilidade por ações e encaminhamentos
+
+Decisões relevantes podem gerar ações, correções, revisões, complementações, restrições, monitoramento ou outros encaminhamentos.
+
+Quando esses encaminhamentos forem materialmente relevantes, deve ser possível identificar quem responde por sua execução ou acompanhamento.
+
+Podem ser considerados, conforme o contexto:
+
+- ações técnicas;
+- complementação de evidências;
+- correções documentais;
+- mitigação de risco;
+- revisão de modelo ou dados;
+- acompanhamento de limitações;
+- atendimento de condicionantes;
+- tratamento de pendências;
+- outras providências decorrentes de decisões técnicas ou institucionais.
+
+A Responsabilização não determina qual ação deve ser escolhida nem qual fluxo institucional deve ser utilizado para defini-la. Esses aspectos podem pertencer às dimensões técnicas correspondentes ou à Governança.
+
+Seu foco é verificar se, uma vez estabelecida uma ação ou encaminhamento relevante, existe atribuição clara de quem responde por sua execução ou acompanhamento.
+
+---
+
+## Prestação de contas
+
+A prestação de contas pressupõe que os responsáveis possam explicar e sustentar, por meio de registros verificáveis, decisões e ações relevantes realizadas no âmbito de suas responsabilidades.
+
+Isso pode exigir, conforme o caso, informação suficiente para compreender:
+
+- o que foi decidido ou realizado;
+- por quem;
+- em que contexto;
+- com base em quais elementos;
+- qual justificativa foi adotada;
+- quais ações subsequentes foram atribuídas;
+- quais consequências relevantes foram observadas.
+
+Prestação de contas não exige um formato documental único.
+
+Os registros podem estar distribuídos entre diferentes artefatos, desde que seu conjunto permita reconstruir de forma suficiente a responsabilidade pelo elemento analisado.
+
+A existência de documentação, por si só, não demonstra responsabilização. Deve ser possível relacionar os registros ao responsável e ao objeto da prestação de contas.
+
+---
+
+## Responsabilidade e consequências
+
+Determinadas decisões ou ações podem produzir consequências relevantes para:
+
+- desempenho;
+- riscos;
+- limitações;
+- grupos ou populações;
+- condições de uso;
+- operação;
+- continuidade da tarefa;
+- outras dimensões de IA Responsável.
+
+Quando essas consequências forem materialmente relevantes para a prestação de contas, deve ser possível associá-las às decisões ou ações correspondentes e aos responsáveis pertinentes.
+
+Essa associação não significa que todo resultado indesejado constitua automaticamente falha do responsável identificado.
+
+A avaliação deve distinguir:
+
+- atribuição de responsabilidade;
+- ocorrência da consequência;
+- avaliação substantiva sobre adequação da decisão ou ação;
+- eventual determinação de falha, descumprimento ou responsabilidade jurídica.
+
+O FIAR-Saúde avalia a existência e a verificabilidade dos mecanismos de responsabilização no escopo do framework. Ele não substitui processos jurídicos, disciplinares, regulatórios ou profissionais de determinação de responsabilidade.
+
+---
+
+## Relação com outras dimensões
+
+A Responsabilização se relaciona de forma transversal com as demais dimensões, mas possui objeto específico.
+
+Em particular:
+
+- **Governança** avalia estruturas, competências, processos de decisão, supervisão, escalonamento e mecanismos institucionais de resposta; a Responsabilização verifica quem responde por decisões, ações e consequências produzidas nesses processos;
+- **Rastreabilidade** avalia se estados, versões, evidências, mudanças e relações relevantes podem ser reconstruídos; a Responsabilização verifica se, dentro dessas relações, decisões e ações podem ser atribuídas aos responsáveis pertinentes;
+- **Transparência** avalia a documentação e a comunicação das características, limitações, comportamento e bases relevantes para compreensão da tarefa; a Responsabilização utiliza registros suficientes para permitir prestação de contas pelos responsáveis, sem exigir necessariamente comunicação pública dessas informações;
+- **Justiça, Privacidade e Segurança** podem identificar riscos, achados ou ações específicas; a Responsabilização pode exigir que decisões ou ações decorrentes desses achados possuam responsável identificável.
+
+Uma mesma evidência pode sustentar requisitos de diferentes dimensões sem que esses requisitos sejam equivalentes.
 
 ---
 
 ## Riscos associados
 
-Limitações na Responsabilização podem contribuir para riscos como:
+Limitações de Responsabilização podem contribuir para riscos como:
 
-- impossibilidade de identificar quem possui competência ou responsabilidade por decisões relevantes;
-- decisões técnicas ou institucionais sem justificativa rastreável;
-- dificuldade de revisar ou investigar falhas;
-- conflitos ou sobreposição de responsabilidades;
-- ausência de registro sobre riscos residuais ou trade-offs aceitos;
-- condicionantes sem responsável definido para acompanhamento;
-- mudanças organizacionais que deixem responsabilidades desatualizadas.
+- decisões relevantes sem responsável identificável;
+- responsabilidades atribuídas apenas de forma implícita;
+- diluição de responsabilidade entre múltiplas pessoas, equipes ou instituições;
+- impossibilidade de determinar quem tomou ou aprovou determinada decisão;
+- ausência de justificativa verificável para decisões relevantes;
+- ações ou encaminhamentos sem responsável por execução ou acompanhamento;
+- dificuldade de prestar contas sobre decisões após mudanças de equipe ou versão;
+- impossibilidade de relacionar consequências relevantes às decisões e responsáveis pertinentes;
+- transferência informal de responsabilidade sem registro;
+- confusão entre autoria técnica e responsabilidade institucional;
+- impossibilidade de distinguir responsabilidade pela produção de evidências, pela avaliação técnica e pela deliberação institucional.
 
 ---
 
 ## Evidências esperadas
 
-Dependendo da tarefa e do contexto, podem constituir evidências relevantes:
+Dependendo da Tarefa de IA, da Versão Avaliável, do Contexto de Uso e da Trilha de Execução, podem constituir evidências relevantes:
 
-- Formulário de Entrada;
 - Identificação da Avaliação;
-- definição formal de papéis e responsabilidades;
+- documentação de papéis e responsabilidades;
+- registros institucionais de designação;
+- registros administrativos;
 - Registros de Decisão Técnica;
-- atas ou registros de reuniões e comitês;
-- registros de validação ou aprovação;
-- documentação de aceite de risco residual;
-- condicionantes institucionais;
-- registros de escalonamento;
-- documentação de responsabilidades operacionais;
-- histórico de mudanças de responsáveis;
-- registros de acompanhamento de decisões.
+- Registros de Decisão Institucional;
+- atas ou pareceres;
+- registros de aprovação;
+- documentação de ações ou encaminhamentos;
+- registro de pendências e respectivas responsabilidades;
+- condicionantes e registros de acompanhamento;
+- documentação de mudanças de responsabilidade;
+- histórico de decisões;
+- registros de correções ou medidas adotadas;
+- outros registros capazes de associar decisões, ações ou consequências aos responsáveis pertinentes.
 
-A ausência de determinada evidência deve ser analisada quanto à sua aplicabilidade ao requisito e ao contexto. Ela não implica automaticamente Não Conformidade nem determina o nível de maturidade do projeto.
+A existência de um documento específico de papéis e responsabilidades, matriz RACI, Registro de Decisão Técnica ou outro artefato não constitui requisito universal do FIAR-Saúde.
+
+A ausência de determinado artefato deve ser analisada quanto à necessidade da evidência para o requisito aplicável. Ela não implica automaticamente Não Conformidade.
 
 ---
 
 ## Requisitos e mecanismos de verificação
 
-| ID | Requisito ou questão de avaliação | Exemplos de evidências | Mecanismos de verificação |
-|---|---|---|---|
-| RES-01 | Os papéis e responsabilidades relevantes para a tarefa estão identificados? | Formulário de Entrada, Identificação da Avaliação, documentação institucional | Verificação documental; análise de suficiência |
-| RES-02 | Responsabilidades técnicas, operacionais e institucionais estão diferenciadas quando necessário? | matriz de responsabilidades, documentação do projeto | Verificação documental; consistência cruzada |
-| RES-03 | Decisões relevantes estão documentadas com responsável, contexto e justificativa identificáveis? | Registro de Decisão Técnica, atas, pareceres | Verificação documental; rastreabilidade |
-| RES-04 | As evidências utilizadas para fundamentar decisões relevantes podem ser reconstruídas? | decisões técnicas, relatórios, avaliações | Consistência cruzada; rastreabilidade entre evidência e decisão |
-| RES-05 | Riscos residuais ou trade-offs relevantes foram atribuídos à instância competente para decisão quando necessário? | registro de escalonamento, pareceres, decisões institucionais | Verificação institucional; contextualização |
-| RES-06 | Aceites de risco, condicionantes ou restrições estão formalmente registrados quando aplicáveis? | atas, pareceres, registros do Comitê Gestor | Verificação institucional; rastreabilidade |
-| RES-07 | Condicionantes ou decisões possuem responsáveis definidos para execução ou acompanhamento? | decisão institucional, plano de ação, registro de pendências | Verificação documental; rastreabilidade |
-| RES-08 | Há consistência entre responsabilidades declaradas nos documentos e os papéis efetivamente associados às decisões registradas? | Formulário de Entrada, artefatos, decisões técnicas | Consistência cruzada |
-| RES-09 | Mudanças relevantes de equipe, papel ou responsabilidade são registradas quando afetam a tarefa? | histórico de validação, registros institucionais | Verificação de rastreabilidade e versionamento |
+| ID     | Requisito ou questão de avaliação                                                                                                                                     | Exemplos de evidências                                                                                                            | Mecanismos de verificação                                                                                |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| RES-01 | As responsabilidades por decisões, ações e resultados relevantes associados à tarefa estão atribuídas de forma clara e identificável?                             | documentação de papéis e responsabilidades, registros de designação, Identificação da Avaliação, registros institucionais | verificação documental; consistência cruzada                                                            |
+| RES-02 | Decisões relevantes podem ser associadas ao responsável que as tomou ou aprovou e à justificativa ou fundamento correspondente?                                       | Registro de Decisão Técnica, Registro de Decisão Institucional, atas, pareceres, histórico de decisões                        | rastreabilidade entre decisão, responsável e fundamento; verificação documental; consistência cruzada |
+| RES-03 | Quando responsabilidades são compartilhadas, delegadas ou transferidas, permanecem claros os limites de responsabilidade entre as partes envolvidas?                    | documentação de responsabilidades, registros de delegação, acordos institucionais, registros de mudança de responsáveis      | verificação documental; consistência entre fontes; análise da atribuição de responsabilidades        |
+| RES-04 | Ações ou encaminhamentos decorrentes de decisões relevantes possuem responsável identificável por sua execução ou acompanhamento?                                 | registros de encaminhamento, planos de ação, pendências, condicionantes, registros de acompanhamento                            | rastreabilidade entre decisão, ação e responsável; verificação de acompanhamento                     |
+| RES-05 | Existem registros suficientes para que os responsáveis possam prestar contas sobre decisões e ações relevantes sob sua responsabilidade?                             | registros de decisão, justificativas, evidências utilizadas, histórico de ações, relatórios ou registros equivalentes        | verificação documental; análise de suficiência; rastreabilidade da prestação de contas               |
+| RES-06 | Quando decisões ou ações produzem consequências relevantes, é possível associá-las aos responsáveis e aos registros necessários para sua prestação de contas? | registros de resultados, incidentes, limitações, ações corretivas, decisões técnicas ou institucionais                       | rastreabilidade entre consequência, decisão e responsável; consistência cruzada; análise contextual   |
 
 ---
 
@@ -141,10 +251,12 @@ A ausência de determinada evidência deve ser analisada quanto à sua aplicabil
 
 Para cada requisito aplicável, as evidências devem ser analisadas considerando:
 
-- **Suficiência:** há informação adequada para identificar responsabilidades e reconstruir decisões relevantes?
-- **Consistência:** os papéis e responsabilidades declarados são coerentes entre os diferentes documentos e registros?
-- **Rastreabilidade:** é possível relacionar decisões, responsáveis, evidências e ações correspondentes?
-- **Contextualização:** o nível de formalização das responsabilidades e decisões é adequado ao tipo de tarefa, à Trilha de Execução e ao Contexto de Uso?
+- **Suficiência:** os registros permitem identificar adequadamente quem responde pela decisão, ação ou consequência analisada?
+- **Consistência:** as diferentes fontes atribuem responsabilidades de forma compatível?
+- **Rastreabilidade:** é possível relacionar responsabilidade, decisão, ação e registros pertinentes?
+- **Pertinência:** a responsabilidade identificada corresponde à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso considerados?
+- **Atualidade:** a atribuição de responsabilidade permanece válida para o estado da tarefa considerado no ciclo?
+- **Contextualização:** o nível de formalização da responsabilização é proporcional à natureza da decisão, da ação, da consequência e da Trilha de Execução?
 
 Essas propriedades apoiam a avaliação das evidências e não constituem, isoladamente, resultados de conformidade.
 
@@ -160,12 +272,4 @@ Seus resultados são considerados juntamente com as demais dimensões na consoli
 
 **Tarefa de IA + Versão Avaliável + Contexto de Uso.**
 
-A maturidade é inferida separadamente no nível do projeto e de forma longitudinal.
-
----
-
-## Relação com o processo de avaliação
-
-Para o processo completo de avaliação, consulte:
-
-→ [Ciclo de Avaliação Técnica](../ciclo_avaliacao.md)
+A maturidade é inferida separadamente no nível do projeto e de forma longitudinal, a partir da recorrência, continuidade e rastreabilidade das práticas de IA Responsável observadas ao longo de sucessivos ciclos.
