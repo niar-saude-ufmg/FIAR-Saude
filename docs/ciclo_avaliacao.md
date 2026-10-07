@@ -1,312 +1,162 @@
-# Ciclo de Avaliação Técnica do FIAR-Saúde
+# Ciclo de Avaliação do FIAR-Saúde
 
-O FIAR-Saúde operacionaliza a Inteligência Artificial Responsável por meio de um ciclo estruturado de produção, organização, verificação e avaliação de evidências ao longo do ciclo de vida das tarefas de IA.
+O FIAR-Saúde avalia práticas de IA Responsável a partir de evidências, em ciclos de avaliação. O FIAR-Saúde não é certificação, validação clínica nem autorização de implantação.
 
-O processo distingue três responsabilidades institucionais:
+Este documento registra as regras gerais. Os campos e as instruções de preenchimento estão no Formulário de Entrada, nos modelos e no guia operacional do repositório FIAR-Audit-Template.
 
-* **Equipe do projeto:** fornece informações sobre a iniciativa e produz, mantém e atualiza as evidências técnicas sob sua responsabilidade;
-* **NIAR-Saúde:** delimita a avaliação, orienta a produção de evidências, verifica sua suficiência, consistência e rastreabilidade e conduz a avaliação técnica;
-* **Instância de governança:** delibera quando a avaliação exige decisão institucional, como aceite de risco, definição de condicionantes ou restrições de uso.
+## Papéis
 
-A avaliação de conformidade não recai sobre o projeto ou sobre o modelo isoladamente. Sua unidade é a combinação entre:
+* **Equipe do projeto:** fornece informações sobre a iniciativa, produz e mantém os artefatos sob sua responsabilidade e responde às perguntas do NIAR-Saúde.
+* **NIAR-Saúde:** delimita o ciclo, determina a aplicabilidade dos requisitos, avalia, faz recomendações e prepara o relatório ao Comitê Gestor. Não edita os artefatos da equipe.
+* **Comitê Gestor:** valida os relatórios de avaliação e delibera, no âmbito de sua competência institucional, sobre riscos e questões encaminhadas, inclusive condicionantes e restrições de uso. Pode solicitar esclarecimentos ou revisão ao NIAR-Saúde, sem substituir a avaliação técnica. A aceitação de risco não altera, por si só, os resultados dos requisitos.
 
-**Tarefa de IA + Versão Avaliável + Contexto de Uso.**
+## Conceitos
 
-A maturidade, por sua vez, é uma propriedade longitudinal do projeto e é inferida a partir da recorrência, continuidade e rastreabilidade das práticas de IA Responsável observadas ao longo de sucessivos ciclos de avaliação.
+* **Projeto:** iniciativa responsável por uma ou mais Tarefas de IA; guarda o histórico dos ciclos.
+* **Tarefa de IA:** modelo, dados e procedimentos orientados a um objetivo específico, que pode ser clínico, assistencial, operacional ou de pesquisa. Mudanças no objetivo, no tipo de resultado ou no escopo essencial podem caracterizar uma nova tarefa, conforme análise justificada do NIAR-Saúde. A delimitação das tarefas cabe ao NIAR-Saúde.
+* **Versão Avaliável:** estado da tarefa avaliado no ciclo (modelo, dados e procedimentos). A falta de um identificador exato não impede automaticamente a avaliação, mas é preciso haver informação suficiente para relacionar as evidências à tarefa, ao estado avaliado e ao contexto.
+* **Contexto de Uso:** condições nas quais a tarefa é desenvolvida, avaliada ou utilizada, incluindo finalidade, usuários, população, ambiente e restrições relevantes. O contexto considerado no ciclo é explicitado. O uso pretendido que não for objeto do ciclo é registrado separadamente.
+* **Unidade de avaliação:** Tarefa de IA + Versão Avaliável + Contexto de Uso.
+* **Ciclo de avaliação:** uma avaliação de uma unidade, da delimitação ao fechamento.
+* **Trilha de Execução:** Experimental (pesquisa, desenvolvimento ou validação, sem operação ativa) ou Produção (em operação ativa). Orienta a aplicabilidade dos requisitos e a natureza das evidências necessárias.
+* **Evidência e fonte:** evidência é a informação que responde a um requisito; fonte é onde ela está (artefato ou comunicação registrada).
+* **Maturidade:** propriedade longitudinal do projeto, a ser definida em revisão posterior.
 
----
+## Etapas do ciclo
 
-## 1. Entrada do projeto
+### 1. Entrada
 
-O ciclo inicia-se com o fornecimento, pela equipe do projeto, de informações básicas necessárias para compreender a iniciativa.
+O Formulário de Entrada é aberto na entrada do projeto e atualizado quando houver mudanças relevantes, sem exigir novo preenchimento integral a cada ciclo. Reúne informações gerais do projeto e blocos específicos para as Tarefas de IA apresentadas para avaliação.
 
-O Formulário de Entrada registra, entre outros elementos:
+A equipe descreve as tarefas conforme sua compreensão, com base nas informações disponíveis, sem precisar produzir novas análises. O NIAR-Saúde confirma ou ajusta a delimitação das tarefas e das unidades de avaliação.
 
-* identificação do projeto;
-* descrição da solução;
-* problema ou objetivo que orienta seu desenvolvimento;
-* uso atual e uso pretendido;
-* estágio de desenvolvimento ou operação;
-* dados e modelos envolvidos;
-* pessoas ou grupos potencialmente afetados;
-* responsáveis e pontos de contato conhecidos;
-* documentos e aprovações já existentes;
-* limitações ou riscos já identificados.
+Os identificadores usados no formulário relacionam suas informações internas e não definem, por si só, unidades de avaliação.
 
-O objetivo dessa etapa é fornecer ao NIAR-Saúde informações suficientes para iniciar a delimitação da avaliação, sem exigir que a equipe produza antecipadamente novas análises técnicas.
+As respostas da equipe subsidiam a delimitação e a determinação da aplicabilidade dos requisitos, que cabem ao NIAR-Saúde.
 
----
+### 2. Delimitação
 
-## 2. Triagem e identificação da avaliação
+Com base no formulário e nas demais fontes disponíveis, o NIAR-Saúde confirma ou ajusta a delimitação e registra a Tarefa de IA, a Versão Avaliável, o Contexto de Uso avaliado, a Trilha, o escopo e as fontes. O uso pretendido que não for objeto do ciclo é registrado separadamente.
 
-O NIAR-Saúde analisa as informações iniciais para determinar o objeto da avaliação.
+Por padrão, o ciclo considera o contexto atual. Um contexto de uso pretendido pode ser objeto de avaliação antes de sua implementação, desde que isso esteja explicitamente delimitado e justificado. Nesse caso, a análise distingue práticas e condições já existentes daquelas apenas planejadas, sem tratar planos como evidência de execução. A mera indicação de um uso futuro no formulário não o inclui automaticamente no escopo do ciclo.
 
-São definidos:
+Avaliar um uso pretendido não altera, por si só, a Trilha de Execução atual da tarefa nem demonstra atendimento a requisitos que dependam de evidências de operação.
 
-* o projeto ao qual a avaliação pertence;
-* a Tarefa de IA;
-* a Versão Avaliável;
-* o Contexto de Uso;
-* a Trilha de Execução;
-* o escopo da avaliação;
-* os artefatos e evidências inicialmente necessários.
+A etapa termina com a decisão de que o ciclo está pronto para avaliação. Lacunas na identificação da versão são registradas como limitações, desde que as evidências possam ser relacionadas à tarefa, ao estado avaliado e ao contexto.
 
-Uma **Tarefa de IA** é definida pela combinação de modelo, dados, procedimentos e objetivo clínico ou operacional situada em determinado contexto de uso.
+Somente fontes localizadas e verificadas quanto à pertinência ao objeto avaliado podem sustentar a avaliação. Fontes de ciclos anteriores podem ser reutilizadas quando permanecerem pertinentes e atuais. Lembranças de conversas ou registros ainda não verificados servem apenas como pistas para localizar evidências.
 
-A **Versão Avaliável** corresponde a uma configuração da tarefa que introduz mudança relevante no modelo, nos dados, nos procedimentos ou no contexto de uso e que, por isso, requer nova avaliação integral ou parcial.
+### 3. Avaliação por requisito
 
-A tarefa é classificada em uma das seguintes trilhas:
+Para cada requisito das dimensões operacionalizadas, o NIAR-Saúde:
 
-* **Trilha Experimental:** pesquisa, experimentação, desenvolvimento ou validação metodológica sem integração ativa a um sistema em operação;
-* **Trilha Produção:** tarefa integrada a um sistema em operação ativa.
+1. determina a aplicabilidade, com justificativa, antes de julgar o atendimento, consultando as informações factuais das fontes;
+2. identifica o que precisa ser demonstrado;
+3. localiza as evidências nas fontes disponíveis;
+4. analisa suficiência, consistência, rastreabilidade e pertinência;
+5. atribui o resultado.
 
-Quando as informações disponíveis forem insuficientes ou contraditórias, o NIAR-Saúde poderá solicitar esclarecimentos adicionais ou realizar entrevista com a equipe do projeto.
+A existência de um template ou tipo de artefato não o torna obrigatório. A necessidade da evidência precede a escolha do artefato. A avaliação responde ao requisito; não verifica apenas a existência de documentos.
 
----
+### 4. Rodadas com a equipe
 
-## 3. Solicitação e produção de evidências
+As perguntas à equipe nascem das pendências destinadas a ela e são enviadas em rodadas. A equipe responde pelo canal que preferir. A resposta é registrada como comunicação, analisada pelo NIAR-Saúde e citada como fonte.
 
-Com o objeto da avaliação delimitado, o NIAR-Saúde identifica as evidências necessárias para aquele ciclo.
+Não se exige atualizar um artefato apenas para transcrever uma resposta já registrada. A atualização pode ser necessária quando o próprio requisito exigir documentação atualizada ou comunicação a determinado público.
 
-Os projetos permanecem responsáveis pela produção e manutenção dos artefatos técnicos sob sua responsabilidade.
+### 5. Fechamento
 
-Entre os artefatos de desenvolvimento podem estar:
+O NIAR-Saúde registra a unidade avaliada, a cobertura da avaliação, os resultados por requisito e suas justificativas, as fontes utilizadas, as limitações e as pendências remanescentes.
 
-* Data Card;
-* Model Card;
-* Fairness Report;
-* Explainability Report;
-* Registro de Decisão Técnica;
-* documentação de privacidade;
-* aprovação ética, quando aplicável;
-* outros registros técnicos ou institucionais necessários ao contexto da tarefa.
+O fechamento pode ocorrer com resultados Inconclusivos, desde que seus motivos e as necessidades de acompanhamento estejam explícitos. Encerrar o ciclo não significa encerrar automaticamente as pendências.
 
-Tarefas na Trilha Produção podem demandar também artefatos operacionais, como:
+As evidências, os resultados e as decisões permanecem vinculados à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso correspondentes. São registrados os encaminhamentos e os gatilhos de reavaliação.
 
-* relatórios de monitoramento;
-* registros de incidentes;
-* histórico de versões;
-* logs operacionais;
-* registros de reimplantação;
-* evidências de revisão periódica formal.
+Quando houver gatilho de envio, o NIAR-Saúde prepara o relatório ao Comitê Gestor. A cobertura parcial não autoriza uma conclusão global de atendimento pelo projeto.
 
-O FIAR-Saúde não pressupõe um conjunto universal e rígido de artefatos. As evidências exigidas devem ser proporcionais à tarefa, à trilha, ao contexto de uso e às dimensões de IA Responsável aplicáveis.
+## Resultados por requisito
 
----
+* **Atendido:** a evidência verificada sustenta o atendimento.
+* **Não atendido:** a evidência verificada é suficiente para mostrar que o requisito não é cumprido.
+* **Inconclusivo:** a evidência disponível não permite concluir se o requisito é ou não atendido. Registra-se o motivo.
+* **Não aplicável:** a condição pressuposta pelo requisito não existe na unidade avaliada, com justificativa.
 
-## 4. Controle documental e pré-avaliação
+Quando não for possível determinar a aplicabilidade, registra-se Inconclusivo, com o motivo “aplicabilidade não determinada”, e abre-se a pendência necessária para esclarecer a condição objetiva do requisito. Isso não equivale a considerar o requisito aplicável ou não aplicável.
 
-Antes da avaliação requisito a requisito, o NIAR-Saúde realiza uma pré-avaliação documental para verificar se existem condições suficientes para iniciar a análise técnica.
+Atendimento parcial ou prática apenas planejada não levam automaticamente a Inconclusivo. Distingue-se insuficiência de evidência (Inconclusivo) de evidência suficiente de não atendimento (Não atendido).
 
-Essa etapa inclui:
+Ausência de artefato não é resultado. Um requisito não é não aplicável apenas porque a evidência está ausente.
 
-- confirmação da Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha de Execução;
-- inventário dos artefatos efetivamente disponíveis;
-- identificação das evidências relevantes contidas nos documentos;
-- verificação cruzada entre artefatos;
-- identificação de informações ausentes, ambiguidades e divergências;
-- identificação e registro inicial de pendências;
-- determinação das evidências adicionais realmente necessárias.
+## Pendências
 
-A pré-avaliação documental não produz resultado de conformidade.
+* Uma pendência é uma questão que precisa ser resolvida para delimitar a avaliação, determinar a aplicabilidade de um requisito ou concluir sua análise. Está sempre ligada à delimitação ou a um requisito.
+* Antes de abrir uma pendência, verifica-se se a questão é necessária, se a informação já está em alguma fonte e se já foi respondida.
+* Destinatário: equipe, quando depende dela; NIAR-Saúde, para verificação interna ou decisão metodológica ainda não tomada. Questões internas não são transferidas à equipe.
+* A pendência bloqueia apenas o que depende dela.
+* Estados: aberta, respondida, encerrada, cancelada (com motivo). Uma resposta recebida é analisada e não encerra automaticamente a pendência. Só o NIAR-Saúde encerra, citando a fonte.
+* Requisito com pendência aberta só fica Inconclusivo quando a pendência impede a conclusão. Se já houver evidência suficiente de não atendimento, esse resultado é registrado.
 
-Somente fontes verificadas no ciclo atual podem ser tratadas como evidências da avaliação. Informações provenientes de conversas anteriores, memória do sistema ou registros históricos não verificados podem ser utilizadas apenas como pistas para localização de evidências.
+## Decisões metodológicas e informações não confirmadas
 
-O procedimento detalhado está definido em:
+* Decisões metodológicas já tomadas são registradas no documento que afetam, com justificativa.
+* Informações factuais são registradas com suas fontes. Uma informação suficientemente documentada não exige nova confirmação da equipe apenas para repetir o que já consta da fonte.
+* Inferências ainda não sustentadas suficientemente são identificadas como hipóteses do NIAR-Saúde, com sua base e limitação. Não substituem fatos demonstrados.
+* Responsabilidades técnicas não são estabelecidas por dedução do avaliador. Quando não estiverem documentadas suficientemente, permanecem não confirmadas. Solicita-se esclarecimento somente quando necessário à delimitação ou à análise de um requisito.
 
-→ [Protocolo de Pré-Avaliação Documental](protocolo_pre_avaliacao_documental.md)
+## Inconsistências
 
-### Saída da etapa
+Inconsistência é uma contradição confirmada dentro de uma fonte ou entre fontes sobre o mesmo fato, versão e contexto. Ausência de informação, dúvida interpretativa ou evidência ainda não fornecida não constituem inconsistência.
 
-Ao final da pré-avaliação, o NIAR-Saúde deve registrar:
+A inconsistência é registrada na delimitação ou na análise do requisito afetado. Gera pendência quando exigir esclarecimento necessário à avaliação, com destinatário definido conforme quem pode resolvê-la.
 
-- se a unidade de avaliação está suficientemente delimitada;
-- quais artefatos foram recebidos;
-- quais verificações cruzadas foram realizadas;
-- quais pendências permanecem;
-- quais evidências adicionais precisam ser solicitadas;
-- se existem condições para iniciar a avaliação requisito a requisito.
+## Encaminhamentos
 
-### Determinação de evidências adicionais
+* **Recomendação do NIAR-Saúde:** sugestão à equipe; não é obrigatória e não altera resultados.
+* **Questão para o Comitê Gestor:** aceite de risco, restrição de uso, definição de responsabilidades ou conflito que ultrapasse a avaliação técnica.
 
-A existência de diretórios, templates ou tipos de artefato previstos pelo FIAR-Saúde não implica sua obrigatoriedade para todas as tarefas.
+Condicionantes são definidas apenas pelo Comitê Gestor.
 
-Após a pré-avaliação documental, o NIAR-Saúde deve:
+## Relatório ao Comitê Gestor
 
-1. identificar os requisitos aplicáveis;
-2. verificar quais evidências já estão disponíveis;
-3. analisar se essas evidências são suficientes para os requisitos correspondentes;
-4. identificar lacunas efetivas;
-5. somente então determinar quais complementações ou evidências adicionais precisam ser solicitadas ao projeto.
+O relatório é por projeto, em linguagem simples, e descreve a cobertura da avaliação, os resultados, os riscos identificados, as recomendações e a decisão solicitada. Não classifica a aceitabilidade dos riscos.
 
-Artefatos como Fairness Report, Explainability Report, Registro de Decisão Técnica, RIPD ou outros documentos específicos devem ser solicitados apenas quando forem necessários para suprir uma necessidade de evidência identificada na avaliação.
+É enviado quando houver:
 
-A necessidade da evidência precede a escolha do artefato utilizado para registrá-la.
+1. primeira avaliação concluída;
+2. resultado que muda de categoria, ou risco novo ou agravado, mesmo sem mudança de categoria;
+3. mudança de contexto para uso real ou entrada na Trilha Produção;
+4. questão para o Comitê;
+5. revisão periódica, se definida.
 
+Ciclos sem esses efeitos entram no relatório seguinte. Cada emissão do relatório identifica os ciclos e as unidades de avaliação abrangidos. A decisão do Comitê é registrada e vinculada à emissão apreciada.
 
----
+A aceitação de riscos vale exclusivamente para as tarefas, versões, contextos e condições explicitados na decisão.
 
-## 5. Registro e tratamento de pendências
+## Mudanças relevantes
 
-As pendências identificadas durante a pré-avaliação documental devem ser registradas e tratadas de forma rastreável antes ou durante a avaliação técnica, conforme seu impacto.
+Mudanças como retreinamento, alteração dos dados, das entradas ou saídas, da arquitetura, da população, do contexto de uso, integração em produção ou incidentes relevantes são analisadas pelo impacto. Uma mudança de uso prevista pode ser avaliada antes de seu início, quando pertinente. Há quatro tratamentos possíveis:
 
-Pendências materiais na delimitação da **Tarefa de IA**, da **Versão Avaliável**, do **Contexto de Uso** ou da **Trilha de Execução** devem ser resolvidas antes do início da avaliação requisito a requisito.
+1. apenas registrar a mudança;
+2. reavaliar os requisitos afetados;
+3. abrir novo ciclo (nova versão ou novo contexto);
+4. delimitar nova Tarefa de IA.
 
-Outras pendências podem ser tratadas durante o ciclo, desde que seu impacto sobre a avaliação esteja explicitamente registrado.
+A escolha e sua justificativa são registradas.
 
-As pendências podem envolver:
-
-* informação;
-* evidência;
-* análise;
-* inconsistência documental;
-* enquadramento metodológico;
-* decisão institucional.
-
-Somente as pendências que dependem da equipe do projeto devem ser encaminhadas ao projeto para complementação.
-
-Uma inconsistência deve ser registrada como tal somente quando houver divergência efetiva entre fontes ou evidências. Ausência de informação, dúvida interpretativa ou evidência ainda não fornecida não constituem, isoladamente, inconsistência.
-
-Após a complementação, os registros de evidências e pendências são atualizados.
-
----
-
-## 6. Avaliação técnica por dimensão
-
-Quando houver evidências suficientes para análise, o NIAR-Saúde conduz a avaliação das dimensões de IA Responsável aplicáveis:
-
-* Governança;
-* Segurança;
-* Privacidade;
-* Responsabilização;
-* Rastreabilidade;
-* Justiça;
-* Transparência.
-
-Para cada dimensão, a avaliação deve explicitar:
-
-* requisito ou questão avaliada;
-* evidências utilizadas;
-* mecanismo de verificação aplicado;
-* análise realizada;
-* limitações da evidência;
-* pendências remanescentes;
-* achados relevantes;
-* recomendações;
-* eventual necessidade de escalonamento.
-
-A avaliação não se limita à verificação da existência de documentos. As evidências são analisadas quanto à sua **suficiência, consistência, rastreabilidade e adequação ao contexto de uso**.
-
-Diferentes requisitos podem exigir diferentes mecanismos de verificação, incluindo análise documental, consistência cruzada entre artefatos, métricas, testes técnicos, revisão metodológica, esclarecimentos com a equipe ou análise institucional.
-
----
-
-## 7. Consolidação do resultado de conformidade
-
-Os resultados das avaliações por dimensão são consolidados pelo NIAR-Saúde.
-
-O resultado refere-se exclusivamente à combinação:
-
-**Tarefa de IA + Versão Avaliável + Contexto de Uso.**
-
-Os estados de conformidade são:
-
-* **Conforme:** as evidências disponíveis sustentam o atendimento dos requisitos aplicáveis ao ciclo avaliado;
-* **Pendente:** existem questões, evidências ou ações ainda necessárias para concluir ou sustentar a avaliação;
-* **Não Conforme:** existem requisitos aplicáveis não atendidos ou evidências suficientes de inadequação relevante em relação aos critérios estabelecidos.
-
-A conformidade é pontual e não deve ser confundida com a maturidade do projeto.
-
-Uma versão não conforme não implica, por si só, regressão da maturidade do projeto.
-
----
-
-## 8. Sinais de governança e escalonamento
-
-Achados identificados durante a avaliação podem produzir sinais de governança.
-
-Esses sinais podem indicar, por exemplo:
-
-* necessidade de mitigação;
-* necessidade de monitoramento adicional;
-* risco residual significativo;
-* necessidade de restrição de uso;
-* necessidade de revisão técnica;
-* necessidade de aceite institucional de risco;
-* necessidade de definição de condicionantes.
-
-Quando a questão ultrapassar o escopo da avaliação técnica de rotina, ela deverá ser encaminhada à instância de governança responsável pela deliberação institucional.
-
-O NIAR-Saúde subsidia essa decisão por meio das evidências e análises produzidas, mas não substitui a instância deliberativa.
-
----
-
-## 9. Encerramento do ciclo
-
-O ciclo é encerrado com o registro de:
-
-* objeto avaliado;
-* evidências consideradas;
-* avaliações por dimensão;
-* resultado de conformidade;
-* pendências remanescentes;
-* condicionantes, quando houver;
-* decisões institucionais associadas;
-* próximos gatilhos de reavaliação.
-
-Toda evidência e decisão relevante deve permanecer vinculada à Tarefa, à Versão Avaliável e ao Contexto de Uso correspondentes.
-
----
-
-## 10. Reavaliação e acompanhamento longitudinal
-
-O FIAR-Saúde acompanha a evolução das tarefas ao longo do tempo.
-
-Mudanças relevantes podem iniciar novo ciclo de avaliação, integral ou parcial. Entre os possíveis gatilhos estão:
-
-* retreinamento do modelo;
-* alteração relevante do conjunto de dados;
-* mudança de arquitetura;
-* alteração das entradas ou saídas;
-* expansão do contexto de uso;
-* mudança da população afetada;
-* incidentes relevantes;
-* integração da tarefa em ambiente de produção.
-
-A recorrência das práticas de documentação, avaliação, decisão e monitoramento ao longo de sucessivas versões avaliáveis constitui a base para a inferência longitudinal da maturidade do projeto.
-
-A maturidade não é obtida pela agregação de resultados de checklist nem representa a qualidade de uma versão isolada.
-
----
-
-## Visão resumida do ciclo
+## Visão resumida
 
 ```text
-Entrada do projeto
+Entrada (formulário aberto na entrada e atualizado quando há mudança relevante)
         ↓
-Triagem pelo NIAR-Saúde
+Delimitação: Tarefa + Versão + Contexto, Trilha, fontes
         ↓
-Identificação da Tarefa + Versão Avaliável + Contexto de Uso
+Avaliação por requisito  ⇄  Rodadas com a equipe
         ↓
-Definição das evidências necessárias
+Fechamento do ciclo
         ↓
-Produção e envio de artefatos pelo projeto
+Relatório ao Comitê Gestor, quando houver gatilho
         ↓
-Pré-avaliação documental
+Decisão do Comitê
         ↓
-Pendências e complementações, quando necessárias
-        ↓
-Avaliação técnica por dimensão
-        ↓
-Resultado de conformidade
-        ↓
-Sinais de governança
-        ↓
-Deliberação institucional, quando necessária
-        ↓
-Encerramento e acompanhamento longitudinal
-        ↓
-Nova versão avaliável / novo ciclo, quando aplicável
+Mudança relevante → registro, reavaliação, novo ciclo ou nova tarefa
 ```
-
-O ciclo de avaliação técnica constitui, portanto, o mecanismo pelo qual o FIAR-Saúde transforma dimensões de IA Responsável em evidências verificáveis, avaliações estruturadas, sinais de governança e acompanhamento ao longo do ciclo de vida.
