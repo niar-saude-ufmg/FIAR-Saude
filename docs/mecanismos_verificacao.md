@@ -157,14 +157,19 @@ A existência de um campo preenchido não implica, por si só, evidência sufici
 
 ### 4.2 Consistência cruzada entre artefatos
 
-Compara informações relacionadas presentes em diferentes evidências.
+Compara informações relacionadas presentes em diferentes evidências. Pode ser usada na delimitação do ciclo e na análise dos requisitos.
 
 Exemplos:
 
+* Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha são descritos de forma coerente entre os documentos;
 * datasets mencionados no Model Card correspondem aos Data Cards disponíveis;
-* população descrita nos dados corresponde à população considerada na avaliação de Justiça;
+* versões dos dados correspondem às versões do modelo;
+* população descrita nos dados corresponde à população analisada, inclusive na avaliação de Justiça;
+* entradas e saídas declaradas são coerentes entre os documentos;
+* métricas descritas correspondem aos resultados reportados;
 * limitações identificadas em um artefato aparecem refletidas nas análises e decisões subsequentes;
-* uso pretendido é consistente entre os documentos do ciclo.
+* decisões técnicas têm relação com as evidências disponíveis;
+* responsabilidades explicitamente declaradas são consistentes entre os documentos.
 
 Divergências confirmadas devem ser registradas como inconsistências. Ausência de informação em apenas um dos documentos não deve ser automaticamente classificada como inconsistência.
 
@@ -369,9 +374,9 @@ O mesmo resultado técnico pode ser aceitável, insuficiente ou relevante de man
 
 ## 7. Sequência de avaliação de um requisito
 
-A avaliação requisito a requisito ocorre após a pré-avaliação documental do ciclo, conforme o [Protocolo de Pré-Avaliação Documental](protocolo_pre_avaliacao_documental.md).
+A avaliação requisito a requisito ocorre após a delimitação do ciclo descrita em [ciclo_avaliacao.md](ciclo_avaliacao.md). 
 
-A pré-avaliação organiza e verifica inicialmente as fontes disponíveis; os mecanismos descritos neste documento são utilizados posteriormente para analisar as evidências em relação aos requisitos aplicáveis.
+A delimitação identifica a unidade avaliada e as fontes disponíveis; os mecanismos descritos neste documento são utilizados para analisar as evidências em relação aos requisitos aplicáveis.
 
 Para cada requisito das dimensões do FIAR-Saúde, a avaliação segue a seguinte sequência:
 
