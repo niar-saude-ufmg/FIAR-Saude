@@ -2,16 +2,16 @@
 
 ## Contexto e Motivação
 
-Frameworks de IA Responsável frequentemente estabelecem princípios éticos de alto nível — como transparência, justiça e responsabilização (*accountability*) — mas oferecem orientação limitada sobre sua implementação prática.
+Frameworks de IA Responsável frequentemente estabelecem princípios éticos de alto nível, como transparência, justiça e responsabilização (*accountability*), mas oferecem orientação limitada sobre sua implementação prática.
 
 Essa lacuna entre **princípios normativos e operacionalização** é amplamente discutida na literatura (Floridi et al., 2018; Morley et al., 2020).
 
 O FIAR-Saúde foi desenvolvido para responder a esse problema no contexto específico da saúde pública brasileira, propondo uma abordagem operacional baseada em:
 
-- documentação estruturada do sistema
+- documentação estruturada das tarefas de IA
 - evidências verificáveis ao longo do ciclo de vida da tarefa
 - avaliação sistemática por dimensões de IA Responsável
-- inferência longitudinal de maturidade institucional
+- acompanhamento das práticas ao longo de sucessivos ciclos de avaliação
 
 Diferentemente de abordagens centradas exclusivamente na avaliação interna de modelos, o FIAR-Saúde concentra-se na **governança verificável das práticas** associadas ao desenvolvimento, operação e monitoramento de sistemas de IA. Seu foco não é inspecionar diretamente as propriedades internas do modelo ou acessar ambientes restritos, mas avaliar a **suficiência, consistência, rastreabilidade e contextualização** das evidências técnicas, documentais e, quando aplicável, operacionais produzidas ao longo do ciclo de vida da tarefa, bem como a recorrência dessas práticas ao longo de sucessivos ciclos de avaliação.
 
@@ -24,10 +24,9 @@ Essa perspectiva aproxima o framework de abordagens de  **avaliação técnica i
 O FIAR-Saúde se diferencia de outros frameworks de IA Responsável por:
 
 - operacionalizar princípios éticos em **critérios verificáveis**
-- separar explicitamente **produção de evidências pelo projeto, avaliação técnica pelo NIAR-Saúde e deliberação institucional quando necessária**
+- separar explicitamente **produção de evidências pelo projeto, avaliação técnica pelo NIAR-Saúde e validação e deliberação pelo Comitê Gestor.**
 - utilizar **evidências documentadas como base da avaliação**, sem necessidade de acesso a dados sensíveis ou ambientes restritos
-- adotar um **modelo de maturidade longitudinal e cumulativo**, baseado na recorrência verificável das práticas ao longo do tempo
-- distinguir **conformidade pontual** da combinação **Tarefa de IA + Versão Avaliável + Contexto de Uso** de **maturidade longitudinal do projeto**
+- avaliar cada **Tarefa de IA + Versão Avaliável + Contexto de Uso** de forma pontual, mantendo o histórico doprojeto ao longo dos ciclos.
 - incorporar **trilhas de execução** diferenciadas conforme o destino do modelo (publicação científica ou operação ativa)
 
 Essa abordagem responde a críticas recorrentes na literatura sobre a dificuldade de traduzir princípios de IA Responsável em práticas auditáveis e mensuráveis (Mittelstadt, 2019; Raji et al., 2020).
@@ -44,7 +43,7 @@ As tarefas de IA devem possuir documentação clara sobre contexto de uso, dados
 
 ### 2. Evidências verificáveis
 
-A avaliação de IAR deve ser baseada em evidências documentadas — artefatos técnicos, registros operacionais e documentação institucional — não em autoproclamação. Não há inferência válida sem artefato correspondente.
+A avaliação de IAR deve ser baseada em evidências documentadas (artefatos técnicos, registros operacionais e documentação institucional), não em autoproclamação. Não há inferência válida sem artefato correspondente.
 
 ### 3. Separação entre produção de evidências e avaliação
 
@@ -52,17 +51,17 @@ O framework estabelece uma distinção estrutural entre a produção das evidên
 
 A equipe do projeto produz, mantém e atualiza os artefatos sob sua responsabilidade. O NIAR-Saúde delimita a avaliação, verifica as evidências e conduz a avaliação técnica de forma independente da equipe responsável pelo desenvolvimento.
 
-Quando necessário, questões que exigem aceite de risco, condicionantes ou outras decisões institucionais são encaminhadas à instância de governança responsável.
+O Comitê Gestor valida os relatórios de avaliação e delibera sobre as questões encaminhadas, como aceite de risco, condicionantes e restrições de uso, sem substituir a avaliação técnica.
 
 Essa separação contribui para a credibilidade, rastreabilidade e imparcialidade do processo (Raji et al., 2020).
 
 ### 4. Avaliação multidimensional
 
-A avaliação técnica considera sete dimensões de IA Responsável — Governança, Segurança, Privacidade, Responsabilização, Rastreabilidade, Justiça e Transparência. Essas dimensões estruturam diferentes aspectos das práticas de IA Responsável e são analisadas de forma integrada.
+A avaliação técnica considera sete dimensões de IA Responsável: Governança, Segurança, Privacidade, Responsabilização, Rastreabilidade, Justiça e Transparência. Essas dimensões estruturam diferentes aspectos das práticas de IA Responsável e são analisadas de forma integrada.
 
 ### 5. Governança longitudinal
 
-A conformidade é avaliada pontualmente por versão avaliável. A maturidade é inferida longitudinalmente a partir do histórico de conformidades do projeto, refletindo a capacidade institucional de executar práticas de IAR de forma recorrente e verificável ao longo do tempo.
+Os requisitos são avaliados pontualmente, para cada Tarefa de IA + Versão Avaliável + Contexto de Uso. O histórico dos ciclos fica registrado no projeto. A forma de inferir a maturidade a partir desse histórico será definida em revisão posterior.
 
 ---
 
@@ -75,9 +74,9 @@ A operacionalização da avaliação técnica no FIAR-Saúde segue a seguinte ca
 - **Evidências:** constituem a base utilizada para fundamentar a análise.
 - **Mecanismos de verificação:** definem como as evidências são examinadas.
 - **Suficiência, consistência, rastreabilidade e contextualização:** constituem propriedades transversais consideradas na análise das evidências.
-- **Achados e pendências:** registram os resultados da análise e as questões ainda não resolvidas.
-- **Conformidade:** constitui o resultado pontual da avaliação de uma **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
-- **Maturidade:** constitui uma inferência longitudinal no nível do projeto, baseada na recorrência, continuidade e rastreabilidade das práticas de IA Responsável ao longo de sucessivos ciclos de avaliação.
+- **Pendências:** registram as questões necessárias para delimitar a avaliação, determinar a aplicabilidade de um requisito ou concluir sua análise.
+- **Resultado por requisito:** Atendido, Não atendido, Inconclusivo ou Não aplicável, para uma **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
+- **Maturidade:** propriedade longitudinal do projeto, a ser definida em revisão posterior.
 
 ---
 
@@ -100,7 +99,9 @@ No contexto de projetos que utilizam dados de saúde, os projetos desenvolvidos 
 
 O FIAR-Saúde é um framework institucional e metodológico de governança baseada em evidências, apoiado por avaliação técnica independente das equipes responsáveis pelos projetos.
 
-- certificar modelos clínicos
+O FIAR-Saúde não tem como objetivo:
+
+- certificar modelos, tarefas ou projetos
 - garantir ausência de viés
 - substituir validação clínica
 - substituir mecanismos regulatórios ou processos formais de certificação
@@ -112,26 +113,22 @@ O FIAR-Saúde é um framework institucional e metodológico de governança basea
 
 ---
 
-## Fases do Ciclo Operacional
+## Etapas do Ciclo de Avaliação
 
-O FIAR-Saúde organiza a avaliação em um ciclo que pode ser reexecutado integral ou parcialmente quando mudanças relevantes produzirem uma nova Versão Avaliável.
+O FIAR-Saúde organiza a avaliação em ciclos. Cada ciclo avalia uma Tarefa de IA + Versão Avaliável + Contexto de Uso.
 
-| Fase                                                      | Responsável principal                    | Atividades principais                                                                                                                                                    |
-| --------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **1. Entrada e Triagem**                            | Projeto + NIAR-Saúde                     | Fornecimento das informações iniciais pelo projeto; compreensão da iniciativa; identificação de dúvidas e necessidade de esclarecimentos.                          |
-| **2. Identificação da Avaliação**               | NIAR-Saúde                               | Delimitação da**Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha**, definição do escopo e identificação das evidências inicialmente necessárias. |
-| **3. Produção e Organização das Evidências**   | Projeto                                   | Produção, atualização e envio dos artefatos técnicos e documentais aplicáveis, com orientação e padronização do NIAR-Saúde.                                   |
-| **4. Pré-Avaliação e Tratamento de Pendências** | NIAR-Saúde + Projeto, quando necessário | Verificação inicial de suficiência, consistência e rastreabilidade; registro de pendências; esclarecimentos e complementações.                                    |
-| **5. Avaliação Técnica por Dimensão**           | NIAR-Saúde                               | Aplicação dos mecanismos de verificação às evidências, análise das dimensões de IAR, registro de achados, limitações, pendências e sinais de governança.     |
-| **6. Consolidação da Conformidade**               | NIAR-Saúde                               | Consolidação do resultado referente à**Tarefa de IA + Versão Avaliável + Contexto de Uso**, expresso como Conforme, Pendente ou Não Conforme.                |
-| **7. Deliberação Institucional**                  | Comitê Gestor, quando necessária        | Deliberação sobre questões escalonadas, como aceite de risco, condicionantes, restrições ou outras decisões institucionais.                                        |
-| **8. Acompanhamento Longitudinal**                  | NIAR-Saúde + Projeto                     | Registro do histórico, acompanhamento de condicionantes e gatilhos de reavaliação e inferência longitudinal da maturidade do projeto.                                |
+| Etapa                                  | Responsável                 | O que acontece                                                                                                                 |
+| -------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **1. Entrada**                   | Equipe do projeto            | Preenche o Formulário de Entrada, atualizado quando houver mudança relevante.                                                |
+| **2. Delimitação**             | NIAR-Saúde                  | Define a Tarefa de IA, a Versão Avaliável, o Contexto de Uso, a Trilha, o escopo e as fontes.                                |
+| **3. Avaliação por requisito** | NIAR-Saúde                  | Determina a aplicabilidade e atribui o resultado de cada requisito, com base nas evidências.                                  |
+| **4. Rodadas com a equipe**      | NIAR-Saúde e equipe         | Perguntas ligadas às pendências; as respostas são registradas como fonte.                                                   |
+| **5. Fechamento**                | NIAR-Saúde                  | Registra resultados, limitações, pendências remanescentes e encaminhamentos.                                                |
+| **Relatório e decisão**        | NIAR-Saúde e Comitê Gestor | Quando houver gatilho, o NIAR-Saúde envia o relatório; o Comitê Gestor o valida e delibera sobre as questões encaminhadas. |
 
-Reavaliações podem ser acionadas quando houver mudanças relevantes na tarefa, incluindo retreinamento com novos dados, alterações de arquitetura, mudanças relevantes nas entradas ou saídas, expansão do contexto de uso, mudança da população afetada, incidentes operacionais ou alterações institucionais ou regulatórias aplicáveis.
+Mudanças relevantes na tarefa são analisadas pelo impacto e podem levar a apenas registrar a mudança, reavaliar os requisitos afetados, abrir novo ciclo ou delimitar nova Tarefa de IA. Nem toda alteração técnica constitui uma nova Versão Avaliável.
 
-Nem toda alteração técnica constitui uma nova Versão Avaliável. A necessidade e o escopo da reavaliação devem considerar a relevância da mudança para as dimensões de IA Responsável.
-
-A recorrência e a rastreabilidade desses ciclos constituem a base para a inferência longitudinal da maturidade do projeto.
+As regras de cada etapa, os resultados, as pendências e os gatilhos do relatório estão em [ciclo_avaliacao.md](ciclo_avaliacao.md).
 
 ---
 
@@ -147,7 +144,7 @@ Projetos que ainda não possuem práticas estruturadas de IA Responsável podem 
 - orientação sobre governança e rastreabilidade
 - ciclos iterativos de adequação documental e técnica
 
-O objetivo principal nessa etapa não é a reprovação imediata do projeto, mas o desenvolvimento gradual de mecanismos verificáveis de governança.
+O objetivo principal nessa etapa é o desenvolvimento gradual de mecanismos verificáveis de governança.
 
 ---
 
@@ -160,6 +157,7 @@ O objetivo principal nessa etapa não é a reprovação imediata do projeto, mas
 - Governança da Avaliação → [governanca_avaliacao.md](governanca_avaliacao.md)
 - Mapeamento de Referências → [mapeamento_referencias.md](mapeamento_referencias.md)
 - Mecanismos de Verificação → [mecanismos_verificacao.md](mecanismos_verificacao.md)
+
 ---
 
 ## Referências
