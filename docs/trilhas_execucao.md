@@ -59,7 +59,6 @@ Questões que ultrapassam a avaliação técnica, como aceite de risco, restriç
 - Mudanças relevantes contribuem para a progressão de maturidade e não implicam regressão do nível já atribuído.
 - Na migração para a Trilha Produção, o nível obtido na Trilha Experimental (N2) é herdado como ponto de partida, sem alteração retroativa da maturidade do projeto.
 
-
 ---
 
 ## Relação com a metodologia
