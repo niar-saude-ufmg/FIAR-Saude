@@ -1,3 +1,7 @@
+
+
+> **Em revisão.** Este mapeamento usa os códigos do checklist da versão anterior, que foi removido. Os códigos citados abaixo não correspondem aos requisitos atuais: alguns não existem mais (como SEG-07, RESP-07, TRA-08 e os códigos JUS) e outros têm hoje outro conteúdo (por exemplo, GOV-03). O mapeamento será refeito para cada dimensão quando seus requisitos forem estabilizados.
+
 # Mapeamento de Referências – FIAR
 
 Este documento apresenta o mapeamento entre os critérios operacionais do checklist FIAR e referências internacionais em IA Responsável.
