@@ -21,10 +21,9 @@ A avaliação técnica do FIAR-Saúde pode ser compreendida por meio da seguinte
 - **Evidências:** constituem **a base utilizada para fundamentar a análise**.
 - **Mecanismos de verificação:** definem **como as evidências são examinadas**.
 - **Suficiência, consistência, rastreabilidade e contextualização:** constituem **propriedades transversais consideradas na análise das evidências**.
-- **Achados e pendências:** registram **os resultados da análise e as questões ainda não resolvidas**.
-- **Conformidade:** constitui o resultado pontual da avaliação de uma **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
-- **Maturidade:** constitui uma inferência longitudinal no nível do **projeto**, baseada na recorrência, continuidade e rastreabilidade das práticas de IA Responsável ao longo de sucessivos ciclos de avaliação.
-
+- **Pendências:** registram **as questões necessárias para delimitar a avaliação, determinar a aplicabilidade de um requisito ou concluir sua análise**.
+- **Resultado por requisito:** Atendido, Não atendido, Inconclusivo ou Não aplicável, para uma **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
+- **Maturidade:** propriedade longitudinal do **projeto**, a ser definida em revisão posterior.
 
 ---
 
@@ -56,7 +55,7 @@ Aspectos considerados incluem:
 - mecanismos de proteção, hardening ou isolamento de infraestrutura, quando aplicáveis
 
 Para critérios detalhados de avaliação, consulte:
-→ [Avaliação de Segurança](avaliacao/seguranca.md) *(arquivo ainda não criado — ver observação no final)*
+→ [Avaliação de Segurança](avaliacao/seguranca.md)
 
 ---
 
@@ -88,7 +87,7 @@ Aspectos considerados incluem:
 - rastreabilidade de aprovações institucionais
 
 Para critérios detalhados de avaliação, consulte:
-→ [Avaliação de Responsabilização](avaliacao/responsabilizacao.md) *(arquivo ainda não criado — ver observação no final)*
+→ [Avaliação de Responsabilização](avaliacao/responsabilizacao.md)
 
 ---
 
@@ -104,7 +103,7 @@ Aspectos considerados incluem:
 - disponibilidade de artefatos técnicos ao longo do tempo
 
 Para critérios detalhados de avaliação, consulte:
-→ [Avaliação de Rastreabilidade](avaliacao/rastreabilidade.md) *(arquivo ainda não criado — ver observação no final)*
+→ [Avaliação de Rastreabilidade](avaliacao/rastreabilidade.md)
 
 ---
 
@@ -136,7 +135,7 @@ Aspectos considerados incluem:
 - comunicação de limitações a públicos não técnicos
 
 Para critérios detalhados de avaliação, consulte:
-→ [Avaliação de Transparência](avaliacao/transparencia.md) *(arquivo ainda não criado — ver observação no final)*
+→ [Avaliação de Transparência](avaliacao/transparencia.md)
 
 ---
 
@@ -152,8 +151,8 @@ A avaliação de uma dimensão não se limita à presença de documentos. Para c
 - a análise realizada;
 - as limitações da evidência;
 - eventuais pendências;
-- os achados relevantes;
-- eventuais recomendações ou sinais de governança.
+- o resultado do requisito;
+- eventuais encaminhamentos (recomendações ou questões para o Comitê Gestor).
 
 As evidências são analisadas transversalmente quanto a quatro propriedades:
 
@@ -162,11 +161,11 @@ As evidências são analisadas transversalmente quanto a quatro propriedades:
 - **Rastreabilidade:** é possível identificar a origem, a versão e a relação da evidência com a tarefa e com as conclusões produzidas?
 - **Contextualização:** a evidência e seus resultados foram interpretados considerando o contexto de uso, as limitações, os riscos e as populações ou partes interessadas relevantes?
 
-Essas propriedades apoiam a análise das evidências, mas não constituem, isoladamente, resultados de conformidade.
+Essas propriedades apoiam a análise das evidências, mas não constituem, isoladamente, resultados dos requisitos.
 
-Os resultados das diferentes dimensões subsidiam a consolidação da avaliação de conformidade da **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
+Os resultados dos requisitos são registrados no fechamento do ciclo da **Tarefa de IA + Versão Avaliável + Contexto de Uso**, conforme [ciclo_avaliacao.md](ciclo_avaliacao.md).
 
-A maturidade não é avaliada dentro de cada dimensão nem resulta da agregação de seus resultados. Ela é inferida longitudinalmente no nível do projeto, a partir da recorrência, continuidade e rastreabilidade das práticas de IA Responsável ao longo de sucessivos ciclos de avaliação.
+A maturidade não é avaliada dentro de cada dimensão. Sua definição será estabelecida em revisão posterior.
 
 ---
 
@@ -186,11 +185,9 @@ Esses mecanismos podem incluir, entre outros:
 - esclarecimentos ou entrevistas com a equipe do projeto;
 - verificação de registros institucionais.
 
-Checklists padronizados podem ser utilizados como instrumentos de apoio para organizar requisitos, evidências e verificações:
+Os requisitos de cada dimensão estão nos arquivos indicados nas seções acima. Para as dimensões operacionalizadas, a aplicabilidade, as perguntas de apoio, os exemplos de evidências e os mecanismos de verificação estão no [Guia de Requisitos para Avaliação](https://github.com/niar-saude-ufmg/FIAR-Audit-Template/blob/main/documentacao_metodologica/guia_requisitos_avaliacao.md) do FIAR-Audit-Template.
 
-→ [Checklists de Avaliação](avaliacao/checklist.md)
-
-O checklist **não substitui a análise técnica e contextual** e não determina isoladamente o resultado de conformidade.
+As perguntas de apoio **não substituem a análise técnica e contextual** e não determinam isoladamente o resultado dos requisitos.
 
 Cada requisito deve estar associado, sempre que aplicável, a:
 
@@ -198,11 +195,11 @@ Cada requisito deve estar associado, sempre que aplicável, a:
 2. **evidência esperada**;
 3. **mecanismo de verificação**;
 4. **critério de suficiência da evidência**;
-5. **análise e achados**;
+5. **análise e resultado**;
 6. **pendências ou limitações**;
-7. **eventual sinal de governança**.
+7. **eventuais encaminhamentos.**
 
-Estados administrativos ou documentais, como evidência recebida, incompleta ou ausente, não devem ser automaticamente convertidos em resultados de conformidade.
+A ausência de um artefato não é, por si só, um resultado. A evidência recebida, incompleta ou ausente não deve ser automaticamente convertida em resultado do requisito.
 
 ---
 
@@ -216,7 +213,7 @@ Para uma visão conceitual dos princípios e da arquitetura do framework:
 Para o fluxo operacional da avaliação:
 → [Ciclo de Avaliação Técnica](ciclo_avaliacao.md)
 
-Para os níveis e critérios de maturidade longitudinal:
+Para o modelo de maturidade (em revisão):
 → [Modelo de Maturidade](modelo_maturidade.md)
 
 ---

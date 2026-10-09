@@ -19,9 +19,9 @@ A avaliação técnica segue a seguinte cadeia:
 * **Evidências:** constituem **a base utilizada para fundamentar a análise**.
 * **Mecanismos de verificação:** definem **como as evidências são examinadas**.
 * **Suficiência, consistência, rastreabilidade e contextualização:** constituem **propriedades transversais consideradas na análise das evidências**.
-* **Achados e pendências:** registram **os resultados da análise e as questões ainda não resolvidas**.
-* **Conformidade:** constitui o resultado pontual da avaliação de uma **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
-* **Maturidade:** constitui uma inferência longitudinal no nível do **projeto**, baseada na recorrência, continuidade e rastreabilidade das práticas de IA Responsável ao longo de sucessivos ciclos de avaliação.
+* **Pendências:** registram **as questões necessárias para delimitar a avaliação, determinar a aplicabilidade de um requisito ou concluir sua análise**.
+* **Resultado por requisito:** Atendido, Não atendido, Inconclusivo ou Não aplicável, para uma **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
+* **Maturidade:** propriedade longitudinal do **projeto**, a ser definida em revisão posterior.
 
 Os mecanismos de verificação, portanto, ocupam a camada operacional entre a existência da evidência e a conclusão da avaliação.
 
@@ -44,7 +44,7 @@ A seleção deve considerar, entre outros elementos:
 * riscos e limitações conhecidos;
 * evidências disponíveis.
 
-A inexistência de determinado teste ou artefato não constitui automaticamente uma não conformidade. Deve-se primeiro determinar se aquela evidência é aplicável ao requisito e ao contexto avaliado.
+A inexistência de determinado teste ou artefato não leva automaticamente a Não atendido nem gera, por si só, uma pendência. Deve-se primeiro determinar se aquela evidência é aplicável ao requisito e ao contexto avaliado.
 
 A aplicabilidade de uma dimensão não implica a obrigatoriedade de um mecanismo técnico específico. Os mecanismos devem ser selecionados em função do requisito, da tarefa, das evidências e do contexto de uso.
 
@@ -67,7 +67,7 @@ O avaliador deve distinguir claramente:
 * pendências;
 * decisões institucionais.
 
-Inferências sem suporte documental ou técnico devem ser explicitamente identificadas como limitações ou questões pendentes.
+Inferências sem suporte documental ou técnico suficiente devem ser identificadas como hipóteses do NIAR-Saúde, com sua base e limitação. Não substituem fatos demonstrados.
 
 Uma deficiência, ausência ou limitação identificada em determinada evidência não deve ser automaticamente propagada como falha para todas as dimensões ou requisitos que possam depender dela.
 
@@ -103,7 +103,7 @@ Por isso, a aplicação de um mecanismo de verificação deve considerar tanto o
 
 Toda verificação relevante deve registrar, quando aplicável:
 
-* requisito avaliado;
+* identificador do requisito avaliado;
 * evidência utilizada;
 * identificação ou versão do artefato;
 * mecanismo aplicado;
@@ -111,10 +111,9 @@ Toda verificação relevante deve registrar, quando aplicável:
 * interpretação do resultado;
 * limitações;
 * pendências;
-* relação com outros artefatos ou decisões.
-* identificador do requisito;
+* relação com outros artefatos ou decisões;
 * data da verificação;
-* responsável pela avaliação;
+* responsável pela avaliação.
 
 Essa estrutura permite reconstruir posteriormente como uma conclusão foi produzida.
 
@@ -157,14 +156,19 @@ A existência de um campo preenchido não implica, por si só, evidência sufici
 
 ### 4.2 Consistência cruzada entre artefatos
 
-Compara informações relacionadas presentes em diferentes evidências.
+Compara informações relacionadas presentes em diferentes evidências. Pode ser usada na delimitação do ciclo e na análise dos requisitos.
 
 Exemplos:
 
+* Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha são descritos de forma coerente entre os documentos;
 * datasets mencionados no Model Card correspondem aos Data Cards disponíveis;
-* população descrita nos dados corresponde à população considerada na avaliação de Justiça;
+* versões dos dados correspondem às versões do modelo;
+* população descrita nos dados corresponde à população analisada, inclusive na avaliação de Justiça;
+* entradas e saídas declaradas são coerentes entre os documentos;
+* métricas descritas correspondem aos resultados reportados;
 * limitações identificadas em um artefato aparecem refletidas nas análises e decisões subsequentes;
-* uso pretendido é consistente entre os documentos do ciclo.
+* decisões técnicas têm relação com as evidências disponíveis;
+* responsabilidades explicitamente declaradas são consistentes entre os documentos.
 
 Divergências confirmadas devem ser registradas como inconsistências. Ausência de informação em apenas um dos documentos não deve ser automaticamente classificada como inconsistência.
 
@@ -210,7 +214,7 @@ Pode envolver:
 * resultados de explicabilidade;
 * métricas de segurança ou privacidade, quando aplicáveis.
 
-Uma métrica isolada não determina automaticamente conformidade. Seu significado depende do requisito e do contexto de uso.
+Uma métrica isolada não determina automaticamente o resultado do requisito. Seu significado depende do requisito e do contexto de uso.
 
 ### 4.6 Testes técnicos
 
@@ -252,7 +256,9 @@ Podem ser utilizadas quando:
 * decisões relevantes não estão suficientemente explicadas;
 * o contexto de uso não pode ser compreendido apenas pelos documentos.
 
-Informações obtidas por entrevista que sejam relevantes para a avaliação devem ser registradas de maneira rastreável.
+As perguntas à equipe partem de pendências registradas. Exemplos de perguntas servem de apoio e não constituem checklist.
+
+As respostas da equipe, por entrevista ou por outro canal, são registradas de maneira rastreável e podem ser citadas como fonte na avaliação. Não se exige atualizar um artefato apenas para transcrever uma resposta. Isso pode ser necessário quando o requisito exigir documentação atualizada ou comunicação a um público.
 
 A entrevista não substitui evidências técnicas que devam existir formalmente.
 
@@ -283,7 +289,9 @@ Para cada requisito deve ser registrado:
 - **Aplicabilidade:** Aplicável | Não aplicável
 - **Justificativa:** fundamento para a determinação de aplicabilidade.
 
-A classificação como **Não aplicável** deve ser justificada e não equivale a atendimento do requisito.
+A classificação como **Não aplicável** deve ser justificada e não equivale a atendimento do requisito. Um requisito não é não aplicável apenas porque a evidência está ausente.
+
+Quando não for possível determinar a aplicabilidade, registra-se Inconclusivo, com o motivo "aplicabilidade não determinada", e abre-se a pendência necessária, conforme [ciclo_avaliacao.md](ciclo_avaliacao.md).
 
 A aplicabilidade pode variar entre tarefas e versões. Um requisito não aplicável em uma tarefa experimental pode tornar-se aplicável após mudança de contexto, integração em produção ou outra alteração relevante.
 
@@ -310,7 +318,7 @@ Possíveis situações incluem:
 * evidência insuficiente;
 * evidência não disponível;
 
-Esses estados descrevem a condição da evidência e não equivalem automaticamente a resultados de conformidade.
+Esses estados descrevem a condição da evidência e não equivalem automaticamente a resultados dos requisitos.
 
 ### 6.2 Consistência
 
@@ -326,7 +334,7 @@ A análise pode considerar:
 * consistência entre versões dos documentos;
 * consistência entre resultados técnicos e conclusões registradas.
 
-Uma inconsistência deve ser sustentada por evidências de divergência efetiva.
+Inconsistência é uma contradição confirmada, dentro de uma fonte ou entre fontes, sobre o mesmo fato, versão e contexto. Ausência de informação, dúvida interpretativa ou evidência ainda não fornecida não constituem inconsistência.
 
 ### 6.3 Rastreabilidade
 
@@ -369,9 +377,9 @@ O mesmo resultado técnico pode ser aceitável, insuficiente ou relevante de man
 
 ## 7. Sequência de avaliação de um requisito
 
-A avaliação requisito a requisito ocorre após a pré-avaliação documental do ciclo, conforme o [Protocolo de Pré-Avaliação Documental](protocolo_pre_avaliacao_documental.md).
+A avaliação requisito a requisito ocorre após a delimitação do ciclo descrita em [ciclo_avaliacao.md](ciclo_avaliacao.md).
 
-A pré-avaliação organiza e verifica inicialmente as fontes disponíveis; os mecanismos descritos neste documento são utilizados posteriormente para analisar as evidências em relação aos requisitos aplicáveis.
+A delimitação identifica a unidade avaliada e as fontes disponíveis; os mecanismos descritos neste documento são utilizados para analisar as evidências em relação aos requisitos aplicáveis.
 
 Para cada requisito das dimensões do FIAR-Saúde, a avaliação segue a seguinte sequência:
 
@@ -396,57 +404,38 @@ Para cada requisito das dimensões do FIAR-Saúde, a avaliação segue a seguint
    - contextualização.
 6. **Registrar o resultado da análise**
 
-   - achados;
+   - resultado do requisito (Atendido, Não atendido, Inconclusivo ou Não aplicável) e seus fundamentos;
    - limitações;
    - pendências;
    - recomendações, quando pertinentes.
-7. **Avaliar a existência de sinal de governança**
+7. **Identificar encaminhamentos ao Comitê Gestor**
 
-   - determinar se o achado requer mitigação, monitoramento, restrição, escalonamento ou decisão institucional.
+   - determinar se a análise gera questão que ultrapassa a avaliação técnica, como aceite de risco, restrição de uso, definição de responsabilidades ou conflito relevante.
 
-Essa sequência impede que presença, ausência ou preenchimento de um artefato sejam convertidos automaticamente em resultado de conformidade.
+Essa sequência impede que presença, ausência ou preenchimento de um artefato sejam convertidos automaticamente em resultado do requisito.
 
----
+## 8. Encaminhamentos
 
-## 8. Sinais de governança
+A análise de um requisito pode gerar encaminhamentos, conforme [ciclo_avaliacao.md](ciclo_avaliacao.md):
 
-Um achado pode produzir um **sinal de governança** quando sua relevância exige uma resposta que ultrapassa o tratamento ordinário de pendências documentais ou técnicas.
+- **Recomendação do NIAR-Saúde:** sugestão à equipe, como mitigação, monitoramento específico ou revisão em versão futura. Não é obrigatória e não altera resultados.
+- **Questão para o Comitê Gestor:** aceite de risco, restrição de uso, definição de responsabilidades ou conflito que ultrapasse a avaliação técnica. Condicionantes são definidas apenas pelo Comitê Gestor; o NIAR-Saúde pode recomendá-las.
 
-Possíveis sinais incluem:
+Pendências de informação, complementação documental ou esclarecimento são tratadas pelo fluxo ordinário da avaliação e não constituem, por si só, encaminhamento.
 
-- necessidade de mitigação;
-- necessidade de monitoramento específico;
-- necessidade de revisão em versão futura;
-- necessidade de restrição ou condicionamento de uso;
-- risco residual que requer avaliação institucional;
-- necessidade de escalonamento ao Comitê Gestor.
+Nem toda análise gera encaminhamento.
 
-Pendências de informação, complementação documental ou esclarecimento são tratadas pelo fluxo ordinário da avaliação e não constituem, por si só, sinais de governança.
+Quando houver encaminhamento, deve ser possível rastrear:
 
-Nem todo achado produz um sinal de governança.
-
-Quando houver sinal, deve ser possível rastrear:
-
-**evidência → mecanismo de verificação → achado → sinal de governança → ação ou decisão correspondente.**
+**evidência → mecanismo de verificação → resultado do requisito → encaminhamento → decisão correspondente, quando houver.**
 
 ---
 
-## 9. Estados da evidência, achados e conformidade
+## 9. Estados da evidência, pendências e resultados
 
 É necessário distinguir três níveis diferentes de resultado.
 
 ### 9.1 Estado da evidência
-
-### Estado documental
-
-Descreve a disponibilidade administrativa da evidência:
-
-- recebida;
-- parcialmente recebida;
-- não recebida;
-- substituída ou desatualizada, quando aplicável.
-
-### Estado analítico da evidência
 
 A condição analítica da evidência é registrada segundo propriedades independentes, quando aplicáveis.
 
@@ -470,7 +459,7 @@ Podem também ser registrados estados auxiliares, como:
 - requer evidência adicional;
 - requer análise adicional.
 
-Essas classificações não constituem resultados de conformidade.
+Essas classificações não constituem resultados dos requisitos.
 
 ### 9.2 Resultado da verificação
 
@@ -494,45 +483,40 @@ Um **achado** corresponde à conclusão produzida pelo NIAR-Saúde a partir da a
 
 Um **achado** é uma conclusão sustentada pela análise de uma ou mais evidências.
 
-Uma **pendência** representa uma questão que ainda impede ou limita a conclusão sobre determinado requisito.
+Uma **pendência** é uma questão que precisa ser resolvida para delimitar a avaliação, determinar a aplicabilidade de um requisito ou concluir sua análise. Seu destinatário é a equipe, quando depende dela, ou o NIAR-Saúde, para verificação interna ou decisão metodológica. As regras completas estão em [ciclo_avaliacao.md](ciclo_avaliacao.md).
 
 Exemplos de pendência incluem:
 
-* informação ausente;
-* evidência insuficiente;
-* análise adicional necessária;
-* inconsistência ainda não esclarecida;
-* decisão institucional necessária.
+* informação necessária ao requisito que não foi localizada nas fontes disponíveis;
+* evidência insuficiente para concluir;
+* análise adicional necessária pelo NIAR-Saúde;
+* inconsistência que exige esclarecimento.
 
-### 9.4 Resultado de conformidade
+Ausência de informação não é, por si só, pendência. Questões que exigem decisão institucional são encaminhadas ao Comitê Gestor (seção 8).
 
-O resultado de conformidade é produzido somente após a análise dos requisitos aplicáveis à avaliação.
+### 9.4 Resultado por requisito
 
-Ele se refere à combinação:
+Cada requisito recebe um resultado: **Atendido**, **Não atendido**, **Inconclusivo** ou **Não aplicável**, conforme as definições de [ciclo_avaliacao.md](ciclo_avaliacao.md).
+
+O resultado se refere à combinação:
 
 **Tarefa de IA + Versão Avaliável + Contexto de Uso.**
 
-Os estados de evidência não devem ser convertidos mecanicamente em resultados de conformidade.
+Os estados de evidência não devem ser convertidos mecanicamente em resultados dos requisitos.
 
 Por exemplo:
 
-* um documento ausente pode gerar inicialmente uma pendência;
+* um documento ausente só gera pendência quando a informação for necessária ao requisito e não estiver em outra fonte;
 * uma evidência incompleta pode requerer complementação;
 * uma inconsistência pode ser esclarecida ou confirmada;
-* uma limitação técnica conhecida pode ser compatível com uso condicionado, dependendo do contexto e da decisão institucional aplicável.
+* uma limitação técnica conhecida pode ser compatível com uso condicionado, dependendo do contexto e da decisão do Comitê Gestor. A aceitação de risco não altera, por si só, o resultado do requisito.
 
-A conformidade resulta da análise fundamentada do conjunto de requisitos e evidências, e não da simples contagem de itens presentes ou ausentes.
+Os resultados decorrem da análise fundamentada dos requisitos e evidências, e não da simples contagem de itens presentes ou ausentes.
 
 ---
 
 ## 10. Relação com a maturidade
 
-Os mecanismos de verificação produzem evidências sobre um ciclo específico de avaliação e não atribuem diretamente o nível de maturidade do projeto.
+Os mecanismos de verificação produzem evidências sobre um ciclo específico de avaliação e não atribuem o nível de maturidade do projeto.
 
-A maturidade é inferida longitudinalmente a partir da recorrência, continuidade e rastreabilidade das práticas observadas ao longo de sucessivos ciclos.
-
-Portanto:
-
-- a aplicação de um mecanismo em uma única versão não demonstra recorrência;
-- um requisito não atendido em uma versão não implica automaticamente regressão de maturidade;
-- a maturidade não resulta da soma ou agregação dos resultados dos requisitos.
+A definição da maturidade e a forma de inferi-la serão estabelecidas em revisão posterior.

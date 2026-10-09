@@ -5,11 +5,11 @@
 ![Domain](https://img.shields.io/badge/domain-public_health_AI-green)
 ![Version](https://img.shields.io/badge/version-1.0-blue)
 
-O **FIAR-Saúde** é um framework institucional e metodológico de governança de sistemas de inteligência artificial aplicados à saúde. Ele transforma princípios de **IA Responsável (IAR)** em critérios verificáveis, evidências documentadas, avaliações técnicas, sinais de governança e acompanhamento longitudinal, operando no contexto da saúde pública brasileira.
+O **FIAR-Saúde** é um framework institucional e metodológico de governança de sistemas de inteligência artificial aplicados à saúde. Ele transforma princípios de **IA Responsável (IAR)** em requisitos verificáveis, evidências documentadas, avaliação técnica por requisito e acompanhamento ao longo de ciclos de avaliação, operando no contexto da saúde pública brasileira.
 
-O framework busca reduzir a lacuna entre **princípios normativos de ética em IA** e sua **operacionalização em práticas de governança e auditoria** — uma limitação amplamente discutida na literatura (Floridi et al., 2018; Mittelstadt, 2019).
+O framework busca reduzir a lacuna entre **princípios normativos de ética em IA** e sua **operacionalização em práticas de governança e auditoria,** uma limitação amplamente discutida na literatura (Floridi et al., 2018; Mittelstadt, 2019).
 
-> O FIAR-Saúde **não** certifica modelos clínicos, **não garante ausência de viés e não substitui** **validação clínica ou mecanismos regulatórios formais**. Seu foco é a governança verificável das práticas, decisões e evidências associadas ao desenvolvimento, avaliação, operação e monitoramento de sistemas de IA.
+> O FIAR-Saúde **não** certifica modelos, tarefas ou projetos, **não garante ausência de viés e não substitui** **validação clínica ou mecanismos regulatórios formais**. Seu foco é a governança verificável das práticas, decisões e evidências associadas ao desenvolvimento, avaliação, operação e monitoramento de sistemas de IA.
 
 <!-- busca reduzir a lacuna entre **princípios normativos de ética em IA** e sua **operacionalização em práticas de governança e auditoria**, permitindo avaliações sistemáticas, reprodutíveis e comparáveis entre sistemas.-->
 
@@ -19,84 +19,71 @@ O framework busca reduzir a lacuna entre **princípios normativos de ética em I
 
 A operacionalização do FIAR-Saúde distingue três responsabilidades institucionais:
 
-- **Projetos de IA:** responsáveis pelo desenvolvimento dos modelos e pela produção, manutenção e atualização das evidências técnicas sob sua responsabilidade.
-- **NIAR-Saúde (Núcleo de Inteligência Artificial Responsável para a Saúde):** instância técnico-operacional responsável por operacionalizar o FIAR-Saúde, orientar e padronizar a produção de evidências, delimitar avaliações, verificar a suficiência, consistência e rastreabilidade dos artefatos e conduzir a avaliação técnica.
-- **Comitê Gestor:** instância de governança responsável por deliberações institucionais quando houver necessidade de aceite de risco, definição de condicionantes, restrições de uso ou outras decisões que ultrapassem a avaliação técnica de rotina.
+- **Projetos de IA:** responsáveis pelo desenvolvimento das Tarefas de IA e pela produção, manutenção e atualização das evidências técnicas sob sua responsabilidade.
+- **NIAR-Saúde (Núcleo de Inteligência Artificial Responsável para a Saúde):** instância técnico-operacional responsável por operacionalizar o FIAR-Saúde, orientar e padronizar a produção de evidências, delimitar avaliações, verificar a suficiência, consistência e rastreabilidade das evidências, conduzir a avaliação técnica e preparar os relatórios ao Comitê Gestor.
+- **Comitê Gestor:** instância de governança responsável por validar os relatórios de avaliação e por deliberar sobre aceite de risco, condicionantes, restrições de uso ou outras decisões que ultrapassem a avaliação técnica.
 
-A **produção de evidências**, a **avaliação técnica** e a **deliberação institucional** são funções distintas.
+A **produção de evidências**, a **avaliação técnica** e a **validação e deliberação institucional** são funções distintas.
 
 ---
 
 ## Ecossistema
 
-Cada projeto avaliadopode utilizar um **repositório próprio criado a partir do FIAR_template**.
+Cada projeto avaliado pode utilizar um **repositório próprio criado a partir do FIAR-Audit-Template**.
 
 ```mermaid
 flowchart TD
     A[FIAR-Saude\nFramework e Metodologia] --> B[FIAR-Audit-Template\nTemplate Base]
     B --> C1[Repositório de Avaliação\nProjeto X]
-    B --> C2[Repositório de Auditoria\nProjeto Y]
-    B --> C3[Repositório de Auditoria\nProjeto Z]
+    B --> C2[Repositório de Avaliação\nProjeto Y]
+    B --> C3[Repositório de Avaliação\nProjeto Z]
     C1 --> D[Histórico de Avaliação]
     C2 --> D
     C3 --> D
 ```
 
-| Repositório                         | Função                                                                                 |
-| ------------------------------------ | ---------------------------------------------------------------------------------------- |
-| **FIAR-Saude** (este)          | Documentação conceitual e metodologia do framework                                     |
-| **FIAR-Audit-Template**        | Template base para documentação e avaliação dos projetos                             |
-| **Repositórios dos projetos** | Contêm documentação, evidências, avaliações, pendências e histórico longitudinal |
-| **ToyExample**                 | Instância de auditoria do PrevisãoRESP-SUS usado como exemplo didático                |
+| Repositório                         | Função                                                                                             |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **FIAR-Saude** (este)          | Documentação conceitual e metodologia do framework                                                 |
+| **FIAR-Audit-Template**        | Template base para documentação e avaliação dos projetos                                         |
+| **Repositórios dos projetos** | Contêm documentação, evidências, comunicações, ciclos de avaliação e relatórios ao Comitê. |
+| **ToyExample**                 | Instância de auditoria do PrevisãoRESP-SUS usado como exemplo didático                            |
 
 ---
 
 ## Dimensões de IAR
 
-O FIAR-Saúde operacionaliza **sete dimensões** de IA Responsável:
+O FIAR-Saúde considera **sete dimensões** de IA Responsável. Os requisitos de cada uma estão em [docs/avaliacao/](docs/avaliacao/).
 
-| Dimensão                     | Exemplos de Evidências                                                                      |
-| ----------------------------- | -------------------------------------------------------------------------------------------- |
-| **Governança**         | Escopo aprovado, condicionantes institucionais, mecanismos de supervisão.                   |
-| **Segurança**          | Registros de incidentes, controle de acesso, mecanismos de resposta a falhas.                |
-| **Privacidade**         | Documentação sobre anonimização, políticas de retenção, controle de acesso aos dados. |
-| **Responsabilização** | Registros nominais de decisão, aprovação formal de riscos.                                |
-| **Rastreabilidade**     | Versionamento de dados e modelos, histórico de decisões técnicas.                         |
-| **Justiça**            | Métricas de disparidade, avaliações de fairness, registros de mitigação.                |
-| **Transparência**      | Relatórios de explicabilidade, justificativas técnicas das decisões de modelagem.         |
+| Dimensão                     | Exemplos de Evidências                                                                                                   |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Governança**         | Escopo aprovado, condicionantes institucionais, mecanismos de supervisão.                                                |
+| **Segurança**          | Registros de incidentes, controle de acesso, mecanismos de resposta a falhas.                                             |
+| **Privacidade**         | Documentação sobre anonimização, políticas de retenção, controle de acesso aos dados.                              |
+| **Responsabilização** | Registros nominais de decisão, aprovação formal de riscos.                                                             |
+| **Rastreabilidade**     | Versionamento de dados e modelos, histórico de decisões técnicas.                                                      |
+| **Justiça**            | Identificação fundamentada de grupos, resultados por grupo, análise de dados e variáveis-alvo, condições de acesso. |
+| **Transparência**      | Relatórios de explicabilidade, justificativas técnicas das decisões de modelagem.                                      |
 
 ---
 
-## Níveis de Maturidade
+## Maturidade
 
-O nível de maturidade expressa a capacidade institucional do projeto de executar práticas de IAR de forma recorrente e verificável ao longo do tempo. É inferido pelo NIAR a partir do histórico de conformidades das tarefas do projeto.
-
-| Nível       | Denominação | Critério                                                                                              |
-| ------------ | ------------- | ------------------------------------------------------------------------------------------------------ |
-| **N1** | Ad-hoc        | Ausência de mecanismos estruturados ou execução apenas reativa.                                     |
-| **N2** | Inicial       | Pelo menos um ciclo completo de avaliação com artefatos formalmente produzidos.                      |
-| **N3** | Desenvolvido  | Recorrência verificável ao longo de múltiplas versões avaliáveis. Exclusivo da Trilha Produção. |
-| **N4** | Consolidado   | Monitoramento contínuo institucionalizado e governança integrada. Exclusivo da Trilha Produção.    |
+A maturidade é uma propriedade longitudinal do projeto. Sua definição e a forma de inferi-la serão estabelecidas em revisão posterior. O [modelo anterior](docs/modelo_maturidade.md) está em revisão e não é aplicado nesta versão.
 
 ---
 
 ## Quickstart
 
-Um novo projeto entra no **FIAR-Saúde** por um ciclo estruturado:
+Cada avaliação é um ciclo para uma **Tarefa de IA + Versão Avaliável + Contexto de Uso**:
 
-1. **Entrada do projeto:** preenchimento do Formulário de Entrada.
-2. **Triagem pelo NIAR-Saúde:** compreensão da iniciativa e identificação de eventuais dúvidas.
-3. **Identificação da avaliação:** definição da **Tarefa de IA**, **Versão Avaliável**, **Contexto de Uso** e **Trilha**.
-4. **Definição das evidências necessárias:** o NIAR-Saúde determina os artefatos adequados ao ciclo.
-5. **Produção e envio das evidências pelo projeto:** por exemplo, Data Card, Model Card e outros artefatos aplicáveis.
-6. **Pré-avaliação documental:** verificação inicial da suficiência, consistência e rastreabilidade das evidências.
-7. **Tratamento de pendências:** complementações ou esclarecimentos, quando necessários.
-8. **Avaliação técnica por dimensão:** análise das evidências segundo os mecanismos de verificação do FIAR-Saúde.
-9. **Resultado de conformidade:** referente à **Tarefa de IA + Versão Avaliável + Contexto de Uso**.
-10. **Deliberação institucional**, quando necessária.
-11. **Acompanhamento longitudinal:** novos ciclos são iniciados quando houver mudanças relevantes.
+1. **Entrada:** a equipe do projeto preenche o Formulário de Entrada.
+2. **Delimitação:** o NIAR-Saúde define a Tarefa de IA, a Versão Avaliável, o Contexto de Uso, a Trilha, o escopo e as fontes.
+3. **Avaliação por requisito:** o NIAR-Saúde determina a aplicabilidade e atribui o resultado de cada requisito (Atendido, Não atendido, Inconclusivo ou Não aplicável).
+4. **Rodadas com a equipe:** perguntas ligadas às pendências; as respostas são registradas como fonte.
+5. **Fechamento:** registro de resultados, limitações, pendências remanescentes e encaminhamentos.
 
-> **A conformidade é pontual. A maturidade é longitudinal e pertence ao projeto.**
+Quando houver gatilho, o NIAR-Saúde envia o relatório ao Comitê Gestor, que o valida e delibera sobre as questões encaminhadas. Mudanças relevantes são analisadas pelo impacto e podem levar a um novo ciclo. Detalhes em [docs/ciclo_avaliacao.md](docs/ciclo_avaliacao.md).
 
 ---
 
@@ -106,12 +93,11 @@ Um novo projeto entra no **FIAR-Saúde** por um ciclo estruturado:
 - Ciclo de Avaliação Técnica → [docs/ciclo_avaliacao.md](docs/ciclo_avaliacao.md)
 - Dimensões de IAR → [docs/dimensoes_avaliacao.md](docs/dimensoes_avaliacao.md)
 - Trilhas de Execução → [docs/trilhas_execucao.md](docs/trilhas_execucao.md)
-- Modelo de Maturidade → [docs/modelo_maturidade.md](docs/modelo_maturidade.md)
+- Requisitos por dimensão → [docs/avaliacao/](docs/avaliacao/)
 - Governança Institucional  → [docs/governanca_avaliacao.md](https://github.com/niar-saude-ufmg/FIAR-Saude/blob/main/docs/governanca_avaliacao.md)
 - Mecanismos de Verificação → [docs/mecanismos_verificacao.md](docs/mecanismos_verificacao.md)
-- Protocolo de Pré-Avaliação Documental → [docs/protocolo_pre_avaliacao_documental.md](docs/protocolo_pre_avaliacao_documental.md) — orienta o inventário inicial de evidências, as verificações cruzadas e o registro de pendências antes da avaliação por requisito. 
-
-
+- Modelo de Maturidade (em revisão) → [docs/modelo_maturidade.md](docs/modelo_maturidade.md)
+- Mapeamento de Referências (em revisão) → [docs/mapeamento_referencias.md](docs/mapeamento_referencias.md)
 
 ---
 
@@ -129,12 +115,22 @@ Sistema hipotético de previsão de internações respiratórias por hospital ut
 FIAR-Saude/
 ├── docs/
 │   ├── metodologia_fiar.md
-│   ├── dimensoes_avaliacao.md
 │   ├── ciclo_avaliacao.md
 │   ├── governanca_avaliacao.md
+│   ├── dimensoes_avaliacao.md
+│   ├── mecanismos_verificacao.md
 │   ├── trilhas_execucao.md
 │   ├── modelo_maturidade.md
-│   └── mapeamento_referencias.md
+│   ├── maturidade_fiar.md
+│   ├── mapeamento_referencias.md
+│   └── avaliacao/
+│       ├── governanca.md
+│       ├── seguranca.md
+│       ├── privacidade.md
+│       ├── responsabilizacao.md
+│       ├── rastreabilidade.md
+│       ├── justica.md
+│       └── transparencia.md
 ├── README.md
 ├── LICENSE
 └── CITATION.cff
