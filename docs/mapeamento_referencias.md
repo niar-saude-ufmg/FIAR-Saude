@@ -2,7 +2,7 @@
 
 ## Escopo e estado da revisão
 
-Este documento registra a fundamentação dos requisitos de Justiça **RC01–RC04**, conforme a reconstrução documentada na planilha `Requisitos_Justica_corrigido_para_requisitos(1).xlsm` e as formulações do `guia_requisitos_avaliacao.md` fornecido nesta atualização.
+Este documento registra a fundamentação dos requisitos de Justiça **RC01–RC04**, conforme a reconstrução documentada na planilha [`docs/fontes/derivacao_requisitos_justica.xlsm`](fontes/derivacao_requisitos_justica.xlsm) e as formulações do `guia_requisitos_avaliacao.md` do FIAR-Audit-Template (commit `48fd505`).
 
 O mapeamento anterior, baseado nos códigos do checklist removido, foi substituído. Governança, Segurança, Privacidade, Responsabilização, Rastreabilidade e Transparência permanecem **em revisão metodológica**, sem mapeamento vigente neste documento.
 
@@ -145,7 +145,7 @@ O AI Act é utilizado como referência normativa internacional, sem pressupor ob
 ## Limites e pendências da documentação de origem
 
 - A aba de extrações ainda contém registros com transcrição literal ou localização a completar, incluindo EXT-051–EXT-055. A inclusão da fonte neste mapeamento não encerra essas pendências.
-- A planilha contém diferença de redação em RC04 e o erro de concordância “os variáveis-alvo” em RC03. Aqui são reproduzidas as formulações do guia fornecido, sem alteração substantiva dos requisitos.
+- A planilha contém diferença de redação em RC04 e o erro de concordância “os variáveis-alvo” em RC03. Aqui são reproduzidas as formulações do guia de requisitos, sem alteração substantiva dos requisitos.
 - Referências jurídicas e versões bibliográficas foram transpostas do corpus, sem nova validação de vigência ou conferência externa.
 
 ## Atualização
