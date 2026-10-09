@@ -1,9 +1,6 @@
 # Avaliação de Maturidade – FIAR
 
-
-
 > **Em revisão.** Este modelo não é aplicado nesta versão do FIAR-Saúde. A definição da maturidade e a forma de inferi-la serão estabelecidas em revisão posterior. O conteúdo abaixo é da versão anterior e não segue o [ciclo de avaliação](ciclo_avaliacao.md) atual
-
 
 A avaliação de maturidade no FIAR tem como objetivo transformar os resultados do checklist em uma interpretação estruturada sobre o grau de desenvolvimento das práticas de IA Responsável em um sistema.
 
@@ -168,10 +165,6 @@ Esses resultados são consolidados no relatório final de auditoria.
 ## Relação com o checklist
 
 A avaliação de maturidade depende diretamente dos resultados do checklist.
-
-Para critérios operacionais:
-
-→ [Checklist de Avaliação](avaliacao/checklist.md)
 
 ---
 

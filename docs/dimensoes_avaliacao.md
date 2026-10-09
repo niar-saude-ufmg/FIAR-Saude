@@ -185,11 +185,9 @@ Esses mecanismos podem incluir, entre outros:
 - esclarecimentos ou entrevistas com a equipe do projeto;
 - verificação de registros institucionais.
 
-Checklists padronizados podem ser utilizados como instrumentos de apoio para organizar requisitos, evidências e verificações:
+Os requisitos de cada dimensão estão nos arquivos indicados nas seções acima. Para as dimensões operacionalizadas, a aplicabilidade, as perguntas de apoio, os exemplos de evidências e os mecanismos de verificação estão no [Guia de Requisitos para Avaliação](https://github.com/niar-saude-ufmg/FIAR-Audit-Template/blob/main/documentacao_metodologica/guia_requisitos_avaliacao.md) do FIAR-Audit-Template.
 
-→ [Checklists de Avaliação](avaliacao/checklist.md)
-
-O checklist **não substitui a análise técnica e contextual** e não determina isoladamente o resultado dos requisitos.
+As perguntas de apoio **não substituem a análise técnica e contextual** e não determinam isoladamente o resultado dos requisitos.
 
 Cada requisito deve estar associado, sempre que aplicável, a:
 
@@ -215,7 +213,7 @@ Para uma visão conceitual dos princípios e da arquitetura do framework:
 Para o fluxo operacional da avaliação:
 → [Ciclo de Avaliação Técnica](ciclo_avaliacao.md)
 
-Para o modelo de maturidade (em revisão): 
+Para o modelo de maturidade (em revisão):
 → [Modelo de Maturidade](modelo_maturidade.md)
 
 ---
