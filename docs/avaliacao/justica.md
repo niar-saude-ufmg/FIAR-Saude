@@ -6,7 +6,7 @@ A análise não deve presumir que toda diferença observada represente automatic
 
 A dimensão está organizada em quatro requisitos: **RC01 a RC04**. Cada requisito é avaliado para a combinação **Tarefa de IA + Versão Avaliável + Contexto de Uso**, considerando a Trilha de Execução, com os resultados definidos em [ciclo_avaliacao.md](../ciclo_avaliacao.md).
 
-A aplicabilidade, as perguntas de apoio, os exemplos de evidências e os mecanismos de verificação de cada requisito estão no [Guia de Requisitos para Avaliação](https://github.com/niar-saude-ufmg/FIAR-Audit-Template/blob/main/documentacao_metodologica/guia_requisitos_avaliacao.md) do FIAR-Audit-Template. Os exemplos de evidências não constituem lista obrigatória de artefatos.
+A aplicabilidade, o checklist do avaliador, os exemplos de evidências e os mecanismos de verificação de cada requisito estão no [Guia de Requisitos para Avaliação](https://github.com/niar-saude-ufmg/FIAR-Audit-Template/blob/main/documentacao_metodologica/guia_requisitos_avaliacao.md) do FIAR-Audit-Template. Os exemplos de evidências não constituem lista obrigatória de artefatos.
 
 ---
 
