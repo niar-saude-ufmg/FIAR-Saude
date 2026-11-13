@@ -6,7 +6,7 @@ A análise não deve presumir que toda diferença observada represente automatic
 
 A dimensão está organizada em quatro requisitos: **RC01 a RC04**. Cada requisito é avaliado para a combinação **Tarefa de IA + Versão Avaliável + Contexto de Uso**, considerando a Trilha de Execução, com os resultados definidos em [ciclo_avaliacao.md](../ciclo_avaliacao.md).
 
-A aplicabilidade, o checklist do avaliador, os exemplos de evidências e os mecanismos de verificação de cada requisito estão no [Guia de Requisitos para Avaliação](https://github.com/niar-saude-ufmg/FIAR-Audit-Template/blob/main/documentacao_metodologica/guia_requisitos_avaliacao.md) do FIAR-Audit-Template. Os exemplos de evidências não constituem lista obrigatória de artefatos.
+A aplicabilidade, o checklist do avaliador, os exemplos de evidências e os mecanismos de verificação de cada requisito estão no [Guia de Requisitos para Avaliação](https://github.com/niar-saude-ufmg/FIAR-Audit-Template/blob/main/documentacao_metodologica/guia_requisitos_avaliacao.md) do FIAR-Audit-Template. Os exemplos de evidências não constituem lista obrigatória de artefatos. O Fairness Report é a exceção: é obrigatório nesta dimensão (ver Fairness Report, abaixo). O modelo do relatório também está no FIAR-Audit-Template.
 
 ---
 
@@ -42,6 +42,12 @@ A aplicabilidade, o checklist do avaliador, os exemplos de evidências e os meca
 
 ---
 
+## Fairness Report
+
+O Fairness Report é obrigatório nesta dimensão, nas Trilhas Experimental e Produção. É a posição formal da equipe sobre RC01 a RC04. As Seções 1 a 4 correspondem a RC01 a RC04, e cada campo indica o item do checklist a que responde (RCxx.y). O agente da sala segura pré-preenche o relatório a partir da execução, do Model Card e do Data Card. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Os fatos ficam resumidos no relatório, com fonte e versão de cada um. A equipe confere, completa os julgamentos e assina.
+
+O NIAR-Saúde verifica o relatório com as demais evidências em avaliacao.md e aponta lacunas. A equipe responde em nova versão do relatório. O resultado dos requisitos é do NIAR-Saúde e não consta do relatório. A Seção 5 do relatório, síntese da equipe, é apresentada ao Comitê Gestor no relatório do NIAR-Saúde.
+
 ## Fontes de evidência
 
-Informações factuais podem ser recuperadas de Data Card, Model Card, documentação do projeto, resultados experimentais ou outras fontes. O **Fairness Report** é uma possível fonte para consolidar análises específicas de Justiça, sem duplicar fatos já documentados em outros artefatos. A ausência de um Fairness Report, isoladamente, não demonstra insuficiência.
+Informações factuais podem ser recuperadas de Data Card, Model Card, documentação do projeto, resultados experimentais ou outras fontes, que o Fairness Report resume, com fonte e versão.
