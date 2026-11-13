@@ -44,7 +44,7 @@ A aplicabilidade, o checklist do avaliador, os exemplos de evidências e os meca
 
 ## Fairness Report
 
-O Fairness Report é obrigatório nesta dimensão, nas Trilhas Experimental e Produção. É a posição formal da equipe sobre RC01 a RC04. As Seções 1 a 4 correspondem a RC01 a RC04, e cada campo indica o item do checklist a que responde (RCxx.y). O agente da sala segura pré-preenche o relatório a partir da execução, do Model Card e do Data Card. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Os fatos ficam resumidos no relatório, com fonte e versão de cada um. A equipe confere, completa os julgamentos e assina.
+O Fairness Report é o relatório de dimensão de Justiça (ver [ciclo_avaliacao.md](../ciclo_avaliacao.md)). Ele é obrigatório nesta dimensão, nas Trilhas Experimental e Produção. É a posição formal da equipe sobre RC01 a RC04. As Seções 1 a 4 correspondem a RC01 a RC04, e cada campo indica o item do checklist a que responde (RCxx.y). O agente da sala segura pré-preenche o relatório a partir da execução, do Model Card e do Data Card. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Os fatos ficam resumidos no relatório, com fonte e versão de cada um. A equipe confere, completa os julgamentos e assina.
 
 O NIAR-Saúde verifica o relatório com as demais evidências em avaliacao.md e aponta lacunas. A equipe responde em nova versão do relatório. O resultado dos requisitos é do NIAR-Saúde e não consta do relatório. A Seção 5 do relatório, síntese da equipe, é apresentada ao Comitê Gestor no relatório do NIAR-Saúde.
 
