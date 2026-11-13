@@ -6,10 +6,10 @@ Este documento registra as regras gerais. Os campos e as instruções de preench
 
 ## Papéis
 
-* **Equipe do projeto:** fornece informações sobre a iniciativa, produz e mantém os artefatos sob sua responsabilidade, confere, completa e assina os relatórios de dimensão, responde às lacunas e perguntas do NIAR-Saúde.
+* **Equipe do projeto:** fornece informações sobre a iniciativa, produz e mantém os artefatos sob sua responsabilidade, confere, completa e assina os relatórios de dimensão e responde às lacunas e perguntas do NIAR-Saúde.
 * **NIAR-Saúde:** delimita o ciclo, determina a aplicabilidade dos requisitos, verifica os relatórios de dimensão com as demais evidências, aponta lacunas, avalia, faz recomendações e prepara o relatório ao Comitê Gestor. Não edita os artefatos da equipe.
 * **Comitê Gestor:** valida os relatórios de avaliação e delibera, no âmbito de sua competência institucional, sobre riscos e questões encaminhadas, inclusive condicionantes e restrições de uso. Pode solicitar esclarecimentos ou revisão ao NIAR-Saúde, sem substituir a avaliação técnica. A aceitação de risco não altera, por si só, os resultados dos requisitos. Lê a síntese da equipe de cada relatório de dimensão, apresentada no relatório do NIAR-Saúde.
-* **Agentes:** o agente da sala segura pré-preenche os relatórios de dimensão. Outro agente pode rascunhar a verificação para o NIAR-Saúde. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR-Saúde.
+* **Agentes:** o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, um agente a serviço do NIAR-Saúde pode pré-preencher um rascunho (ver etapa 3). Outro agente pode rascunhar a verificação para o NIAR-Saúde. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR-Saúde.
 
 ## Conceitos
 
@@ -51,7 +51,7 @@ Somente fontes localizadas e verificadas quanto à pertinência ao objeto avalia
 
 ### 3. Relatório de dimensão
 
-Nas dimensões com relatório obrigatório, o agente da sala segura pré-preenche o relatório com a execução, o Model Card e o Data Card. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Em cada campo, o agente marca a origem e a versão e aponta as divergências entre as fontes. Os fatos ficam resumidos, com fonte e versão. Campos de julgamento que ele pré-preenche a partir do Model Card vêm marcados "a confirmar". A equipe confere os fatos, confirma ou corrige os campos "a confirmar", completa os julgamentos e assina. O responsável pelo projeto assina a síntese e as decisões. O responsável técnico assina as análises.
+Nas dimensões com relatório obrigatório, o agente da sala segura pré-preenche o relatório com a execução, o Model Card e o Data Card. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Sem agente da sala segura, um agente a serviço do NIAR-Saúde pode pré-preencher o relatório como rascunho, a partir do Model Card, do Data Card, de publicações e das comunicações registradas; esse agente não é o que verifica o relatório. Em cada campo, o agente marca a origem e a versão e aponta as divergências entre as fontes. Os fatos ficam resumidos, com fonte e versão. Fatos tirados de comunicações entram com a fonte (arquivo e data). Campos de julgamento pré-preenchidos a partir do Model Card ou de comunicações da equipe vêm marcados "a confirmar". A equipe confere os fatos, confirma ou corrige os campos "a confirmar", completa os julgamentos e assina. O relatório só passa a ser posição da equipe quando ela o assina. O responsável pelo projeto assina a síntese e as decisões. O responsável técnico assina as análises.
 
 ### 4. Avaliação por requisito
 
@@ -65,7 +65,7 @@ Para cada requisito das dimensões operacionalizadas, o NIAR-Saúde:
 
 O avaliacao.md aponta para os campos do relatório e não reescreve os fatos. Os estados do relatório são da equipe. O resultado do requisito e a situação dos itens são do NIAR-Saúde.
 
-A existência de um template ou tipo de artefato não o torna obrigatório. A necessidade da evidência precede a escolha do artefato. A avaliação responde ao requisito; não verifica apenas a existência de documentos.  A exceção são os relatórios de dimensão definidos como obrigatórios na documentação de cada dimensão. O relatório é a posição formal da equipe e o ponto de partida da verificação, e não substitui a verificação das evidências. As marcações de preenchimento dos modelos (como OBRIGATÓRIO e CONDICIONAL) indicam o que a equipe preenche. Não são resultado nem situação de item.
+A existência de um template ou tipo de artefato não o torna obrigatório. A necessidade da evidência precede a escolha do artefato. A avaliação responde ao requisito; não verifica apenas a existência de documentos. A exceção são os relatórios de dimensão definidos como obrigatórios na documentação de cada dimensão. O relatório é a posição formal da equipe e o ponto de partida da verificação, e não substitui a verificação das evidências. As marcações de preenchimento dos modelos (como OBRIGATÓRIO e CONDICIONAL) indicam o que a equipe preenche. Não são resultado nem situação de item.
 
 ### 5. Rodadas com a equipe
 
@@ -119,6 +119,7 @@ Se um relatório de dimensão obrigatório não for entregue no prazo, os requis
 * Antes de abrir uma lacuna, verifica-se se ela é necessária para concluir o requisito, se a resposta já está no relatório ou em outra fonte e se já foi apontada. Item do checklist não localizado não gera lacuna por si só.
 * Lacuna aberta só torna o requisito Inconclusivo quando impede a conclusão. Se já houver evidência suficiente de não atendimento, esse resultado é registrado. Vencido o prazo, o NIAR-Saúde conclui com o que houver. Lacuna aberta no fechamento é registrada entre as lacunas remanescentes.
 * Nas dimensões com relatório, pergunta à equipe sobre o conteúdo de um requisito é lacuna. A pendência de requisito fica para verificação interna do NIAR-Saúde e para pedidos que não cabem no relatório, como o acesso a uma fonte. A pendência de delimitação não muda.
+* Pendência de aplicabilidade não é lacuna: a aplicabilidade é decidida pelo NIAR-Saúde, mesmo quando depende de informação da equipe.
 
 ## Decisões metodológicas e informações não confirmadas
 
