@@ -2,13 +2,14 @@
 
 O FIAR-Saúde avalia práticas de IA Responsável a partir de evidências, em ciclos de avaliação. O FIAR-Saúde não é certificação, validação clínica nem autorização de implantação.
 
-Este documento registra as regras gerais. Os campos e as instruções de preenchimento estão no Formulário de Entrada, nos modelos e no guia operacional do repositório FIAR-Audit-Template.
+Este documento registra as regras gerais. Os campos e as instruções de preenchimento estão no Formulário de Entrada, nos modelos (inclusive os dos relatórios de dimensão) e no guia operacional do repositório FIAR-Audit-Template.
 
 ## Papéis
 
-* **Equipe do projeto:** fornece informações sobre a iniciativa, produz e mantém os artefatos sob sua responsabilidade e responde às perguntas do NIAR-Saúde.
-* **NIAR-Saúde:** delimita o ciclo, determina a aplicabilidade dos requisitos, avalia, faz recomendações e prepara o relatório ao Comitê Gestor. Não edita os artefatos da equipe.
-* **Comitê Gestor:** valida os relatórios de avaliação e delibera, no âmbito de sua competência institucional, sobre riscos e questões encaminhadas, inclusive condicionantes e restrições de uso. Pode solicitar esclarecimentos ou revisão ao NIAR-Saúde, sem substituir a avaliação técnica. A aceitação de risco não altera, por si só, os resultados dos requisitos.
+* **Equipe do projeto:** fornece informações sobre a iniciativa, produz e mantém os artefatos sob sua responsabilidade, confere, completa e assina os relatórios de dimensão e responde às lacunas e perguntas do NIAR-Saúde.
+* **NIAR-Saúde:** delimita o ciclo, determina a aplicabilidade dos requisitos, verifica os relatórios de dimensão com as demais evidências, aponta lacunas, avalia, faz recomendações e prepara o relatório ao Comitê Gestor. Não edita os artefatos da equipe.
+* **Comitê Gestor:** valida os relatórios de avaliação e delibera, no âmbito de sua competência institucional, sobre riscos e questões encaminhadas, inclusive condicionantes e restrições de uso. Pode solicitar esclarecimentos ou revisão ao NIAR-Saúde, sem substituir a avaliação técnica. A aceitação de risco não altera, por si só, os resultados dos requisitos. Lê a síntese da equipe de cada relatório de dimensão, apresentada no relatório do NIAR-Saúde.
+* **Agentes:** o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, um agente a serviço do NIAR-Saúde pode pré-preencher um rascunho (ver etapa 3). Outro agente pode rascunhar a verificação para o NIAR-Saúde. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR-Saúde.
 
 ## Conceitos
 
@@ -20,6 +21,8 @@ Este documento registra as regras gerais. Os campos e as instruções de preench
 * **Ciclo de avaliação:** uma avaliação de uma unidade, da delimitação ao fechamento.
 * **Trilha de Execução:** Experimental (pesquisa, desenvolvimento ou validação, sem operação ativa) ou Produção (em operação ativa). Orienta a aplicabilidade dos requisitos e a natureza das evidências necessárias.
 * **Evidência e fonte:** evidência é a informação que responde a um requisito; fonte é onde ela está (artefato ou comunicação registrada).
+* **Relatório de dimensão:** artefato da equipe com sua posição formal e assinada sobre os requisitos de uma dimensão. A documentação de cada dimensão define se há relatório obrigatório e qual é o modelo; em Justiça, é o Fairness Report ([justica.md](avaliacao/justica.md)). Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha são os da delimitação. Cada nova versão lista as lacunas a que responde.
+* **Lacuna:** ponto do relatório de dimensão que impede concluir um requisito (ver Lacunas).
 * **Maturidade:** propriedade longitudinal do projeto, a ser definida em revisão posterior.
 
 ## Etapas do ciclo
@@ -46,29 +49,35 @@ A etapa termina com a decisão de que o ciclo está pronto para avaliação. Lac
 
 Somente fontes localizadas e verificadas quanto à pertinência ao objeto avaliado podem sustentar a avaliação. Fontes de ciclos anteriores podem ser reutilizadas quando permanecerem pertinentes e atuais. Lembranças de conversas ou registros ainda não verificados servem apenas como pistas para localizar evidências.
 
-### 3. Avaliação por requisito
+### 3. Relatório de dimensão
+
+Nas dimensões com relatório obrigatório, o agente da sala segura pré-preenche o relatório com a execução, o Model Card e o Data Card. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Sem agente da sala segura, o NIAR-Saúde, ou um agente a seu serviço, pode pré-preencher o relatório como rascunho, a partir do Model Card, do Data Card, de publicações e das comunicações registradas; quem pré-preenche não é quem verifica o relatório. Em cada campo, o agente marca a origem e a versão e aponta as divergências entre as fontes. Os fatos ficam resumidos, com fonte e versão. Fatos tirados de comunicações entram com a fonte (arquivo e data). Campos de julgamento pré-preenchidos a partir do Model Card ou de comunicações da equipe vêm marcados "a confirmar". A equipe confere os fatos, confirma ou corrige os campos "a confirmar", completa os julgamentos e assina. O relatório só passa a ser posição da equipe quando ela o assina. O responsável pelo projeto assina a síntese e as decisões. O responsável técnico assina as análises. O rascunho do relatório de dimensão tem versão 0.1.0 e vai anexado ao pedido à equipe (comunicacoes/anexos/); o relatório entra entre os artefatos da equipe (artefatos/) como 1.0.0, depois de assinado.
+
+### 4. Avaliação por requisito
 
 Para cada requisito das dimensões operacionalizadas, o NIAR-Saúde:
 
 1. determina a aplicabilidade, com justificativa, antes de julgar o atendimento, consultando as informações factuais das fontes;
 2. identifica o que precisa ser demonstrado;
-3. localiza as evidências nas fontes disponíveis;
+3. lê o campo do relatório de dimensão, quando houver, que responde a cada item do checklist e o confere com as evidências nas fontes disponíveis;
 4. analisa suficiência, consistência, rastreabilidade e pertinência;
 5. atribui o resultado.
 
-A existência de um template ou tipo de artefato não o torna obrigatório. A necessidade da evidência precede a escolha do artefato. A avaliação responde ao requisito; não verifica apenas a existência de documentos.
+O avaliacao.md aponta para os campos do relatório e não reescreve os fatos. Os estados do relatório são da equipe. O resultado do requisito e a situação dos itens são do NIAR-Saúde.
 
-### 4. Rodadas com a equipe
+A existência de um template ou tipo de artefato não o torna obrigatório. A necessidade da evidência precede a escolha do artefato. A avaliação responde ao requisito; não verifica apenas a existência de documentos. A exceção são os relatórios de dimensão definidos como obrigatórios na documentação de cada dimensão. O relatório é a posição formal da equipe e o ponto de partida da verificação, e não substitui a verificação das evidências. As marcações de preenchimento dos modelos (como OBRIGATÓRIO e CONDICIONAL) indicam o que a equipe preenche. Não são resultado nem situação de item.
 
-As perguntas à equipe nascem das pendências destinadas a ela e são enviadas em rodadas. A equipe responde pelo canal que preferir. A resposta é registrada como comunicação, analisada pelo NIAR-Saúde e citada como fonte.
+### 5. Rodadas com a equipe
+
+As lacunas e as pendências destinadas à equipe são enviadas em rodadas, com a versão do relatório de dimensão verificada e o prazo. A equipe responde às lacunas em nova versão do Fairness Report e às pendências pelo canal que preferir. A resposta é registrada como comunicação, analisada pelo NIAR-Saúde e citada como fonte. O NIAR-Saúde reavalia os requisitos afetados.
 
 Não se exige atualizar um artefato apenas para transcrever uma resposta já registrada. A atualização pode ser necessária quando o próprio requisito exigir documentação atualizada ou comunicação a determinado público.
 
-### 5. Fechamento
+### 6. Fechamento
 
-O NIAR-Saúde registra a unidade avaliada, a cobertura da avaliação, os resultados por requisito e suas justificativas, as fontes utilizadas, as limitações e as pendências remanescentes.
+O NIAR-Saúde registra a unidade avaliada, a cobertura da avaliação, os resultados por requisito e suas justificativas, as fontes utilizadas, as limitações e as pendências e lacunas remanescentes.
 
-O fechamento pode ocorrer com resultados Inconclusivos, desde que seus motivos e as necessidades de acompanhamento estejam explícitos. Encerrar o ciclo não significa encerrar automaticamente as pendências.
+O fechamento pode ocorrer com resultados Inconclusivos, desde que seus motivos e as necessidades de acompanhamento estejam explícitos. Encerrar o ciclo não significa encerrar automaticamente as pendências e as lacunas.
 
 As evidências, os resultados e as decisões permanecem vinculados à Tarefa de IA, à Versão Avaliável e ao Contexto de Uso correspondentes. São registrados os encaminhamentos e os gatilhos de reavaliação.
 
@@ -87,14 +96,30 @@ Atendimento parcial ou prática apenas planejada não levam automaticamente a In
 
 Ausência de artefato não é resultado. Um requisito não é não aplicável apenas porque a evidência está ausente.
 
+Se um relatório de dimensão obrigatório não for entregue no prazo, os requisitos da dimensão ficam Inconclusivos, com o motivo "relatório de dimensão não entregue", salvo evidência suficiente de não atendimento.
+
 ## Pendências
 
 * Uma pendência é uma questão que precisa ser resolvida para delimitar a avaliação, determinar a aplicabilidade de um requisito ou concluir sua análise. Está sempre ligada à delimitação ou a um requisito.
 * Antes de abrir uma pendência, verifica-se se a questão é necessária, se a informação já está em alguma fonte e se já foi respondida.
-* Destinatário: equipe, quando depende dela; NIAR-Saúde, para verificação interna ou decisão metodológica ainda não tomada. Questões internas não são transferidas à equipe.
+* Destinatário: equipe, quando depende dela; NIAR-Saúde, para verificação interna ou decisão metodológica ainda não tomada. Questões internas não são transferidas à equipe. Nas dimensões com relatório, pergunta à equipe sobre o conteúdo de um requisito é lacuna, não pendência. A pendência de requisito fica para verificação interna do NIAR-Saúde e para pedidos que não cabem no relatório, como o acesso a uma fonte. A pendência de delimitação não muda.
 * A pendência bloqueia apenas o que depende dela.
 * Estados: aberta, respondida, encerrada, cancelada (com motivo). Uma resposta recebida é analisada e não encerra automaticamente a pendência. Só o NIAR-Saúde encerra, citando a fonte.
 * Requisito com pendência aberta só fica Inconclusivo quando a pendência impede a conclusão. Se já houver evidência suficiente de não atendimento, esse resultado é registrado.
+
+## Lacunas
+
+* Lacuna é um ponto do relatório de dimensão que impede concluir um requisito: campo vazio, campo que não responde ao item, falta de fonte, julgamento sem fundamento ou sem autor, divergência com outra evidência ou campo que segue marcado "a confirmar" na versão assinada.
+* **Quem aponta**: o NIAR-Saúde, ao verificar o relatório. Um agente pode rascunhar, desde que não seja o que preencheu o relatório. O NIAR-Saúde valida.
+* **Identificação**: RCxx-Ly, numerada por requisito dentro do ciclo (ex.: RC02-L1). Fora do ciclo, cita-se junto com o ciclo (ex.: C01 RC02-L1).
+* **Registro**: na análise do requisito, no avaliacao.md do ciclo. O pedido à equipe é registrado como comunicação e traz as lacunas, a versão do relatório verificada e o prazo.
+* **Prazo**: definido pelo NIAR-Saúde no pedido de cada rodada.
+* **Resposta**: a equipe responde em nova versão do relatório de dimensão, que lista as lacunas a que responde.
+* **Estados**: aberta, respondida, encerrada, cancelada (com motivo). A lacuna fica respondida quando chega a nova versão do relatório. Só o NIAR-Saúde encerra, citando a versão e o campo do relatório.
+* Antes de abrir uma lacuna, verifica-se se ela é necessária para concluir o requisito, se a resposta já está no relatório ou em outra fonte e se já foi apontada. Item do checklist não localizado não gera lacuna por si só.
+* Lacuna aberta só torna o requisito Inconclusivo quando impede a conclusão. Se já houver evidência suficiente de não atendimento, esse resultado é registrado. Vencido o prazo, o NIAR-Saúde conclui com o que houver. Lacuna aberta no fechamento é registrada entre as lacunas remanescentes.
+* Nas dimensões com relatório, pergunta à equipe sobre o conteúdo de um requisito é lacuna. A pendência de requisito fica para verificação interna do NIAR-Saúde e para pedidos que não cabem no relatório, como o acesso a uma fonte. A pendência de delimitação não muda.
+* Pendência de aplicabilidade não é lacuna: a aplicabilidade é decidida pelo NIAR-Saúde, mesmo quando depende de informação da equipe.
 
 ## Decisões metodológicas e informações não confirmadas
 
@@ -107,7 +132,9 @@ Ausência de artefato não é resultado. Um requisito não é não aplicável ap
 
 Inconsistência é uma contradição confirmada dentro de uma fonte ou entre fontes sobre o mesmo fato, versão e contexto. Ausência de informação, dúvida interpretativa ou evidência ainda não fornecida não constituem inconsistência.
 
-A inconsistência é registrada na delimitação ou na análise do requisito afetado. Gera pendência quando exigir esclarecimento necessário à avaliação, com destinatário definido conforme quem pode resolvê-la.
+A inconsistência é registrada na delimitação ou na análise do requisito afetado. Gera pendência quando exigir esclarecimento necessário à avaliação, com destinatário definido conforme quem pode resolvê-la. Uma inconsistência entre um relatório de dimensão e outra fonte gera lacuna.
+
+Estados: aberta; resolvida (com a fonte que a resolve); cancelada (com motivo, por exemplo quando a revisão mostra que não se tratava do mesmo fato, versão ou contexto). Inconsistência aberta no fechamento é registrada entre as limitações.
 
 ## Encaminhamentos
 
@@ -118,7 +145,7 @@ Condicionantes são definidas apenas pelo Comitê Gestor.
 
 ## Relatório ao Comitê Gestor
 
-O relatório é por projeto, em linguagem simples, e descreve a cobertura da avaliação, os resultados, os riscos identificados, as recomendações e a decisão solicitada. Não classifica a aceitabilidade dos riscos.
+O relatório é por projeto, em linguagem simples, e descreve a cobertura da avaliação, os resultados, os riscos identificados, as recomendações e a decisão solicitada. Não classifica a aceitabilidade dos riscos. Inclui a síntese da equipe de cada relatório de dimensão, identificada como posição da equipe e separada da análise do NIAR-Saúde.
 
 É enviado quando houver:
 
@@ -141,7 +168,7 @@ Mudanças como retreinamento, alteração dos dados, das entradas ou saídas, da
 3. abrir novo ciclo (nova versão ou novo contexto);
 4. delimitar nova Tarefa de IA.
 
-A escolha e sua justificativa são registradas.
+A escolha e sua justificativa são registradas. Mudança listada na síntese de um relatório de dimensão como motivo de nova versão exige nova versão desse relatório.
 
 ## Visão resumida
 
@@ -150,13 +177,17 @@ Entrada (formulário aberto na entrada e atualizado quando há mudança relevant
         ↓
 Delimitação: Tarefa + Versão + Contexto, Trilha, fontes
         ↓
-Avaliação por requisito  ⇄  Rodadas com a equipe
+Relatório de dimensão (em Justiça, Fairness Report): agente da sala segura pré-preenche
+        ↓
+Avaliação por requisito: NIAR-Saúde verifica o relatório com as evidências; resultados e lacunas
+        ↓
+Rodadas com a equipe: lacunas respondidas em nova versão do relatório  →  reavaliação
         ↓
 Fechamento do ciclo
         ↓
-Relatório ao Comitê Gestor, quando houver gatilho
+Relatório ao Comitê Gestor, com a síntese da equipe, quando houver gatilho
         ↓
 Decisão do Comitê
         ↓
-Mudança relevante → registro, reavaliação, novo ciclo ou nova tarefa
+Mudança relevante → registro, reavaliação, novo ciclo, nova tarefa ou nova versão do relatório
 ```
