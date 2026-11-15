@@ -69,7 +69,7 @@ A existência de um template ou tipo de artefato não o torna obrigatório. A ne
 
 ### 5. Rodadas com a equipe
 
-As lacunas e as pendências destinadas à equipe são enviadas em rodadas, com a versão do relatório de dimensão verificada e o prazo. A equipe responde às lacunas em nova versão do Fairness Report e às pendências pelo canal que preferir. A resposta é registrada como comunicação, analisada pelo NIAR-Saúde e citada como fonte. O NIAR-Saúde reavalia os requisitos afetados.
+As lacunas e as pendências destinadas à equipe são enviadas em rodadas, com a versão do relatório de dimensão verificada e o prazo. A equipe responde às lacunas em nova versão do relatório de dimensão e às pendências pelo canal que preferir. A resposta é registrada como comunicação, analisada pelo NIAR-Saúde e citada como fonte. O NIAR-Saúde reavalia os requisitos afetados.
 
 Não se exige atualizar um artefato apenas para transcrever uma resposta já registrada. A atualização pode ser necessária quando o próprio requisito exigir documentação atualizada ou comunicação a determinado público.
 
