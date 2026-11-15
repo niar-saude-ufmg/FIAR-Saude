@@ -9,12 +9,12 @@ Este documento registra as regras gerais. Os campos e as instruções de preench
 * **Equipe do projeto:** fornece informações sobre a iniciativa, produz e mantém os artefatos sob sua responsabilidade, confere, completa e assina os relatórios de dimensão e responde às lacunas e perguntas do NIAR-Saúde.
 * **NIAR-Saúde:** delimita o ciclo, determina a aplicabilidade dos requisitos, verifica os relatórios de dimensão com as demais evidências, aponta lacunas, avalia, faz recomendações e prepara o relatório ao Comitê Gestor. Não edita os artefatos da equipe.
 * **Comitê Gestor:** valida os relatórios de avaliação e delibera, no âmbito de sua competência institucional, sobre riscos e questões encaminhadas, inclusive condicionantes e restrições de uso. Pode solicitar esclarecimentos ou revisão ao NIAR-Saúde, sem substituir a avaliação técnica. A aceitação de risco não altera, por si só, os resultados dos requisitos. Lê a síntese da equipe de cada relatório de dimensão, apresentada no relatório do NIAR-Saúde.
-* **Agentes:** o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, um agente a serviço do NIAR-Saúde pode pré-preencher um rascunho (ver etapa 3). Outro agente pode rascunhar a verificação para o NIAR-Saúde. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR-Saúde.
+* **Agentes:** o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, o NIAR-Saúde, ou um agente a seu serviço, pode pré-preencher um rascunho (ver etapa 3). Outro agente pode rascunhar a verificação para o NIAR-Saúde. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR-Saúde.
 
 ## Conceitos
 
 * **Projeto:** iniciativa responsável por uma ou mais Tarefas de IA; guarda o histórico dos ciclos.
-* **Tarefa de IA:** modelo, dados e procedimentos orientados a um objetivo específico, que pode ser clínico, assistencial, operacional ou de pesquisa. Mudanças no objetivo, no tipo de resultado ou no escopo essencial podem caracterizar uma nova tarefa, conforme análise justificada do NIAR-Saúde. A delimitação das tarefas cabe ao NIAR-Saúde.  Modelo é um componente cujos parâmetros são ajustados ou aprendidos a partir de dados (por exemplo, aprendizado de máquina ou modelo estatístico, como o pareamento probabilístico de registros). Procedimento só com regras fixas definidas por pessoas não é Tarefa de IA; quando gera dados usados por uma Tarefa de IA, é examinado na avaliação dela (RC03).
+* **Tarefa de IA:** modelo, dados e procedimentos orientados a um objetivo específico, que pode ser clínico, assistencial, operacional ou de pesquisa. Mudanças no objetivo, no tipo de resultado ou no escopo essencial podem caracterizar uma nova tarefa, conforme análise justificada do NIAR-Saúde. A delimitação das tarefas cabe ao NIAR-Saúde. Modelo é um componente cujos parâmetros são ajustados ou aprendidos a partir de dados (por exemplo, aprendizado de máquina ou modelo estatístico, como o pareamento probabilístico de registros). Procedimento só com regras fixas definidas por pessoas não é Tarefa de IA; quando gera dados usados por uma Tarefa de IA, é examinado na avaliação dela (RC03).
 * **Versão Avaliável:** estado da tarefa avaliado no ciclo (modelo, dados e procedimentos). A falta de um identificador exato não impede automaticamente a avaliação, mas é preciso haver informação suficiente para relacionar as evidências à tarefa, ao estado avaliado e ao contexto.
 * **Contexto de Uso:** condições nas quais a tarefa é desenvolvida, avaliada ou utilizada, incluindo finalidade, usuários, população, ambiente e restrições relevantes. O contexto considerado no ciclo é explicitado. O uso pretendido que não for objeto do ciclo é registrado separadamente.
 * **Unidade de avaliação:** Tarefa de IA + Versão Avaliável + Contexto de Uso.
@@ -22,7 +22,7 @@ Este documento registra as regras gerais. Os campos e as instruções de preench
 * **Trilha de Execução:** Experimental (pesquisa, desenvolvimento ou validação, sem operação ativa) ou Produção (em operação ativa). Orienta a aplicabilidade dos requisitos e a natureza das evidências necessárias.
 * **Evidência e fonte:** evidência é a informação que responde a um requisito; fonte é onde ela está (artefato ou comunicação registrada).
 * **Relatório de dimensão:** artefato da equipe com sua posição formal e assinada sobre os requisitos de uma dimensão. A documentação de cada dimensão define se há relatório obrigatório e qual é o modelo; em Justiça, é o Fairness Report ([justica.md](avaliacao/justica.md)). Tarefa de IA, Versão Avaliável, Contexto de Uso e Trilha são os da delimitação. Cada nova versão lista as lacunas a que responde.
-* **Lacuna:** ponto do relatório de dimensão que impede concluir um requisito (ver Lacunas).
+* **Lacuna:** ponto do relatório de dimensão que impede concluir ou atender um requisito (ver Lacunas).
 * **Maturidade:** propriedade longitudinal do projeto, a ser definida em revisão posterior.
 
 ## Etapas do ciclo
@@ -51,7 +51,7 @@ Somente fontes localizadas e verificadas quanto à pertinência ao objeto avalia
 
 ### 3. Relatório de dimensão
 
-Nas dimensões com relatório obrigatório, o agente da sala segura pré-preenche o relatório com a execução, o Model Card e o Data Card. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Sem agente da sala segura, o NIAR-Saúde, ou um agente a seu serviço, pode pré-preencher o relatório como rascunho, a partir do Model Card, do Data Card, de publicações e das comunicações registradas; quem pré-preenche não é quem verifica o relatório. Em cada campo, o agente marca a origem e a versão e aponta as divergências entre as fontes. Os fatos ficam resumidos, com fonte e versão. Fatos tirados de comunicações entram com a fonte (arquivo e data). Campos de julgamento pré-preenchidos a partir do Model Card ou de comunicações da equipe vêm marcados "a confirmar". A equipe confere os fatos, confirma ou corrige os campos "a confirmar", completa os julgamentos e assina. O relatório só passa a ser posição da equipe quando ela o assina. O responsável pelo projeto assina a síntese e as decisões. O responsável técnico assina as análises. O rascunho do relatório de dimensão tem versão 0.1.0 e vai anexado ao pedido à equipe (comunicacoes/anexos/); o relatório entra entre os artefatos da equipe (artefatos/) como 1.0.0, depois de assinado.
+Nas dimensões com relatório obrigatório, o agente da sala segura pré-preenche o relatório com a execução, o Model Card e o Data Card. Sem execução na sala segura, os fatos vêm de publicações ou relatórios técnicos, indicados como fonte. Sem agente da sala segura, o NIAR-Saúde, ou um agente a seu serviço, pode pré-preencher o relatório como rascunho, a partir do Model Card, do Data Card, de publicações e das comunicações registradas; quem pré-preenche não é quem verifica o relatório. Em cada campo, o agente marca a origem e a versão e aponta as divergências entre as fontes. Os fatos ficam resumidos, com fonte e versão. Fatos tirados de comunicações entram com a fonte (remetente, data e item). Campos de julgamento pré-preenchidos a partir do Model Card ou de comunicações da equipe vêm marcados [a confirmar]. A equipe confere os fatos, confirma ou corrige os campos [a confirmar], completa os julgamentos e assina. O relatório só passa a ser posição da equipe quando ela o assina. O responsável pelo projeto assina a síntese e as decisões. O responsável técnico assina as análises. O rascunho do relatório de dimensão tem versão 0.1.0 e vai anexado ao pedido à equipe (comunicacoes/anexos/); o relatório entra entre os artefatos da equipe (artefatos/) como 1.0.0, depois de assinado.
 
 ### 4. Avaliação por requisito
 
@@ -109,16 +109,16 @@ Se um relatório de dimensão obrigatório não for entregue no prazo, os requis
 
 ## Lacunas
 
-* Lacuna é um ponto do relatório de dimensão que impede concluir um requisito: campo vazio, campo que não responde ao item, falta de fonte, julgamento sem fundamento ou sem autor, divergência com outra evidência ou campo que segue marcado "a confirmar" na versão assinada.
+* Lacuna é um ponto do relatório de dimensão que impede concluir ou atender um requisito: campo vazio, campo que não responde ao item, falta de fonte, julgamento sem fundamento ou sem autor, divergência com outra evidência ou campo que segue marcado [a confirmar] na versão assinada.
 * **Quem aponta**: o NIAR-Saúde, ao verificar o relatório. Um agente pode rascunhar, desde que não seja o que preencheu o relatório. O NIAR-Saúde valida.
 * **Identificação**: RCxx-Ly, numerada por requisito dentro do ciclo (ex.: RC02-L1). Fora do ciclo, cita-se junto com o ciclo (ex.: C01 RC02-L1).
 * **Registro**: na análise do requisito, no avaliacao.md do ciclo. O pedido à equipe é registrado como comunicação e traz as lacunas, a versão do relatório verificada e o prazo.
 * **Prazo**: definido pelo NIAR-Saúde no pedido de cada rodada.
 * **Resposta**: a equipe responde em nova versão do relatório de dimensão, que lista as lacunas a que responde.
 * **Estados**: aberta, respondida, encerrada, cancelada (com motivo). A lacuna fica respondida quando chega a nova versão do relatório. Só o NIAR-Saúde encerra, citando a versão e o campo do relatório.
-* Antes de abrir uma lacuna, verifica-se se ela é necessária para concluir o requisito, se a resposta já está no relatório ou em outra fonte e se já foi apontada. Item do checklist não localizado não gera lacuna por si só.
+* Antes de abrir uma lacuna, verifica-se se ela é necessária para concluir ou atender o requisito, se a resposta já está no relatório e se já foi apontada. Posição da equipe só em comunicação, em outro artefato ou marcada [a confirmar] não conta como resposta. Item do checklist não localizado não gera lacuna por si só.
 * Lacuna aberta só torna o requisito Inconclusivo quando impede a conclusão. Se já houver evidência suficiente de não atendimento, esse resultado é registrado. Vencido o prazo, o NIAR-Saúde conclui com o que houver. Lacuna aberta no fechamento é registrada entre as lacunas remanescentes.
-* Nas dimensões com relatório, pergunta à equipe sobre o conteúdo de um requisito é lacuna. A pendência de requisito fica para verificação interna do NIAR-Saúde e para pedidos que não cabem no relatório, como o acesso a uma fonte. A pendência de delimitação não muda.
+* Pergunta à equipe sobre o conteúdo de um requisito é lacuna (ver Pendências).
 * Pendência de aplicabilidade não é lacuna: a aplicabilidade é decidida pelo NIAR-Saúde, mesmo quando depende de informação da equipe.
 
 ## Decisões metodológicas e informações não confirmadas
@@ -132,7 +132,7 @@ Se um relatório de dimensão obrigatório não for entregue no prazo, os requis
 
 Inconsistência é uma contradição confirmada dentro de uma fonte ou entre fontes sobre o mesmo fato, versão e contexto. Ausência de informação, dúvida interpretativa ou evidência ainda não fornecida não constituem inconsistência.
 
-A inconsistência é registrada na delimitação ou na análise do requisito afetado. Gera pendência quando exigir esclarecimento necessário à avaliação, com destinatário definido conforme quem pode resolvê-la. Uma inconsistência entre um relatório de dimensão e outra fonte gera lacuna.
+A inconsistência é registrada na delimitação ou na análise do requisito afetado. Gera pendência quando exigir esclarecimento necessário à avaliação, com destinatário definido conforme quem pode resolvê-la. Uma inconsistência entre um relatório de dimensão e outra fonte gera lacuna, se passar no teste da lacuna.
 
 Estados: aberta; resolvida (com a fonte que a resolve); cancelada (com motivo, por exemplo quando a revisão mostra que não se tratava do mesmo fato, versão ou contexto). Inconsistência aberta no fechamento é registrada entre as limitações.
 
@@ -140,6 +140,7 @@ Estados: aberta; resolvida (com a fonte que a resolve); cancelada (com motivo, p
 
 * **Recomendação do NIAR-Saúde:** sugestão à equipe; não é obrigatória e não altera resultados.
 * **Questão para o Comitê Gestor:** aceite de risco, restrição de uso, definição de responsabilidades ou conflito que ultrapasse a avaliação técnica.
+* **Divergência fora da dimensão:** divergência entre fontes que não afeta nenhum requisito da dimensão vira recomendação do NIAR-Saúde, com as fontes.
 
 Condicionantes são definidas apenas pelo Comitê Gestor.
 
