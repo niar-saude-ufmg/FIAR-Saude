@@ -9,7 +9,7 @@ Este documento registra as regras gerais. Os campos e as instruções de preench
 * **Equipe do projeto:** fornece informações sobre a iniciativa, produz e mantém os artefatos sob sua responsabilidade, confere, completa e assina os relatórios de dimensão e responde às lacunas e perguntas do NIAR-Saúde.
 * **NIAR-Saúde:** delimita o ciclo, determina a aplicabilidade dos requisitos, verifica os relatórios de dimensão com as demais evidências, aponta lacunas, avalia, faz recomendações e prepara o relatório ao Comitê Gestor. Não edita os artefatos da equipe.
 * **Comitê Gestor:** valida os relatórios de avaliação e delibera, no âmbito de sua competência institucional, sobre riscos e questões encaminhadas, inclusive condicionantes e restrições de uso. Pode solicitar esclarecimentos ou revisão ao NIAR-Saúde, sem substituir a avaliação técnica. A aceitação de risco não altera, por si só, os resultados dos requisitos. Lê a síntese da equipe de cada relatório de dimensão, apresentada no relatório do NIAR-Saúde.
-* **Agentes:** o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, o NIAR-Saúde, ou um agente a seu serviço, pode pré-preencher um rascunho (ver etapa 3). Outro agente pode rascunhar a verificação para o NIAR-Saúde. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR-Saúde.
+* **Agentes:** o agente da sala segura pré-preenche os relatórios de dimensão; sem ele, o NIAR-Saúde, ou um agente a seu serviço, pode pré-preencher um rascunho (ver etapa 3). Outro agente pode rascunhar a verificação para o NIAR-Saúde. Quem produz e quem verifica são agentes separados. Todo texto de agente é validado pela equipe ou pelo NIAR-Saúde. Quando houver duas avaliadoras, quem valida o rascunho pré-preenchido não valida a verificação.
 
 ## Conceitos
 
@@ -123,7 +123,7 @@ Se um relatório de dimensão obrigatório não for entregue no prazo, os requis
 
 ## Decisões metodológicas e informações não confirmadas
 
-* Decisões metodológicas já tomadas são registradas no documento que afetam, com justificativa.
+* Decisões metodológicas já tomadas são registradas no documento que afetam, com justificativa. As que valem para a avaliação ficam no avaliacao.md, com ID DM-xx, e são revistas quando o ciclo recomeça.
 * Informações factuais são registradas com suas fontes. Uma informação suficientemente documentada não exige nova confirmação da equipe apenas para repetir o que já consta da fonte.
 * Inferências ainda não sustentadas suficientemente são identificadas como hipóteses do NIAR-Saúde, com sua base e limitação. Não substituem fatos demonstrados.
 * Responsabilidades técnicas não são estabelecidas por dedução do avaliador. Quando não estiverem documentadas suficientemente, permanecem não confirmadas. Solicita-se esclarecimento somente quando necessário à delimitação ou à análise de um requisito.
